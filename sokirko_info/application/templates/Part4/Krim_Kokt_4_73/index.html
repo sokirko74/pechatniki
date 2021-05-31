@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Коктебель"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2.<u> Стихи Волошина</u> </p><p>3. <u>"Родина нашего духа"</u></p>
 <p>4. 		Как в раковине малой - океана / Великое дыхание гудит, <br/>
 Как плоть ее мерцает и горит / Отливами и серебром тумана, <br/>
@@ -364,6 +354,6 @@
 Будь прост, как ветр, неистощим, как море,/И памятью насыщен, как земля.<br/>
             Люби далекий парус корабля / И песню волн, шумящих на просторе.<br/>
 Весь трепет жизни всех веков и рас/ Живет в тебе. Всегда. Теперь. Сейчас.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

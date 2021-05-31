@@ -1,22 +1,9 @@
-<html>
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N2: К.Светлов "Ответ на комментарий К.Б. Продолжение дискуссии вокруг статьи К.Буржуадемова «Я обвиняю…»</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="V.3.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="V.5.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>В защиту экономических 
 свобод.            Выпуск 
 2</h3>
@@ -138,4 +125,5 @@
 <a href="V.5.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

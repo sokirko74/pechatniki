@@ -1,20 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>В.и Л.Сокирко. Диафильм «Два Переславля»</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title> В.и Л.Сокирко. Диафильм  «Два  Переславля»</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+<br/><br/>
 <p>1-6.</p> <p>7.<i>  Переславль-3алесский.</i></p>
 <p>8.  В тот год мы купили байдарку. Байдарка требовала, чтобы ее вывозили за город.</p>
 <p>9.  И вот мы на Плещеевом озере, у начала своего первого трехдневного маршрута.</p>
@@ -150,6 +140,6 @@
 <p>129. ...пресыщаться и скучать.</p>
 <p>130. Но тогда придется оставить надежду на то, что когда-нибудь все же выйдет к нам белый священник, притронется рукой...</p>
 <p>131. ...и снимет с души вопрос-камень: «Нужны ли вам русские церкви?».</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

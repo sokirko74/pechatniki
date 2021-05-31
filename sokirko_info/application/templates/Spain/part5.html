@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Испанский дневник</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. Сокирко</b></i></h2>
+
+
+<h2><i><b>В. и Л. Сокирко</b></i></h2>
 <h2><b>Испанский (последний) дневник 2006 года </b></h2>
 <h1>5. Про испанского почти соседа Россию и колонию ее Сибирь.</h1>
 <p><i><b>Призыв к покаянию касается и России. Рано или поздно, но он будет   услышан.</b></i></p>
@@ -33,5 +24,5 @@
 <p><i> Так наши казачьи предки, начав грабить Сибирь, теперь уничтожают уже себя  самих. Болезнь  ограбления, которой переболела Испания, и сегодня мучает  Россию. Боюсь, она, болеет уже смертельно. И это заставляет почти молиться:</i></p>
 <p><i><b>« Господи, верни нам, как испанцам, разум  и   отними у нашего начальства Сибирь» .</b></i></p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

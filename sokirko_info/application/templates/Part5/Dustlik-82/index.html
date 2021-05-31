@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко Дустлик 1982</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>
 <strong>Примечание:</strong> Первоначально этот д/ф был "
         2 частью д/ф <strong>
@@ -82,6 +72,6 @@
 <p>142. начальством, но среди заветов древней культуры и упорного труда.</p>
 <p>143. И нам невозможно поверить, что их будущее трудовое братство не смоет повадки московски-азиатских хапуг, </p>
 <p>144. прибавив к культуре веков новые труды и достижения...</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

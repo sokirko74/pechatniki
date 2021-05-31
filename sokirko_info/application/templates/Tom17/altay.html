@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Походный дневник по высокогорному Алтаю. Август 1987г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Том 17. Алтай-Сибирь 1987 г.</h2>
+
+
+<h2>Том 17. Алтай-Сибирь 1987 г.</h2>
 <h1>Походный дневник по высокогорному Алтаю. Август 1987г. </h1>
 <h3>(Москва - Барнаул - Бийск - Сростки - Шебалино - Усть-Кан - Усть-Кокса - Тюнгур - Кочурла - пер.Кара-Тюрек - Аккем - пер.Дружба - р.Иедыгем - р.Аргут - р.Карагем - пер. Карагем - р.Чаган-узун - Кызыл-Маны - Акташ)</h3>
 <p><b>Введение</b></p>
@@ -1597,5 +1588,5 @@ oтзовутся собственные слова.</i></p>
 прощение за злобу в походе не просил - какие меж друзьями могут быть 
 счеты?!</i></p>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

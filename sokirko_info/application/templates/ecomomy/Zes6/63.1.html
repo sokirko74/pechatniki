@@ -1,22 +1,9 @@
-<html>
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N6: К.Буржуадемов "Стиль руководства страной, как он книге Л.И.Брежнева "Целина"</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="62.1.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="64.1.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>В защиту экономических 
 свобод.            Выпуск 
 6</h3>
@@ -787,4 +774,5 @@ a нужда в технике, строительной и прочей пом�
 <a href="64.1.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Таджикистан"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>151.<u>Галя:2-ой день похода</u></p> <p>Встали утром рано, по холодку, умылись у ручья на старой, заброшенной </p>
 <p>152. дороге. Позавтракали и </p>
 <p>153. пошли.</p>
@@ -204,6 +194,6 @@
 <p>338. И всюду - ложь! Ложь и трусость! Непонимание и равнодушие... Если хотите - это мой последний вывод в этом фильме.</p>
 <p>339.<u> Лиля:</u> Я не хочу кончать наш фильм Витиной отчаянной нотой. Я не могла лишить его права сказать свой вывод, но право на надежду и мажорный аккорд я оставляю за собой...</p>
 <p>340. <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

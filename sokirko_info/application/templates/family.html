@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко (книги,дневники и слайд-фильмы).</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3>Семья и дом: 2000-е годы</h3>
+
+
+<h3>Семья и дом: 2000-е годы</h3>
 <ul>
 <li><a href="zolotsvad/index.html">Золотая Свадьба (2012 г.)</a></li>
 <li><a href="Part70/alex/">Алёшин диафильм "Поздравление на 70-летие маме Лиле"</a></li>
@@ -29,5 +20,5 @@
 <li><a href="family/alena.html">Отзыв на книгу Е.Д. Арманд "О Господи, о Боже мой!" </a></li>
 </ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

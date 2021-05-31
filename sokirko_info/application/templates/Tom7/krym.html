@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Украина</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3>Диафильмы и К</h3>
+
+
+<h3>Диафильмы и К</h3>
 <h2>Том 7. Украина. 1979г.</h2>
 <h2>Раздел 2. Крым - 73 г.</h2>
 <h1>Крымский дневник</h1>
@@ -75,5 +66,5 @@
 <p>Ночевали мы в Аркадии, почти на берегу моря.</p>
 <p><b>22.9.73.</b>Утром, даже больной, Витя не удержался и искупался в море. Ведь Аркадия, и ведь последний раз море. Сейчас он совершенно простудился, но о том, что купался, не жалеет. Зато очень доволен, что едет домой, хоть и в битком набитом вагоне, где ему и сидеть не всегда есть где. Сегодня мы еще походили. Были на Привозе - роскошный базар, не попали в галерею (закрыта на ремонт), пробежались по краеведческому, и опять ходили по добротным, чистым, приятным улицам Одессы, прощались с ней, с летом, с отпускными днями.</p>
 <br/>
- 			</body>
-</html>
+
+{% endblock content %}

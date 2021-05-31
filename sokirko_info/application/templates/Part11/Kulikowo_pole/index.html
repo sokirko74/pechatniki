@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Куликово поле"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-3. <u>"Русское Черноземье - 1985г. ч. III. "Тульщина"</u></p> <p>4. <u>9 мая. Лиля:</u> Мы опять в Черноземье на Тульщине с милыми нам Сулимовыми. Только Лиды с молочной Ульянкой с нами не было. Но, прежде чем говорить об этой поездке, я расскажу немного из истории Тульщины на слайдах </p>
 <p>5. учебных диафильмов. Из нашей семьи я одна раньше бывала на Тульщине и храню к ней личное отношение.</p>
 <p>6. Конечно, как и у многих, была автобусная поездка в Ясную Поляну, когда Тула представляется как некий тамбур перед музеем человека, о </p>
@@ -231,6 +221,6 @@
       Покоя нет! Степная кобылица / Несется вскачь!</p>
 <p>193.<u>И нет конца</u></p>
 <p>194. 			<u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

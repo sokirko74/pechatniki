@@ -1,21 +1,10 @@
-<!DOCTYPE HTML>
-
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta content="Оглавление полного издания сочинений Виктора Сокирко и Лидии Ткаченко" name="description"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко Жизнь и поражения советского инакомыслящего</title>
-<link href="../modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>
+
+
+<h1>
 <em>Виктор Сокирко</em><br/>
 Жизнь и поражения советского инакомыслящего <small>(мой буржуазный коммунизм в тени Бутырки) </small>
 </h1>
@@ -38,7 +27,7 @@
 </td>
 </tr>
 </table>
-</font></body></html>
+</font>
 <ul>
 <li><big>Глава I. Истоки </big>
 <ol>
@@ -315,8 +304,6 @@
 <li><a href="../Part6/Ogni_Baku_1/index.html">Маздак</a> </li>
 <li><a href="../Part6/Ogni_Baku_2/index.html">Путь огня по  Каспию в России</a></li>
 <li><a href="../Part3/Nachichewan/index.html">Посещение Нахичевани</a></li> </ol></small>
-
-
 <li> Каспий и Кавказ 
         <small><ol>
 <li><a href="../Part1/Mangischlak/index.html">Мангышлак -1979</a></li>
@@ -340,14 +327,12 @@
 <li><a href="../Tom12/index.html">Белоруссия и другое (1982)</a>
 <small><ol>
 <li><a href="../Tom12/diary.html">Раздел I.Белорусский дневник </a> </li>
-<li><a href="../Part5/Belorusi-1/index.html">Белая Русь: Мировой смысл Белоруссии.</a> Спор соседей: Литвы, Украины, Польши, Германии, России) </li></ol></small></li> 
+<li><a href="../Part5/Belorusi-1/index.html">Белая Русь: Мировой смысл Белоруссии.</a> Спор соседей: Литвы, Украины, Польши, Германии, России) </li></ol></small></li>
 <li><a href="../Part5/Belorusi_2/index.html">Белая Русь: Рождение Речь Посполита </a> </li>
-<li><a href="../Part5/Belorusi_3/index.html">Белая Русь: Перелом болезни</a> включая антимсемитизм </li> 
+<li><a href="../Part5/Belorusi_3/index.html">Белая Русь: Перелом болезни</a> включая антимсемитизм </li>
 <li><a href="../Part5/Charkov-82/index.html">Харьков ветераны и мое путешествие в детство </a> </li>
 <li><a href="../Part5/Dustlik-82/index.html">Дустлик 1982</a> узбекская шабашка </li>
 <li><a href="../Part5/Belorus_leto_82/index.html">Путешествие с детьми по Белоруссии и Литве</a></li>
-
-
 <li><a href="../Tom13/index.html">Север 83 </a>
 <small><ol>
 <li><a href="../Tom13/sulimova.html">Походные дневники: Л.Сулимова и Маша. Северный поход 1983года</a> </li>
@@ -472,7 +457,6 @@
 <li><a href="../Part71/Shanghai/index.html">Шанхай - Новый Китай(2009)</a></li>
 </ol></small>
 </li>
+<br/>
 
-
-<br>
-</br>
+{% endblock content %}

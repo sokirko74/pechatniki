@@ -1,15 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Бутырский дневник: 2.3 Книги "деревенщиков"</title>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <table width="600"> <tr> <td>
 <a href="a2-2.html"> предыдущая </a>
 </td><td><a href="../index.html">оглавление</a></td><td>
@@ -43,5 +37,5 @@
 </td><td><a href="../index.html">оглавление</a></td><td>
 <a href="a2-4.html"> следующая </a>
 </td></tr></table>
-</body>
-</html>
+
+{% endblock content %}

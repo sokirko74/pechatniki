@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Южный Урал"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2. <u>Южный Урал - Великая Башкирия</u></p> <p>3. <u>Тур.река Белая - ось Ю.Урала - хребтовый нерв Башкирии</u></p>
 <p>4. <u>Мустай Карим:</u> </p>
 <p>Башкирия, я снова вдалеке /От звезд твоих, но неразлучен с ними,<br/>
@@ -215,6 +205,6 @@
       Бережливо нажитое служит дольше и верней...<br/>
       Раб, восставший на жестокость - сам бессмысленно жесток,<br/>
       Род людской впадает в крайность - в этом многих бед исток.</p>
-<br>
-   			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

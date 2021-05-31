@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Орловщина"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> Русское Черноземье. - ч. IV. - 1985 год "Орловщина"</u></p> <p>2. Карта Русского Черноземья </p>
 <p>3. Карта Орловского похода. - В Орловской земле мы пробыли два дня и увидели немного: Мценск с тургеневской усадьбой, да Орел с окрестным Сабуровым. </p>
 <p>4. Только чтобы почувствовать своеобразие этой черноземной страны и ее людей. </p>
@@ -188,6 +178,6 @@
 <p>Нa этой-то лесковской хвале орловской земле-имениннице, на которой свое дело делает Несмертельный Голован, нам и надлежит </p>
 <p>165. закончить свой фильм о первом знакомстве с этой богатой страной.</p>
 <p>166. <u>До свидания</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

@@ -1,19 +1,10 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко. "Сможем ли мы остановить "АЗЕФА"?</title>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2 align="right">В.В.Сокирко </h2>
+
+
+<h2 align="right">В.В.Сокирко </h2>
 <h1 align="center">"Сможем ли мы остановить "АЗЕФА"?</h1>
 <h2 align="center"> (попытка объяснения с коллегами по антивоенному движению ) </h2>
 <h3>Очередной повод .</h3>
@@ -134,6 +125,6 @@
 <p> В конечном счете я верю, что власть России сможет найти в себе силы покончить с войной и найти сперва компромиссный договор с Чечней, а потом и со всеми остальными регионами, со всей Россей.</p>
 <p> И тогда мы поймем, что принесенные чеченцами жертвы не были напрасными, реально они боролись и отстояли не только свою, но и нашу свободу. </p>
 <p align="right">Сокирко В.В., 16.11.2004г.</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

@@ -1,21 +1,9 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>ЗЭС N1: "Уроки НЭПа"- выдержки из тамиздатской книги М.Корякина «Живая история. 1917-1975гг.»</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="3.10.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="4.1.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>В защиту экономических 
 свобод            Выпуск 
 1</h3>
@@ -316,4 +304,5 @@
 <a href="4.1.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

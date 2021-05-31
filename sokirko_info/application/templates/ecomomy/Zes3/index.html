@@ -1,19 +1,10 @@
-<html>
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N3: Светлой памяти Виктора Валентиновича Новожилова посвящается</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
-    <p align="right"><em><strong><font size="4"> Светлой памяти Виктора Валентиновича Новожилова посвящается</font></strong></em></p>
+
+
+<p align="right"><em><strong><font size="4"> Светлой памяти Виктора Валентиновича Новожилова посвящается</font></strong></em></p>
 <h1>В защиту экономических свобод</h1>
 <h2>Выпуск 3, 1979г.</h2>
 <h3>Составитель К.Буржуадемов</h3>
@@ -28,4 +19,5 @@
 <h3><a href="3.2.html">К.Б. "Хищение социалистической собственности: что такое хорошо и что такое плохо…" (обзор 15 судебных фельетонов газеты "Правда")</a></h3>
 <h2><a href="4.1.html">Раздел IV. Заключительный анализ контробвинений статьи "Я обвиняю…" и "Покаяние Буржуадемова"</a></h2>
 <br/>
-</body></html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Волга-Калмыки"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>170. <u> Астрахань</u> </p> <p>171-173.</p>
 <p>174. Ночевали мы недалеко от пристани, долго не могли уснуть, ошеломленные   вечерней встречей с астраханским кремлем, </p>
 <p>175. с ухоженностью Александровского сада при нем. Мы, конечно, и раньше слышали о его красоте, но такой мощи и богатства и такой русской церковности не ожидали после плавания по голой Волге, мимо пустынных и выжженных степей. И вдруг </p>
@@ -167,6 +157,6 @@
 <p>328. а они уже сами вспомнят славное свое прошлое и воскресят-возродят его всем нам на радость и богатство.</p>
 <p>329. И, отправляясь поздним вечером на вокзал, мы от души желаем своим родным калмыкам - в добрый час!</p>
 <p>330-334. - "Конец"</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

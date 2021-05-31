@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. «Дети и шабашки» 1968-1977 гг</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <div class="'n'"> <p>2. Живет на свете веселый мальчишка по имени Артемка. Небогатая у него биография, не блещет способностями, обычный. Но человек вошел в мир и интенсивно его осваивает.</p>
 <p>3. 	(Здесь и далее местами (и ковычках) следует магнитофонная запись рассказов, песенок, реплик, сделанных Артемкой в 4 года)</p>
 <p>«Меня папа и мама родили меня про запас...» - Как это 
@@ -156,6 +146,6 @@
 <p>107. 2000-й год он встретит 36-летним. Возможно, что техника и жизнь будут тогда ошеломляющи другими, но Артемка, мы верим, останется caмим собой, останется нашим продолжением и станет лучше, чем мы. </p>
 <p>108. И пусть он в полной мере ощутит родство с настоящим и прошлым Родины и будет чувствовать свою ответственность за ее будущее.</p>
 </div>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

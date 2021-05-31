@@ -1,26 +1,14 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>Раздел 6. На родине отца, в Шевченково</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="Rasdel2-5.html"> предыдущая </a>
-</td><td><a href="../index.html">оглавление</a></td><td>
-<a href="Rasdel2-7.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h2><em>В.Сокирко</em> Жизнь и поражения советского инакомыслящего </h2>
 <h2>Глава II. Школьные годы</h2>
 <h1>6. На родине отца, в Шевченково</h1>
 <p><img align="left" alt="" height="250" src="/static/images/detyun/glava234/0030-3.jpg"/>
-<img align="right" alt="Отец в детстве постарше" height="270" src="/static/images/detyun/glava234/0052095.jpg">
+<img align="right" alt="Отец в детстве постарше" height="270" src="/static/images/detyun/glava234/0052095.jpg"/>
 Наверное, с моего 4 класса, в нашем мазиловском доме стал появляться 
 Сергей Данилович Сокирко - мой двоюродный дядя по отцу и родной брат моего 
 погибшего дяди, в чью честь я получил своё имя. Сергей всю войну шоферил в 
@@ -31,7 +19,7 @@
 им Антонина Васильевна Сокирко (урождённая Зелинская). История семьи отца 
 осталась для меня непонятной. Я знаю только, что Володя Сокирко родился в 
 изначально счастливой семье портного Клима Сокирко. У нас сохранились две 
-фотографии, где он одет барчуком.</img></p>
+фотографии, где он одет барчуком.</p>
 <p>Но еще до Первой войны наступило их расставание, причем, семья раскололась не 
 на две, а на три части. Клим ушел на фронт, попал в плен, после революции 
 вернулся домой и быстро, в 1922 году, вроде бы, сгорел от тифа.</p>
@@ -226,4 +214,5 @@
 <a href="Rasdel2-7.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

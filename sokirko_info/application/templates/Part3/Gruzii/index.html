@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Грузия - 1969 год"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> Военно-Грузинская дорога</u></p> <p>2. <u>1969</u></p>
 <p>3. <u>Тбилиси</u></p>
 <p>4 -5.  Тбилиси, золотая чаша,/С горы Мтацминда мне видна <br/>
@@ -192,6 +182,6 @@
 <p>124. Не мало древних городов /Земля давно в себе таит. <br/>
       Но тысячу пятьсот годов, /Тбилиси на земле стоит.</p>
 <p>__________________________ </p>
-<br>
-			</br></p></p></body>
-</html>
+<br/>
+</p></p>
+{% endblock content %}

@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Том 11. Черноморье. 1981г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Том 11. Черноморье. 1981г.</h1>
+
+
+<h1>Том 11. Черноморье. 1981г.</h1>
 <ul>
 <li><a href="diary.html"> Черноморский дневник</a></li>
 <li><a href="parents.html"> Л.Т. Моя родословная</a></li>
@@ -24,15 +15,11 @@
 			<ol>
 <li><a href="/Part8/Pont-81-1/">Папай,Пшада,Анапа,Фанагория,порт Кавказ</a></li>
 <li><a href="/Part8/Pont-81-2/">Керчь, Демирджи, Херсонес. Одесса, Белгород Дн.</a></li></ol>
-</li></ul></li></ul></body></html>
-
+</li></ul></li></ul>
 <li>Диафильм "Молдавия"<ol>
 <li><a href="/Part8/Moldawi-1/">Идея 1 Рима</a></li>
 <li><a href="/Part8/Moldawi-2/">Идея 2 Рима и др.</a></li>
 </ol>
 </li>
 
-
-
-<br/>
-			
+{% endblock content %}

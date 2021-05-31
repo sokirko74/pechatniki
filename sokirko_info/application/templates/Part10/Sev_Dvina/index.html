@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Северная Двина"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2.<u>Кто не желает умереть человеком, умрет как собака - Л.А.</u></p> <p>3. <u>О жизни земной</u></p>
 <p>4. <u>и вечной</u></p>
 <p>5. На русский север мы приехали впервые еще 16 лет назад, но Северную Двину тогда охватить не успели, оставив на следующий год. </p>
@@ -230,6 +220,6 @@
 <p>204. соблазнов и готовиться к смерти-радости.</p>
 <p>205. Дай Бог и вам в этом удачи!</p>
 <p>206.-211. <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

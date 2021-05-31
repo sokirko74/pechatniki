@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Алтай - Кош-Агач 1987 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1. <u>Алтай-87 ч.III, "Юго-восток"</u></p> <p>2. <u>Кош-Агач, как алтайская Монголия</u></p>
 <p>3.<u> Про Александру Викторовну Потанину (Лаврину) (1844-1894)</u></p>
 <p>4. <u>Экскурсия в примонгольское пограничье</u></p>
@@ -185,6 +175,6 @@
 <p>158. Рано, в 50 лет ушла Потанина-Лаврина, но какую жизнь прожила, как друга осчастливила! И какой пример всем женщинам дала!</p>
 <p>159. Выходит, не только монгольская степь может учить искусству жизни... Разве Александра Викторовна не осуществила мечту алтайки Сурайи Сартаковой в стихе, прочитанном нами в начале этого фильма: "Хотя б для одного кого-нибудь/Составить в жизни истинное счастье! "</p>
 <p>160. Конец.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

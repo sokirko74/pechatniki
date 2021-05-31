@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Том VII. Кавказ (1969 - 1979)</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.Быть может все, что видел я когда-то, <br/>      Простор полей, и Тихий океан,<br/>
       И дней мятежных длинный караван, <br/>
       Должно погаснуть, точно луч заката <br/>
@@ -286,6 +276,6 @@
       Соскользнул по гребню исполина - и ушел!<br/>
       Наступил черед твой. На мгновенье,<br/>
       Чтоб и ты взглянул на ту вершину, - и ушел!</p>
-<br>
-			</br></p></body>
-</html>
+<br/>
+</p>
+{% endblock content %}

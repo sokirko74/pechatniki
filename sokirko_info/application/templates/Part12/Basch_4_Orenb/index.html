@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Южный Урал"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>340. <u>Дорога на Оренбург</u></p> <p>341. Алеша: <u>Оренбург</u> В последний уральский город мы приехали ранним утром. На вокзале отправили свою лодку в Москву и до обеда </p>
 <p>342. смотрели город. В центре его долго искали столовую, а после завтрака посетили книжный магазин и два музея.</p>
 <p>343. Дошли до статуи Чкалова на берегу Урала и повернули к вокзалу, </p>
@@ -81,6 +71,6 @@
 <p>385. ...В этом мире бесконечном /Добродетелен лишь тот,<br/>
       Кто по сути - человечен / Кто свой разум бережет".</p>
 <p>386-387. <u>Конец.</u></p>
-<br>
-   			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

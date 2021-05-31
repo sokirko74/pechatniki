@@ -1,19 +1,10 @@
-<html>
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N4: В защиту экономических свобод. Выпуск 4</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
-    <h1>В защиту экономических свобод.   Выпуск 4</h1>
+
+
+<h1>В защиту экономических свобод.   Выпуск 4</h1>
 <h1>
 <h1><font size="4">Составитель 
 К.Буржуадемов  </font> </h1></h1><font size="3">
@@ -42,6 +33,5 @@
 <p><a href="46.1.html">Януш Осенка "Загадка Бермудского треугольника"</a></p>
 <p>Раздел VI. Письма о подпольной торговле</p>
 <p><a href="46.2.html">Письмо К.Буржуадемову от И.К. с приложением письма 
-фарцовщика и ответ К.Б.</a></p></font></body></html>
-<br/>
-
+фарцовщика и ответ К.Б.</a></p></font>
+{% endblock content %}

@@ -1,20 +1,10 @@
-﻿<html>
-<head>
+{% extends 'base.html' %}
+<title>В.и Л.Сокирко Том 4. Диафильм «Рассказ об иконах»</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<title> В.и Л.Сокирко Том 4. Диафильм  «Рассказ об иконах»</title>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+<br/><br/>
 <p>1. Нас, как и многих, захватила новая «мода» - на любовь к иконной живописи.</p> <p>2. Да мы и не сопротивлялись. Красивая мода, как мода на цветы.</p>
 <p>3. Да и сами иконы для нас - как непонятные цветы забытых названий и забытого смысла.</p>
 <p>4-5. А сейчас мы и расскажем все, что смогли узнать и понять в созерцании старых икон.</p>
@@ -181,6 +171,6 @@
 <p>151. Во всем мире славятся наши иконы красотой своего колорита и композиции. 152. Красное с золотом делает икону праздничной, совсем в народном духе.</p>
 <p>153. Поистине неоценимое богатство сберегли для нас люди. И мы не устанем гордиться ими и радоваться им.</p>
 <p>154-160.  Конец  диафильма.</p>
-<br>
-</br></p></body>
-</html>
+<br/>
+</p>
+{% endblock content %}

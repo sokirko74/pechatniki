@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Алтай - Белуха 1987 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>
 <a href="https://yadi.sk/d/JArSITtV8khsKA"> Черно-белые фото похода по  Алтаю 1987 года </a>
 </p>
@@ -535,6 +525,6 @@
 <p>378. Судьбу девицы молодой /Узнает слушавший народ,</p>
 <p>379-1.А молодежь из песни той  /Свой неизменный смысл поймет.</p>
 <p>379. <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

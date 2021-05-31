@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Черкесы"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>
 <strong>Примечание:</strong> Эта часть д/ф
         "Черкесы"  отнесена к нему лишь потому, что мы разу не догодались дать ей
@@ -54,6 +44,6 @@
 <p>426. Осталась память и неразрывная связь со всей нашей большой семьей, </p>
 <p>427. где Красовитова - лишь самая живая и близкая связь...</p>
 <p>428. <u>Конец</u></p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Дневник мелкого процесса.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. СОКИРКО</b></i></h2>
+
+
+<h2><i><b>В. и Л. СОКИРКО</b></i></h2>
 <h2>Том 2. Наши горы. 1967-1973гг.</h2>
 <h1><a name="'129'">Дневник мелкого процесса. Март-июнь 1973 г.</a> </h1>
 <p>Я пишу эти записи лишь в июле, когда для меня все уже позади и можно спокойно отдышаться и подумать. Пишу самому себе на память и в поучение. Наверное, покажу близким друзьям. Остальным, уверен, будет неинтересно. Но друзьям, может быть, мой опыт общения с КГБ будет полезен – как для них самих, так и в плане дальнейшего общения со мной.</p>
@@ -1602,6 +1593,6 @@
 <p>Из дома пишут: «Ни о чем не думай и набирайся сил». И 
 эти слова звучат для меня волнующе: «Силы – ведь они скоро 
 пригодятся!»</p>
-<br>
-</br></p></body>
-</html>
+<br/>
+</p>
+{% endblock content %}

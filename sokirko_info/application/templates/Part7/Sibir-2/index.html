@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Сибирь - Бурятская,буддистская</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2.</p> <p>3. Главной целью нашего путешествия в Сибирь был, конечно, Байкал. Мы много слышали о нем, и уже долгие годы заманчиво манили нас</p>
 <p>4.и Песчаная бухта,</p>
 <p>5. и остров Ольхон,</p>
@@ -306,6 +296,6 @@
 <p>265. к воде Кынтарги</p>
 <p>266. и дальше, к курортным радостям Аршана,</p>
 <p>267. заканчивая тем самым буддийское лето свое.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

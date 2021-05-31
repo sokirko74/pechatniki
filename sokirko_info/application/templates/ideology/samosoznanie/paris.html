@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Bиктор Сокирко: Советский читатель вырабатывает убеждения</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Bиктор Сокирко</h2>
+
+
+<h2>Bиктор Сокирко</h2>
 <h2>Советский читатель вырабатывает убеждения</h2>
 <h1>Переписка с Парижем</h1>
 <p><b>Первое письмо в Париж. Осень 1975г.</b></p>
@@ -113,5 +104,5 @@
 <p>Ниже я приведу выдержки из своего недавнего конспекта статей и высказываний ведущих деятелей и идеологов демократического социализма в Западной Европе (в основном, в ФРГ), собранных в полусекретном (для служебного пользования) сборнике.</p>
 <p>Ввиду разрозненности статей, помещенных в этом сборнике, я буду приводить выдержки из них - лишь в качестве иллюстрации и подтверждения принятых на Западе положений ... и практически без своих комментариев...</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

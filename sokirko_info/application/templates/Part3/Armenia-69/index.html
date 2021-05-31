@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Д/ф «Армения -69г.»</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.	<u>Армения</u></p> <p>2.<u>Сентябрь, 1969 г.</u></p>
 <p>3-5.<u>    Севан</u></p>
 <p>6-9.<u>Айоцдзор </u></p>
@@ -307,6 +297,6 @@
 <p>204.<u>Перевал</u></p>
 <p>205. Здесь, на границе Армянского Зангезура с Азербайджанским Нахичеванем,</p>
 <p>206. мы и попрощались со страной тысячелетий.</p>
-<br>
-			</br></p></p></p></body>
-</html>
+<br/>
+</p></p></p>
+{% endblock content %}

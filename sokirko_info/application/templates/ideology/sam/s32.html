@@ -1,16 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title> Переписка с В.Ронкиным и </title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% extends 'base.html' %}
+<title>Переписка с В.Ронкиным и</title>
+{% block content %}
+
+
+
 <h4>В. Сокирко</h4>
 <h4>Самиздатские материалы. 1981-1988гг.</h4>
 <h1>       
@@ -404,5 +397,5 @@
 поводу говорят о тех же возможноcтях. </p>
 <p>Так что думаю, основания для оптимизма существуют.</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

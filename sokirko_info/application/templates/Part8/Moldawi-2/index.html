@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Молдавия"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>106. <u>Идея 2-го Рима - православие</u></p> <p>107. Городище Старого Орхея на высоком мысу Реута в 10 км от его устья - считается одним из древнейших в Молдавии. </p>
 <p>108. Но мы ничего о раскопках не узнали, не у кого было. </p>
 <p>109. Были рады хоть тому, что нашли смотрителя пещерного монастыря и вошли в скалу.</p>
@@ -155,6 +145,6 @@
 <p>193. И мы надеемся, что наследство Драгоша окончательно победит традиции Дракулы, что они еще удивят мир, как дако-румыны в эпоху Штефана Великого,</p>
 <p>194. и что их пример и нам поможет.</p>
 <p>195-196. <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

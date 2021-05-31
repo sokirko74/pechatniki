@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко Белоруссия и другое</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>
 <strong>Примечание:</strong> Этот д/ф первоначально был
         первой частью д/ф <a href="/Part5/Belorus_leto_82/">"Рассказы о лете -1982"</a> ("Путешествие с детьми по Белоруссии и Литве")
@@ -108,6 +98,6 @@
 <p>84. и разочарований.</p>
 <p>85. Считанные часы пробежки по городу, вдумывания в его историю, вслушивания в слова отца, в слова ветеранов, два дня живительной встречи  и </p>
 <p>86. мы прощаемся с Харьковом, наверное, надолго, но не навсегда. Опыт предков, опыт ветеранов нельзя сдать в багаж, к нему нельзя не возвращаться.</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

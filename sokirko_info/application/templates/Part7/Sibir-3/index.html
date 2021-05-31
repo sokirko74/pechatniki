@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Сибирь православная и советская</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2.</p> <p>3. <u>Старая столица</u> К сожалению, весь день лил дождь и затемнил фотопленку. Так выглядит Иркутск в десяти минутах ходьбы от центрального проспекта.</p>
 <p>4. Подобной же стеклобетонной роскоши в Иркутске пока еще немного, и потому</p>
 <p>5. из всех сибирских старых городов он показался нам самым интересным и исторически значимым.</p>
@@ -203,6 +193,6 @@
 <p>Остаться в его власти безвольно? - Погибнешь. Как-то ограничить, направить верно? - Но как?</p>
 <p>201. Мы знаем только: всем надо думать, все помнить и понимать, бояться и стараться, ценить и охранять цветы духовные и цветы живые.</p>
 <p>202. Тогда, быть может, мир спасется...</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

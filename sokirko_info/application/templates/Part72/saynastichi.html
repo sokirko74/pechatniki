@@ -1,19 +1,10 @@
-<html>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<head>
-<title>Виктор Сокирко и Лидия Ткаченко. Стихи и фотографии от друзей. Поход по Саянам
-1963</title>
-</head>
-<body>
+{% extends 'base.html' %}
+<title>Виктор Сокирко и Лидия Ткаченко. Стихи и фотографии от друзей. Поход по Саянам 1963</title>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <p align="left"><i>
+
+
+<p align="left"><i>
 Уже после окончания вуза в 1963 году Лилины друзья позвали меня в свой первый поход
 по Саянам от железной дороги Абакан-Тайшет через Минусинск к озеру Байкал и я обрадовался,                  &lt;
 что смогу попутно заехать в страну своего сибирского детства
@@ -341,15 +332,5 @@
 Святых с чертями и прочую муть- / Всех посылаем куда-нибудь.<br/>
 Висим над бездной в который раз, / Проходит минута как целый час, <br/>
 А чтобы поверить вам в эту жуть, / Залезьте сами куда-нибудь.<br/><br/>
-<td><img height="271" src="/static/images/Part72/saynastichi.files/image022.jpg" width="257"/></td></td></tr></table></p></body></html><br/><br/>
-<br/>
-<table><tr><td>
-<b>Гляжу на озеро Байкал </b> <br/>
-И аппарат держу “Кристалл”.<br/>
-Покинул озеро Байкал,<br/>
-Меня покинул мой“Кристалл”.<br/>
-<td><img height="239" src="/static/images/Part72/saynastichi.files/image023.jpg" width="310"/>
-</td></td></tr></table>
-<br>
-</br>
-
+<td><img height="271" src="/static/images/Part72/saynastichi.files/image022.jpg" width="257"/></td></td></tr></table></p>
+{% endblock content %}

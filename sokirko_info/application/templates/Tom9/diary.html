@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Среднеазиатский дневник 1976 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. Сокирко</b></i></h2>
+
+
+<h2><i><b>В. и Л. Сокирко</b></i></h2>
 <h2>Том 9. СРЕДНЯЯ АЗИЯ.  1966-1976 гг.</h2>
 <h1>Раздел II. Среднеазиатский дневник 1976 г.</h1>
 <p><b>Вступление</b></p>
@@ -179,5 +170,5 @@
 <p>Нет, Витя настаивает дожидаться утра, - а вдруг все же улетим в Баку. Ну что ж - испробуем последний шанс.</p>
 <p>Палатку ставим в сквере рядом с аэропортовской площадью. Сейчас прохожих почти нет, а утром мы уже снимемся. Boт только самолеты часто ревут. Наконец, утихли.</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

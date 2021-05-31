@@ -1,24 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>А.Гринева Учитель и строптивый ученик-приверженец</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="epcomment.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="otvetgr.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3><i>В.Абрамкин, К.Буржуадемов, 
+
+
+<h3><i>В.Абрамкин, К.Буржуадемов, 
 Т.М.Великанова, А.Гринева, В.Грин, В.Н., В.Никольский, С.О., Е.П., Г.С.Померанц, 
 М.Ростиславский, К.Светлов, В.В.Сокирко</i></h3>
 <h2>Жить не по лжи</h2>
@@ -391,5 +377,5 @@
 <a href="otvetgr.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Том 5. Север - Сибирь.</title>
-<link href="../modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Том 5. Север - Сибирь. 1967-1978гг.</h1>
+
+
+<h1>Том 5. Север - Сибирь. 1967-1978гг.</h1>
 <ul>
 <li><ul><li><a href="intro.html">Предисловие</a></li></ul>
 <li>Раздел I. Север-1967.<ul>
@@ -39,5 +30,5 @@
 </li>
 </li></li></ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

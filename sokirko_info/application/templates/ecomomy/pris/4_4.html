@@ -1,14 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Сокирко В.В. 5 судов по делу камчатских рыбаков</title></head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% extends 'base.html' %}
+<title>Сокирко В.В. 5 судов по делу камчатских рыбаков</title>
+{% block content %}
+
+
+
 <table width="600"> <tr> <td>
 <a href="4_3.html"> предыдущая </a>
 </td><td><a href="../prisyaghnye.html">оглавление</a></td><td>
@@ -748,5 +743,5 @@
 </td><td><a href="../prisyaghnye.html">оглавление</a></td><td>
 <a href="4_5.html"> следующая </a>
 </td></tr></table>
-</body>
-</html>
+
+{% endblock content %}

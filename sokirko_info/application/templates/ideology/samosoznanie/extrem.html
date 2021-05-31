@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Bиктор Сокирко: Советский читатель вырабатывает убеждения</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Bиктор Сокирко</h2>
+
+
+<h2>Bиктор Сокирко</h2>
 <h2>Советский читатель вырабатывает убеждения</h2>
 <h1>Экстремизм анализа</h1>
 <p>Рассмотренную выше книгу А.Московита "Метаполитика" следует отнести к произведениям, базирующимся на принципиальном историцизме и либерализме.  Существует какая-то сильная взаимосвязанность между этими чертами: тот, кто ищет в истории опыта для прогноза действий в будущем, как правило, приходит к либеральным убеждениям.</p>
@@ -25,5 +16,5 @@
 <li><a href="ac.html"> А.С. <i>Заметки о партии и государстве в системе коммунистической ментальности</i></a></li>
 </ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

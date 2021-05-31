@@ -1,15 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Вокруг Поисков: К вопросу о диссидентской этике</title>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>1.22 <a href="/Tom10/butyrka/a1-5.html">К. Буржуадемов “К вопросу о диссидентской этике”</a></h3>
 <br/>
 <table width="600"> <tr> <td>
@@ -18,5 +12,5 @@
 <a href="1.23.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Ростовская земля"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> "Российское Черноземье-1985г. " Часть VII. "Дон-Азов" </u></p> <p>2-7. песня Александра Розенбаума "Казаки"</p>
 <p>8.<u> "Ростовская земля - бывшая Область Войска Донского"</u></p>
 <p>9. <u>"Ростов"</u></p>
@@ -116,6 +106,6 @@
 <p>104. разбойного характера и отсутствия всяких внутренних традиций правильной мирной жизни.</p>
 <p>105. Когда Азов вошел-таки в отстав Российской империи, успели вырасти уже Таганрог на море и Ростов на Дону, так что прежней столице досталась роль заштатного городка, посада на земле Войска Донского.</p>
 <p>106-108. ........  (песня Розенбаума)</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

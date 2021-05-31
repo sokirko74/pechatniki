@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Проект обращения к лидерам армянского и азербайджанского народных движений</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>    Том 18.  Закавказье. 1988 г.</h2>
+
+
+<h2>    Том 18.  Закавказье. 1988 г.</h2>
 <h1>Проект обращения к лидерам армянского и азербайджанского народных движений</h1>
 <p><b>Игорю Мурадяну и иным лидерам армянского Движения "Карабах",
 Немату Панахову и иным лидерам азербайджанского Народного Движения </b></p>
@@ -34,5 +25,5 @@
 <p>Мудрости и ответственности от вас ожидаем! </p>
 <p>10.12.88.С уважением В.Сокирко, Л.Ткаченко </p>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Карабах" 1988 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> Карабах - через Афганистан</u></p> <p>2. <u>Отчет о поездке 26-28 сентября 1988г.</u></p>
 <p>3.<u> Эпилог</u> Из карабахской глубинки в столичный Степанакерт мы возвращались колхозным ПАЗиком и напоследок насматривались видами </p>
 <p>4. пашен и развалин привычно туманного Карабаха.</p>
@@ -307,6 +297,6 @@
 <p>265. а смерть!... - И еще: помните традиции своей земли, вырастившей в годы независимого Карабахского ханства замечательную дружбу. Вы ведь не только армяне, но и карабахцы!</p>
 <p>266. Да здравствует союзный Карабах!</p>
 <p>Конец!</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

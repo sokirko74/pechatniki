@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Испанский дневник. Север</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. Сокирко</b></i></h2>
+
+
+<h2><i><b>В. и Л. Сокирко</b></i></h2>
 <h2><b>Испанский (последний) дневник 2006 года </b></h2>
 <h1>7. Север Испании - Бургос и баски</h1>
 <h4>13 октября. Бургос - снова Испания и снова столица.</h4>
@@ -38,5 +29,5 @@
 <p><i> <a href="/static/images/Spain/france/002.jpg">На песчаном пляже</a> с хорошей волной было <a href="/static/images/Spain/france/002.jpg">чудесно</a>. <a href="/static/images/Spain/france/002.jpg">Сильная волна</a> на
  каменистых мысах и на ней периодически поднимаются серфингисты - может, местные баски или приезжие французы Занятый видео, Тема в воду не входил. У него нет ощущения единственности этого момента, и это меня торопит выходить. И только поднимаясь по лестнице, оглядываясь и любуясь на Океан. я начинаю понимать, что Лиля сверху видела и эти волны, и мое плавание в них и было ей жалко и завидно. Подходя к машине, спрашиваю: «Тебе хотелось туда?» Она отвечает кратким: «Да!» Я реагирую лишь виноватым молчанием.</i></p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

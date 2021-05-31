@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Письма о конституции.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. СОКИРКО</b></i></h2>
+
+
+<h2><i><b>В. и Л. СОКИРКО</b></i></h2>
 <h2>Том 2.Наши горы. 1967-1977гг.</h2>
 <h1><a name="'195'">Приложение 4. Письма о конституции.</a></h1>
 <p>Весной 1977 г. в газетах было неожиданно объявлено об удалении из Политбюро ЦК КПСС официального главы государства Н.В.Подгорного и одновременно о скором обнародовании проекта новой Конституции.</p>
@@ -27,5 +18,5 @@
 <li><a href="toeditor.html"> Письмо составителям самиздатских бюллетеней «Вокруг    проекта Конституции СССР</a></li>
 </li></li></ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

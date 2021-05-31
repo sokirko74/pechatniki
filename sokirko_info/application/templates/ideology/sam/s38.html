@@ -1,17 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Редакции бюллетеня "Век ХХ и мир"
-</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% extends 'base.html' %}
+<title>Редакции бюллетеня "Век ХХ и мир"</title>
+{% block content %}
+
+
+
 <h4>В. Сокирко</h4>
 <h4>Самиздатские материалы. 1981-1988гг.</h4>
 <h1>       
@@ -178,5 +170,5 @@
 <p>Прошу напечатать мое письмо, а в случае отказа - сообщить о причине. Прошу 
 показать это письмо Г.Павловскому. 13.1.1988. В.В.Сокирко</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

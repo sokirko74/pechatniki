@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Испанский дневник</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. Сокирко</b></i></h2>
+
+
+<h2><i><b>В. и Л. Сокирко</b></i></h2>
 <h1><b>Испанский (последний) дневник 2006 года </b></h1>
 <h2>(Германия, Испания, <b>Марокко</b>,  Португалия, Франция и <b>Россия</b>)</h2>
 <ul>
@@ -28,5 +19,5 @@
 <li><a href="part8.html">8. Недолго во Франции</a></li>
 </ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

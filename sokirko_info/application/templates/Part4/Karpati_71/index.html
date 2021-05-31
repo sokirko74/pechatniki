@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Украина</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u>Карпаты</u></p> <p>2. <u>Космач</u></p>
 <p>3. Друзья и знакомые говорили нам: "Есть на западе зеленые горы Карпаты, а в них живут гуцулы. Они красиво одеты и хорошо поют".</p>
 <p>4. И нам, конечно же, захотелось увидеть горы и гуцулов и синее-синее озеро Синевир.</p>
@@ -163,6 +153,6 @@
 <p>148. И малый кусочек от той хаты лежит теперь в нашей московской квартире, писанка той самой женщины Евдокии Ожиняк. Дай бог ей здоровья!</p>
 <p>143. Последний взгляд на село Космач, на верховинские горы, на карпатскую Русь.</p>
 <p>150. И надо бы сказать какие-то слова. Но нет у нас слов. Лучше всего сказал Валентин Мороз: "Я вернусь не раз еще в эти горы набираться сил, учиться познавать себя, искать ответа на вопрос: "Кто еси? "</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

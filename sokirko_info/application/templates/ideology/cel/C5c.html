@@ -1,20 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Цели людей: Письмо осуждённого директору Института экономики АН СССР Капустину Е.Н.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="C5b.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>В. Сокирко</h3>
 <h3>Цели людей </h3>
 <h1>Письмо осуждённого директору Института экономики АН СССР Капустину Е.Н.</h1>
@@ -154,5 +143,5 @@
 </td><td><a href="index.html">оглавление</a></td><td>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

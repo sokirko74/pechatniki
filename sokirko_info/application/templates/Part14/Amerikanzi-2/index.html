@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Соблазн (советско-американский велопробег - 89г.)</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>333.<u> Day 9. На Житомир!</u></p> <p>В этот день группу вел Саша, и потому мы регулярно отдыхали и много купались.</p>
 <p>That day Sasha was leading our team and we had regular stopped and a lot of bathes.</p>
 <p>334. Как мы радовались, искупавшись в речке с родным нам теперь именем "Случ".</p>
@@ -279,6 +269,6 @@
 <p>471. радужная калифорнийская птица.</p>
 <p><i>bird will fly back and land our road.</i></p>
 <p>472. <u>Happy end</u></p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

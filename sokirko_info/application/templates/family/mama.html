@@ -1,19 +1,10 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title> Виктор Сокирко: ПАМЯТЬ О МАМЕ</title>
+{% extends 'base.html' %}
+<title>Виктор Сокирко: ПАМЯТЬ О МАМЕ</title>
+{% block content %}
 
-<br/><br/><br/><br/><br/><br/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <p><h2>Виктор Сокирко</h2> </p>
+
+<p><h2>Виктор Сокирко</h2> </p>
 <h1>ПАМЯТЬ О МАМЕ</h1>
 <h2>О Татьяне Дмитриевне Глобенко –<br/>
 ее дорогим внукам и моим детям
@@ -447,6 +438,6 @@ img {float:left;margin:5px;"}
 <p>В день похорон, я отвел в сторону Тему и Галю от свежей маминой могилы и наказывал им: "Когда умру и будет у Вас возможность, не раскидает если судьба, похороните меня здесь рядом с бабушкой Таней“.</p>
 <p>Сейчас я повторяю это для них и для Алеши с Аней.</p>
 <p>От этого решения-завещания мне стало увереннее жить, покойнее. Теперь я знаю, "куда пойду в последний путь", и кто похоронит, и кто будет приходить поминать и помнить мою любовь и передачу знанья.</p>
-<br>
-</br></p></body>
-</html>
+<br/>
+</p>
+{% endblock content %}

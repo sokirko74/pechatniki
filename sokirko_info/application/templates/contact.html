@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Контакты</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>В. и Л. СОКИРКО. Контактная информация</h1>
+
+
+<h1>В. и Л. СОКИРКО. Контактная информация</h1>
 <table border="1" cellpadding="10">
 <tr><td> Имя</td> <td>E-mail</td> </tr>
 <tr> <td>Сокирко Алексей (сын, текущий администратор сайта)</td> <td> <a href="mailto:sokirko@yandex.ru">sokirko@yandex.ru</a></td></tr>
@@ -41,6 +32,6 @@
 <p>
 <a href="/static/images/sokirko.info.cc.by.pdf"> PDF-файл с лицензией  </a>
 </p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

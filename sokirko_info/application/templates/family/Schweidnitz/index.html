@@ -1,18 +1,8 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко Schweidnitz</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body> 
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+
 
 <h1>Г.Скорикову</h1>
 <p>Дорогой Геннадий!  Обращается к Вам  Виктор Сокирко, бывший	 ученик советской школы в Швейднице 1946-47гг., которого Вы разыскали  по интернету и одарили кучей радостной  информации  о,  казалось бы, давно и навсегда ушедшем прошлом.  </p>
@@ -138,5 +128,4 @@
 <br/>
 </p></p>
 
-</body>
-</html>
+{% endblock content %}

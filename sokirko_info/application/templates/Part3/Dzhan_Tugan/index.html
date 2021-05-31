@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Наши горы (1967-1973гг.) Джан-Туган</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <div class="'n'"><p>1.-14. «Джан-Туган»
       <br/>Горы 1968</p>
 <p>15.  Июнь 1968 года. В альплагерь едет первая смена.</p>
@@ -147,6 +137,6 @@
              На который еще не бывал…</p>
 <p>184.      «До свидания, горы!»</p>
 </p></div>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

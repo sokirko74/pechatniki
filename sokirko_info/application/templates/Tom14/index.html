@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Том 14. Памир. 1984г.</title>
-<link href="../modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Том 14. Памир. 1984г.</h1>
+
+
+<h1>Том 14. Памир. 1984г.</h1>
 <ul>
 <li><a href="diary.html">Памирский дневник</a>
 <li>Диафильмы - 1984г
@@ -37,5 +28,5 @@
 <li><a href="replies.html">Отзывы на "Памирский дневник"</a></li>
 </li></li></li></li></ul></li></li></li></ul>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

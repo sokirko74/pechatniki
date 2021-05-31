@@ -1,18 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>Приглашение к обсуждению темы «Чечня и Россия»</title>
+{% block content %}
 
-<title>Приглашение  к обсуждению темы   «Чечня и Россия»</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Приглашение  к обсуждению темы   «Чечня и Россия»</h1>
+
+<h1>Приглашение  к обсуждению темы   «Чечня и Россия»</h1>
 <img align="right" src="/static/images/picket/razgon20.jpg"/><p>В  последнее время я уже не раз слышу упреки не только себе, но и в адрес всего антивоенного пикета, как сборища упрямцев,
 переставших понимать, чего конкретно они добиваются. Такие упреки заставили меня пересмотреть свои собственные предложения, 
 начиная с конца 1994 года с целью выявить потеряна ли была их актуальность и существует в них «развитие»? В этом разделе  
@@ -37,5 +29,5 @@
 <a href="http://viktor-sokirko.livejournal.com/">http://viktor-sokirko.livejournal.com/</a>
 </p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

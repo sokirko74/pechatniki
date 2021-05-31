@@ -1,16 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>А.Сокирко. Вечер </title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% extends 'base.html' %}
+<title>А.Сокирко. Вечер</title>
+{% block content %}
+
+
+
 <h3>Самиздатские материалы. 1981-1988гг.</h3>
 <h1><em>А.Сокирко.</em>  Вечер</h1>
 <p>По дорожке, посыпанной гравием, в направлении большого девятиэтажного дома 
@@ -118,5 +111,5 @@
 последней «пятнице», и хозяина квартиры осудили на три года за «заведомо ложные 
 измышления, порочащие советскиё государственный и общественный строй".</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

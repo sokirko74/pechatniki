@@ -1,21 +1,9 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>7.Старшие классы - начатки легального</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="Rasdel2-6.html"> предыдущая </a>
-</td><td><a href="../index.html">оглавление</a></td><td>
-<a href="Rasdel2-8.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h2><em>В.Сокирко</em> Жизнь и поражения советского инакомыслящего </h2>
 <h2>Глава II. Школьные годы</h2>
 <h1>Раздел 7.Старшие классы - начатки открытого инакомыслия</h1>
@@ -28,7 +16,7 @@
 меня же доброжелательные учителя посоветовали только сжечь все "неправильные 
 бумаги". Я это обещал и действительно сжёг наиболее сомнительные из них на 
 газовой плите"</p>
-<p><img align="left" alt="" height="255" src="/static/images/detyun/glava234/0044-34.jpg"/><img align="right" alt="" height="260" src="/static/images/detyun/glava234/0044-33.jpg">
+<p><img align="left" alt="" height="255" src="/static/images/detyun/glava234/0044-34.jpg"/><img align="right" alt="" height="260" src="/static/images/detyun/glava234/0044-33.jpg"/>
 С вынужденным уходом из школы моих 
 преследователей жизнь в классе нормализовалась. У меня появились школьные 
 приятели. На переменах мы без обид обменивались пинками и тумаками, ходили домой 
@@ -37,7 +25,7 @@
 разговоры по душам, но в студенческие годы наши встречи стали редкими, пока не 
 пресеклись совсем - наши интересы разошлись. Например, Витя Г. (лучший математик 
 в нашем классе и любитель стихов Б.Пастернака) после окончания мехмата МГУ 
-поступил в какую-то контору КГБ по чисто профессиональным интересам. </img></p>
+поступил в какую-то контору КГБ по чисто профессиональным интересам. </p>
 <p>В общественной теме я был всегда один, кружка единомышленников у меня никогда 
 не было ни в школе, ни потом. А «собеседники» для меня выискивались из числа 
 персонажей и авторов книг или воображаемых представителей власти, к которым я 
@@ -349,4 +337,5 @@
 <a href="Rasdel2-8.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко Белоруссия и другое</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>431. <u>Часть IV. Перелом болезни</u></p> <p>432. <u>1. Леонполь - Память о Костюшко</u></p>
 <p>В бывшем имении графов Лопатьинских, на Двине у самой границы с Псковщиной, стоит до сих пор эта колонна - памятник Конституции 3 мая 1791 года, поставленная вольнолюбивым графом на виду у грозного русского врага.</p>
 <p>433. Он ожидал, что майская Конституция станет непреодолимой преградой против Азии, восточного варварства, ну, и так далее. Но, скорей всего, граф в конституционных тонкостях особо не разбирался, Конституцию-91 и шляхетские вольности валил в одну кучу. </p>
@@ -300,6 +290,6 @@
       Чтоб люди на вас / Не имели бы злости.<br/>
       А если, по счастью,/ И двое прибудет,<br/>
       Никто с вас не спросит,/ Никто не осудит.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

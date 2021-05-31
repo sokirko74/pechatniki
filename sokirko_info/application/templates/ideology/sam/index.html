@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Самиздатские материалы семьи Сокирко. 1981-</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3>  </h3>
+
+
+<h3>  </h3>
 <h1>Самиздатские материалы семьи Сокирко. 1981-1988гг.</h1>
 <p><font size="4"><strong>Содержание</strong></font></p>
 <p><a href="s1.html">1. Прошение Ю.В.Андропову о 
@@ -130,4 +121,5 @@
 пока) материалы. Обращения В. Сокирко имели, как правило, заключительную фразу 
 «С уважением» и обязательную подпись (при подготовке сборника для помещения на 
 сайт они исключены)</i></p>
-</body></html>
+
+{% endblock content %}

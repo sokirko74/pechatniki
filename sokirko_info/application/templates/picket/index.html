@@ -1,19 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>Антивоенное движение - в защиту Российской Федерации</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Антивоенное движение -  в защиту  Российской Федерации</title>
-<link href="../modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1 align="center">Антивоенное движение -  в защиту  Российской Федерации</h1>
+
+<h1 align="center">Антивоенное движение -  в защиту  Российской Федерации</h1>
 <img alt="Victor Sokirko" src="/static/images/picket/img702.jpg" style="FLOAT: right"/>
 <h3 align="center">Отчёты о пикетах находятся <a href="http://viktor-sokirko.livejournal.com/">на живом журнале</a>.</h3>
 <ul>
@@ -127,5 +118,5 @@
 <a href="http://www.rospozor.ru"> Всероссийская доска позора, википедия политической оппозиции </a>
 <h3><a href="../contact.html">Контактная информация</a></h3>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

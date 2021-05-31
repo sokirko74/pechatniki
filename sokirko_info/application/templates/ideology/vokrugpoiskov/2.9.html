@@ -1,15 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Вокруг Поисков: Справка о серии самиздатской литературы «В защиту экономических свобод»</title>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <table width="600"> <tr> <td>
 <a href="2.8.html"> предыдущая </a>
 </td><td><a href="../vokrugpoiskov.html">оглавление</a></td><td>
@@ -762,5 +756,5 @@ K.Б., не располагают для обоснования какими-т
 <a href="2.10.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

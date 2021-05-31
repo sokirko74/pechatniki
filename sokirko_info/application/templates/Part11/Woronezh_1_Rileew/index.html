@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Воронежская земля"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> Любимая Воронежская земля послала в бой за свободу Рылеева,</u> </p> <p>2. <u>родила сначала несмелого Кольцова, а потом распрямившегося Никитина, а в 1937 году вместе со Сталиным предала на смерть Мандельштама</u></p>
 <p>2а. <u>Воронежские поэты: Рылеев, Кольцов, Никитин, Мандельштам</u></p>
 <p>3.<u> К.Ф.Рылеев, 1824г.</u> Заплатите тому презрением холодным,<br/>
@@ -182,6 +172,6 @@
       Где в стране благословенной, /Потонул в глуши садов, <br/>
       Городок уединенный /Острогожских казаков...</p>
 <p><u>Вечной памяти!</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

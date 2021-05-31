@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Испанский дневник. Недолго во Франции</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. Сокирко</b></i></h2>
+
+
+<h2><i><b>В. и Л. Сокирко</b></i></h2>
 <h2><b>Испанский (последний) дневник 2006 года </b></h2>
 <h1>8. Недолго во Франции</h1>
 <p>Теперь наш путь  пролегал  мимо французских городов и деревень, пустынных полей и виноградников. И снова я вспоминаю рассказы об искушенности французов в винах и начинаю беспокоиться о том, что же завтра дарить  Лине и Леше в Париже.</p>
@@ -54,5 +45,5 @@
 <p><i> И все равно будем   стараться. И дай  Бог удачи !</i></p>
 <p><i>Январь 2007 г.</i></p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

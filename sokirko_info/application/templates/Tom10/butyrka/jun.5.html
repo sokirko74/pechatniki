@@ -1,15 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Бутырский дневник: Лиля.</title>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <table width="600"> <tr> <td>
 <a href="jun.4.html"> предыдущая </a>
 </td><td><a href="../index.html">оглавление</a></td><td>
@@ -32,7 +26,7 @@
 -Ну, ведь это Вам нужно, а не мне.<br/>
 -Вам тоже.<br/>
 -Ну, тогда заказывайте пропуск.<br/>
-В 4 часа с минутами я была у него, в 5 ушла.</body></html>
+В 4 часа с минутами я была у него, в 5 ушла.
 <p>Начал он так: "Вопросы есть?" Я спросила о твоём здоровье, самочувствии, о передачах и о сроке.<br/>
 -Вот о сроке и пойдёт наш разговор. Он в какой-то степени зависит от Вас.<br/>
 - За чем дело стало? Хочу, чтоб он завтра был дома.<br/>
@@ -113,3 +107,4 @@
 <a href="jul.html"> следующая </a>
 </td></tr></table>
 
+{% endblock content %}

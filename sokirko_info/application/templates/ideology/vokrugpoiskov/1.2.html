@@ -1,15 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Вокруг Поисков: Репортаж о первом обыске</title>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <table width="600"> <tr> <td>
 <a href="1.1.html"> предыдущая </a>
 </td><td><a href="../vokrugpoiskov.html">оглавление</a></td><td>
@@ -18,4 +12,5 @@
 <h3>1.2 <a href="/Tom10/butyrka/a1-2.html">Репортаж о первом обыске</a> </h3>
 <p><strong>Событие 6</strong>  . В феврале-марте восстановлен «Поиски» №5</p>
 <br/>
-</body></html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. «Дети и шабашки» 1968-1977 гг</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <div class="'n'"> <p>1-2. Наши старшие дети Тема и Галя уже имеют о себе диафильмы, так как же можно обойтись без диарассказа о самых маленьких?</p>
 <p>3. <b>«Часть I. Рождение»</b></p>
 <p>Когда в Хабаровской шабашке я получил известие, что Лиля родила двух сразу, что у меня теперь четверо детей, то испытал какую-то непередаваемую радость: «Все хорошо, все хорошо, все хорошо!!!». </p>
@@ -310,6 +300,6 @@
 <p>307. А что получится из наших желаний, жизнь покажет! </p>
 <p>308-325.</p>
 </div>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

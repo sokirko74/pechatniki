@@ -1,19 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>Экономические материалы и обсуждения 1980-1988гг.</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Экономические материалы и обсуждения 1980-1988гг. </title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>
+
+<h1>
 <p> </p>
 <p><font size="5">Сокирко В.В.</font> </p>
 <p><font size="6">Экономические материалы и обсуждения 1980-1988гг.</font> </p>
@@ -141,5 +132,5 @@
 имели, как правило, заключительную фразу «С уважением» и обязательную подпись. 
 При подготовке сборника для размещения на сайте они исключены.</em> </p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

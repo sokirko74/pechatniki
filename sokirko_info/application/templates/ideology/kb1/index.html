@@ -1,19 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>Cборник статей буржуазного коммуниста</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Cборник статей буржуазного коммуниста </title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <p align="right"><em>Посвящается друзьям, свидетелям и  соучастникам осознания <br/>вечной нерасторжимости идеалов и буржуазной человечьей жизни</em> </p>
+
+<p align="right"><em>Посвящается друзьям, свидетелям и  соучастникам осознания <br/>вечной нерасторжимости идеалов и буржуазной человечьей жизни</em> </p>
 <p><font size="5">В.Сокирко</font></p>
 <p>        <strong>  <font size="6">К.Б.</font></strong></p>
 <font size="4">
@@ -31,8 +22,5 @@
 <p>2. <a href="/Tom10/butyrka/a1-3.html">Экономика 1990г: что нас ждёт и есть ли выход</a></p>
 <p>3. <a href="../cel/C5a.html">Справка о серии самиздатской литературы "В защиту экономических свобод"</a></p>
 <p>4. <a href="../cel/C5b.html">Из истории суда 1980 года над сборниками «В защиту экономических свобод»</a></p>
-<p>5. <a href="../cel/C5c.html">Письмо осуждённого  директору Института экономики АН СССР Капустину Е.Н.</a></p> </font></body></html>
-
-<br>
-</br>
-
+<p>5. <a href="../cel/C5c.html">Письмо осуждённого  директору Института экономики АН СССР Капустину Е.Н.</a></p> </font>
+{% endblock content %}

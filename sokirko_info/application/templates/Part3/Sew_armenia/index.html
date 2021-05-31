@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Д/ф «Северо-Армянские монастыри»</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u>  Монастыри Армении</u></p> <p>2.<u>В стихах средневековых поэтов</u></p>
 <p>3. В этом диафильме мы поведем рассказ о северной Армении - ее дождливых и лесистых районах Алаверды и Дилижан.</p>
 <p>4. Первой остановкой, если ехать железной дорогой, может стать Ахтала с ее бесчисленными рудниками и старинной крепостью, в глубине которой виден храм. А в храме том такая огромная голубая Богородица, что сами собой подгибаются колени.</p>
@@ -184,6 +174,6 @@
       Умру - меня твоя укроет тишина, <br/>
       Армянская страна, родная сторона.</p>
 <hr/>
-<br>
-			</br></p></body>
-</html>
+<br/>
+</p>
+{% endblock content %}

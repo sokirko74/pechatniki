@@ -1,21 +1,15 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Вокруг Поисков: Открытый ответ на Открытое письмо </title>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% extends 'base.html' %}
+<title>Вокруг Поисков: Открытый ответ на Открытое письмо</title>
+{% block content %}
+
+
+
 <table width="600"> <tr> <td>
 <a href="3.19.html"> предыдущая </a>
 </td><td><a href="../vokrugpoiskov.html">оглавление</a></td><td>
 <a href="3.21.html"> следующая </a>
 </td></tr></table>
-<h3>3.20 Открытый ответ на Открытое письмо</h3></body></html>
+<h3>3.20 Открытый ответ на Открытое письмо</h3>
 <p>Дорогая Софья Васильевна! Вам известно, что мой муж 
 Виктор Сокирко дал обязательство властям не выступать в самиздате. Выступив в 
 его адрес с обвинением в форме вопросов, Вы поставили его перед выбором: открыто 
@@ -226,3 +220,5 @@
 <a href="3.21.html"> следующая </a>
 </td></tr></table>
 <br/>
+
+{% endblock content %}

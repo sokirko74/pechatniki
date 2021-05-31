@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Гвиитовое on-line</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Дорогой Александр Максимович.</h2>
+
+
+<h2>Дорогой Александр Максимович.</h2>
 <p>Наконец, я имею
  возможность выполнить Вашу просьбу и отправить заказанные
  материалы
@@ -63,5 +54,5 @@
 <li><a href="/static/images/family/Gvintovoe/529.jpg">529</a></li>
 </ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

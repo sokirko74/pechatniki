@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко. Путешествие с детьми по Белоруссии и Литве 1982г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>
 <strong>Примечание: </strong> Первоначально
         этот д/ф состоял из трёх частей. Первая часть выделена в д/ф <a href="/Part5/Charkov-82/">"Харьков"</a>, вторая -   в <a href="/Part5/Dustlik-82/"> "Дустлик - 1982" </a>
@@ -279,6 +269,6 @@
 <p>391. Опять встают вечные вопросы, как усвоить культуру и добро предков?</p>
 <p>392. Как уничтожить зло и безделье в своей жизни? Нынешней?</p>
 <p>393. Как помочь детям в нашей с ними жизни будущей? (Конец</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

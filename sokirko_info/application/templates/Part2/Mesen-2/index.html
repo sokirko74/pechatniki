@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Мезень"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>
 <strong>Пояснение. </strong>
         Начало этого фильма см. <a href="/Part2/Sabas-83_ssilkaGleba/">
@@ -267,6 +257,6 @@
 <p>290. Вот где хорошо думается на ходу, </p>
 <p>300. перерабатывая мезенские уроки...</p>
 <p>301-303 <u>Конец</u></p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

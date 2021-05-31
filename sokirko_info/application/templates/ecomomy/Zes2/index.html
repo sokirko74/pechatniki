@@ -1,20 +1,10 @@
-<html>                                      6
-
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N2: Содержание</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
-    <h1>В защиту экономических свобод </h1>
+
+
+<h1>В защиту экономических свобод </h1>
 <h1>Выпуск 2, ноябрь 1978г.</h1>
 <h1>Составители К. Буржуадемов и В.Грин<strong><em><font size="4"> </font></em></strong></h1>
 <h1>Содержание</h1>
@@ -66,4 +56,5 @@
 сказать, сборника с названием «В защиту экономических свобод» - Комментарий 
 К.Б.</a></font></h1>
 <br/>
-</body></html>
+
+{% endblock content %}

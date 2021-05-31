@@ -1,18 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Viktor Sokirko Home page</title>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
+
+
+<br/><br/>
 <h2 align="center">В. и Л. Сокирко "Партизанское кино"</h2>
 <h3 align="center">
 (архив диафильмов одной советской семьи
@@ -41,6 +33,6 @@
 <br/>	
 	В.В.Сокирко
 </p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

@@ -1,18 +1,8 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>В.Сокирко Антивоенный пикет 5.04.07г.</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>В.Сокирко Антивоенный пикет  5.04.07г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body> 
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
 
 <h1>Антивоенный пикет  5.04.07г.</h1>
 <p>Он был такой нормальный и привычный,  что кажется, не о чем и рассказать. Никто нас не запрещал, и даже прохожие почти не подходили. Наверное, к нам уже все привыкли, и с войной на Кавказе всем все  понятно.</p><p>
@@ -38,4 +28,5 @@
 P.S. Искренне доверяя мнению А Политковской, составленному после  общения с Р.Кадыровым, что Путин вырастил в Чечне <b>дракона</b> (Р,Кадырова), как должна быть там устроена жизнь, чтоб  от этой оценки можно было отступить? – Л.Т.. </p>
 <br/>
 </p>
-</body></html>
+
+{% endblock content %}

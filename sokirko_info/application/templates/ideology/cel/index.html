@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко: Цели людей</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <p align="right">
+
+
+<p align="right">
 <em><strong>"Свободен, свободен,cвободен, наконец-то, свободен!!!"</strong></em>
 <p align="right">М.Л.Кинг</p>
 </p>
@@ -50,4 +41,4 @@
 <br/>
 </font>
 
-</body></html>
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Тиман"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2. <u>От Ям-озера к Мезени Пижмой через Тиман летом 1983г</u></p> <p>3.<u> Общее дело - на катамаране</u></p>
 <p>4. <u>Пролог о небесном</u> (Лиля)</p>
 <p>Высокая традиция требует предварять земную драму прологом на небесах. Так что же на небесах предшествовало нашему путешествию по Северу да и вообще жизни??</p>
@@ -185,6 +175,6 @@
 <p>164. мы подошли к нашему большому лагерю. Взрослые нас сразу же спросили: "Где Аня?" - Мы ответили, что не знаем сами, потому что она ушла от нас. На самом деле она уже сидела в Сокиркинской палатке и все, усмехаясь, слышала. Но скоро взрослые смирились с нашим поступком. А мы с Аней долго не разговаривали. </p>
 <p>165. Но скоро наша обида кончилась. И мы зажили дружной походной жизнью".</p>
 <p><u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

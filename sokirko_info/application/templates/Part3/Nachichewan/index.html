@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Посещение Нахичевани"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>72. <u>21 сентября 1969 г.</u></p> <p>73. <u>Посещение Нахичевани</u></p>
 <p>74-75.</p>
 <p>76. <u>еще утром прохлада гор Армении</u></p>
@@ -31,6 +21,6 @@
 <p>88. по плоскому, глиняному, пыльному, безводному, захолустному восточному городу и</p>
 <p>89. его старой крепости. Давняя провинция Ирана, Нахичевань последние несколько веков держалась независимым ханством, пока русские походя не захватили это провинциальное захолустье. Черепки и глина! Что в этом интересного?</p>
 <p>90. Разве что легендарная могила прародителя нашего Ноя, забытая в Нахичевани, да мавзолеи знаменитой нахичеваньской школы, так живо воспринявшей в себя островерхую зароастрийскую традицию?</p>
-<br>
- </br></body>
-</html>
+<br/>
+
+{% endblock content %}

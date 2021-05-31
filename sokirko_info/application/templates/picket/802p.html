@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Обращение к согражданам</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Обращение к согражданам</h1>
-</body></html>
+
+
+<h1>Обращение к согражданам</h1>
 <p>Мы, участники традиционного антивоенного пикета против войны властей с народами Кавказа и России, возвращаемсяпредлагаем вернуться к нашему старому призыву 2004 года -  
 бойкота всех пропутинских властей и их, так называемых, выборов.
 </p>
@@ -85,4 +75,5 @@
 <p>                     Сокирко В.В. 109388 Москва, ул.Гурьянова,д.43,кв.286 тел. 354-13-21
 </p>
 <br/>
-			
+
+{% endblock content %}

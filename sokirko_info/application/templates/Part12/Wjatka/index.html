@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Вятка"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u>Урал. ч.1</u></p> <p>2.<u> Урал-1986. Предъуралье</u> </p>
 <p>3. <u>Хваткая Вятка и уральская Пермь</u></p>
 <p>4. Две однодневные остановки в двух областных столицах географического Предъуралья стали нашим преддверием и предисловием к стержневой теме Урала, </p>
@@ -100,6 +90,6 @@
 <p>81. уже не о себе, а о своих детях и внуках... непобедимых, вечных...</p>
 <p><u>"Волшебный мир народной игрушки"</u> </p>
 <p>82.<u> До свидания, Вятка!</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

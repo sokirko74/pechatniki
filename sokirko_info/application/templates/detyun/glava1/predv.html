@@ -1,16 +1,9 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>Предварение</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h1><em>В.Сокирко</em>. Жизнь и поражения советского инакомыслящего </h1>
 <h1>Предварение</h1>
 <p>Большинство людей нуждается во внешнем поводе для начала даже 
@@ -47,7 +40,7 @@
   Будь она "благоразумной", не было б у меня любимого мужа, а для наших невесток 
   и зятьёв не родились бы мужья и жёны.</em></p>
 <p><em><img align="left" alt="" src="/static/images/detyun/glava1/0029-2.jpg" width="250"/>
-<img align="right" alt="" hspace="10" src="/static/images/detyun/glava1/0044-04.jpg" width="250">
+<img align="right" alt="" hspace="10" src="/static/images/detyun/glava1/0044-04.jpg" width="250"/>
 	На кладбище в Петрищево, где 
   Витины родители сейчас лежат рядышком, я 
   сперва благодарю маму за веру в своё главное предназначение - родить и 
@@ -61,7 +54,7 @@
   мне, чтобы выдохнуть "мама". Это оказалось таким счастьем получить от судьбы 
   организаторов нашего быта и советчиков в виде мамы-папы (родители - то мои 
   жили далеко, в Волгограде). Жаль, что не смогла я этот урок передать 
-  невесткам.</img></em></p>
+  невесткам.</em></p>
 <p><em>Вступив в войну в ВКП(б), Владимир Климентьевич никогда не 
   был на партийных должностях, но и не порывался выйти.из партии. Так что 
   свою веру Витя получил хоть и не с молоком матери, зато с теплотой отца - 
@@ -77,4 +70,5 @@
 Нынешний текст – расширение моих воспоминаний 
 <p><a href="razd1.html">Следующая</a></p>
 <br/>
-</body></html>
+
+{% endblock content %}

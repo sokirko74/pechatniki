@@ -1,21 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>За гражданский мир и взаимопонимание </title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="red.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="k2.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% extends 'base.html' %}
+<title>За гражданский мир и взаимопонимание</title>
+{% block content %}
+
+
+
 <h1>В. Сокирко<strong><em><font size="4"> </font></em></strong></h1>
 <h1>К.Б.</h1>
 <h1> За гражданский мир и взаимопонимание</h1>
@@ -561,5 +549,5 @@
 <a href="k2.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

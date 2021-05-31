@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Калуга</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>114. <u>ч. II. Калужская земля</u> </p> <p>115. <u>Алеша: Город Козельск</u>В Козельск мы приехали поездом на закате солнца, с перепачканными в мазуте об мои обмазученные сапоги рюкзаками.</p>
 <p>116. До гостиницы в старинном доме мы добрались не сразу. Нo оказалось, что в ней совсем нет свободных мест. Пришлось нам снова проситься на</p>
 <p>117. ночлег в школу-интернат здесь на центральной площади.</p>
@@ -101,6 +91,6 @@
 <p>200. народов. И познание этого богатства может и должно длиться </p>
 <p>201. бесконечно.</p>
 <p><u>Конец 1 и 2 частей</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

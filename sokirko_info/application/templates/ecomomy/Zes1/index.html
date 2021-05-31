@@ -1,19 +1,10 @@
-<html>
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N1: В защиту экономических свобод</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
-    <h1>
+
+
+<h1>
 <p>В защиту экономических свобод</p>
 <p>            Выпуск 
 1</p>
@@ -57,4 +48,5 @@
 <p><strong><a href="4.1.html"><em>К.Буржуадемов</em> «За самиздат надо платить!»</a></strong> </p>
 <br/>
 </p></p></p></p>
-</body></html>
+
+{% endblock content %}

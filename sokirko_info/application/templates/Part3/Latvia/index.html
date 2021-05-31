@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Латвия"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-3.</p> <p>4. Пройдет еще несколько часов, и серое латвийское </p>
 <p>5. утро уступит синему дню. Мы свернем свою палатку и пойдем бродить по склонам Сигулды.</p>
 <p>6-7.</p>
@@ -102,6 +92,6 @@
 <p>90. были символом республики. Много историй рассказывают о том, как сохранился этот памятник, но и сейчас для латышей он символизирует очень многое.</p>
 <p>91. Недаром именно это подножье выбрал рижский студент Илья Рипс, чтоб вспыхнуть факелом на всю Россию. Его попытка стать рыцарем свободы не удалась - Рига и теперь не принимает рыцарства, даже во имя свободы. Она идет своим путем. И Рипс остался жив, как жива Рига, как жива земля Латвии.</p>
 <p>92-94.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

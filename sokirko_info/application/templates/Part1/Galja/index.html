@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. «Дети и шабашки» 1968-1977 гг</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <div class="'n'"> <p>1.-8.</p>
 <p>9. Познакомьтесь - это наша дочка Галя. Она родилась в 
 мае 68-го года и сейчас кончает 2-й класс.</p>
@@ -180,6 +170,6 @@
 всем: и Теме, и Гале, и их родителям остается лишь трудиться изо всех сил и самим создавать счастье. </p>
 <p>Дочка, будь счастлива!</p>
 </div>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

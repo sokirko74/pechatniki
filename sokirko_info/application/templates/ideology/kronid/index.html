@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. о книге "Кронид: Избранные статьи К.Любарского"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. Сокирко</b></i></h2>
+
+
+<h2><i><b>В. и Л. Сокирко</b></i></h2>
 <h1>Отзвуки. Мосты. Диалоги...</h1>
 <h1><i>О книге "Кронид: Избранные статьи К.Любарского"</i></h1>
 <h3>М.:РГГУ, 2001.687с.</h3>
@@ -24,7 +15,5 @@
 <li><a href="letter.html">Письмо  С.А.Желудкову. После чтения  "Размышления о всечеловеческой церкви"</a></li>
 <li><a href="gheludkov.html">Ответ священника С.А.Желудкова. Март 1979г</a></li>
 </li></ol>
-</body></html>
 
-<br/>
-
+{% endblock content %}

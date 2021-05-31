@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Соблазн (советско-американский велопробег - 89г.)</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1. <u> Ужгород -Киев. 1989</u></p> <p>2. <u><i>USA. - USSR cycle-trip</i></u></p>
 <p>4. <u>Американцы на Украине</u></p>
 <p>5-7.</p>
@@ -656,6 +646,6 @@
 <p>332. Фила на ступенях к Ильичу, так и улыбнешься его простодушию. </p>
 <p>К сожалению, у нас конфликты пока привычно не разрешать, а разрубать силой...</p>
 <p>What's a pity it's usually for us to settle an argument by force.</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

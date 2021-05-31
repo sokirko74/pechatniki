@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Тюмень, Омск, Новосибирск</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1. <u>Сибирские города-1987г.</u> </p> <p>2.</p>
 <p>3. <u>Что важнее? Торговля и ремесло Тюмени или власть и техника Омска-Новосибирска?</u></p>
 <p>4. Путешествуя по Уралу в прошлом году, мы захотели увидеть и Тюмень; но испугались длинных концов. А в этом году, на обратном пути с Алтая,</p>
@@ -215,6 +205,6 @@
 <p>200. К сожалению, шансы на спасение невелики. Старая Тюмень сама по себе совершенно беззащитна. И мы можем надеяться лишь на изменение во всей стране и в каждом из нас, на то, что в душах наших расцветет</p>
 <p>201. духовное богатство Тюмени и окончательно возьмет верх над властью и техникой-капиталом, что все мы станем <u>старотюменцами</u>!</p>
 <p>202. <u>До свидания, Тюмень!</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

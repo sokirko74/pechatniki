@@ -1,21 +1,14 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>4. Начало войны для нас с мамой и эвакуация в Сибирь</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h2><em>В.Сокирко </em>Жизнь и поражения советского инакомыслящего </h2>
 <h2>Глава I. Истоки</h2>
 <h1>Раздел 4. Начало войны для нас с мамой и эвакуация в Сибирь</h1>
 <p><img align="left" alt="" height="250" src="/static/images/detyun/glava1/0042-11.jpg"/>
-<img align="right" alt="" height="250" src="/static/images/detyun/glava1/new-11.jpg">
+<img align="right" alt="" height="250" src="/static/images/detyun/glava1/new-11.jpg"/>
 Мои первые собственные воспоминания  относятся к Сибири, к концу 
 третьего года жизни, когда материнский госпиталь был эвакуирован из Харькова в 
 Минусинск. ...И кажется, это мой отчаянный рев звучал (и остался в моей памяти) 
@@ -35,7 +28,7 @@
 залезть в ту грязь. Наверное, в этой чувственной мозаике и состоит чувство 
 родины. Думаю, что прежде чем поездка из Москвы в оккупированную Германию 
 сделала меня немного немцем, еще более ранняя эвакуация маминого госпиталя с 
-Украины в Минусинск сделала меня немного сибиряком</img></p>
+Украины в Минусинск сделала меня немного сибиряком</p>
 <p>Уже после окончания вуза в 1963 году Лилины друзья позвали меня в поход по 
 Саянам от железной дороги Абакан-Тайшет через Минусинск, и я обрадовался, что 
 смогу попутно заехать в страну своего сибирского детства. Мать снабдила меня 
@@ -91,4 +84,5 @@
 <p><a href="razd5.html">Следующая</a></p>
 <br/>
 </p></p></p></p></p></p></p>
-</body></html>
+
+{% endblock content %}

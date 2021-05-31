@@ -1,26 +1,14 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>Раздел 3. Жизнь моей младшей тётушки Сони</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="Rasdel2-2.html"> предыдущая </a>
-</td><td><a href="../index.html">оглавление</a></td><td>
-<a href="Rasdel2-4.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h2><em>В.Сокирко</em> Жизнь и поражения советского инакомыслящего </h2>
 <h2>Глава II. Школьные годы</h2>
 <h1>Раздел 3. Жизнь моей младшей тётушки Сони </h1>
 <p><img align="left" alt="" height="250" src="/static/images/detyun/glava234/0042-22.jpg"/>
-<img align="right" alt="" height="250" src="/static/images/detyun/glava234/0044--26.jpg">
+<img align="right" alt="" height="250" src="/static/images/detyun/glava234/0044--26.jpg"/>
 Но прежде чем описывать свое взросление, в основном, на книгах, я должен 
 описать влияние на меня своих ближайших родственников по маме, близких мне по 
 возрасту: её младшей сестры Сони и еще более младшего брата Степы. 
@@ -39,7 +27,7 @@
 в няньки их ребенку семилетняя девочка, вот эта, да, совсем дешево, за 
 кормежку...» И может, чувствуя страх ребенка, москвичи не принимали «выгодное 
 предложение». Пришлось деду перестать пристраивать Соню, и ей досталось обычное 
-детство, в котором были родительские заботы, школьная жизнь, подружки.</img></p>
+детство, в котором были родительские заботы, школьная жизнь, подружки.</p>
 <p>Со Степой Митрофану было, наверное, проще - он стал обыкновенным филевским 
 мальчишкой. Я об этом сужу по запомнившему разговору с давно уже выросшим 
 Степаном. В то время (начало 70-х годов) наша дочка Галя ходила в детский сад, 
@@ -242,4 +230,5 @@
 <a href="Rasdel2-4.html"> следующая </a>
 </td></tr></table>
 <br/>
-</p></body></html>
+</p>
+{% endblock content %}

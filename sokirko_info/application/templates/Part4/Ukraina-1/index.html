@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Земля северская - Украина русская"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <h1> <i> Путивль </i></h1>
 <p>1,2</p> <p>3. 	На заре, на зорьке рано-рано / Со своей тоской наедине, <br/>
       Плачет-причитает Ярославна / На Путивльской городской стене</p>
@@ -225,6 +215,6 @@
 <p>197. в непосредственной близости от русских поселений вдруг оказалось заселено и обжито деятельным народом, родственным к России, но, тем не менее, вполне самобытным и не думающем об исчезновении даже при сильнейшем воздействии официальной русской культуры.</p>
 <p>198. В этот раз вместе с нами в Харьков, на родину отца, приехали и наши дети, русские украинского происхождения. И если нам не хватит сил разобраться в русско-украинской теме, то им-то, может, хватит?</p>
 <p>199. <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

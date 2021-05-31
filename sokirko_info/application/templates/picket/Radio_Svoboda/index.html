@@ -1,19 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>Аудио-интервью О.Кусова радио "Свобода"</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Аудио-интервью О.Кусова радио "Свобода" </title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <table> <tr> <td width="70%">
+
+<table> <tr> <td width="70%">
 <h1>Аудио-интервью О.Кусова радио "Свобода", взятое  03.01.08. и прозвучавшее в эфире 15.01.08г.</h1>
 <ul>
 <li>
@@ -37,11 +28,5 @@
 </table>
 </td>
 </tr> </table>
-</body></html><li>
-<a href="http://realaudio.rferl.org/RU/2008/01/15/20080115-193230-RU-clip.mp3">
-Скачать с сервера "Радио Свобода"
-</a></li>
 
-<br/>
-
-
+{% endblock content %}

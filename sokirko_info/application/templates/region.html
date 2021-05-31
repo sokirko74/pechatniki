@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Список диафильмов по регионам</title>
-<link href="modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Список диафильмов по регионам</h1>
+
+
+<h1>Список диафильмов по регионам</h1>
 <h3>Запад</h3>
 <ol class="start">
 <li>Ленинград
@@ -326,5 +317,5 @@
 <li><a href="Part1/Pamir/index.html">Памир-84 </a> к пику Гармо-Сталина- Коммунизма</li>
 </ol>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

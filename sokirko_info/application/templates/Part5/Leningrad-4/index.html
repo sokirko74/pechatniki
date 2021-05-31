@@ -1,24 +1,14 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Ленинград" Часть IV. Бывшая столица</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
-<p>1. <u>М.Фроман</u> </p> <p>2. 	Под бунтарскою эгидой /Металлической Невы <br>
-      Веет северной обидой /От гранита и травы.</br></p>
-<p>3. 	Старой школьною тетрадкою /Всадник стынет в полумгле <br>
-      Схоластической загадкой /Дремлет ангел на игле</br></p>
+
+<br/><br/>
+<p>1. <u>М.Фроман</u> </p> <p>2. 	Под бунтарскою эгидой /Металлической Невы <br/>
+      Веет северной обидой /От гранита и травы.</p>
+<p>3. 	Старой школьною тетрадкою /Всадник стынет в полумгле <br/>
+      Схоластической загадкой /Дремлет ангел на игле</p>
 <p>4. 	Но сквозь дым болот проржавленный /Здесь, презрением горда,<br/>
       Расцветала, словно яблоня, /Золотая ерунда.</p>
 <p>5. 	Тень высокого двурушника - /Эшафоты декабря <br/>
@@ -259,5 +249,5 @@
       И если так, то в чем наш общий долг? <br/>
       И что должны мы принести ей в жертву?</p>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

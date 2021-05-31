@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко (книги,дневники и слайд-фильмы).</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3>Идеология</h3>
+
+
+<h3>Идеология</h3>
 <ul>
 <li><a href="kb/">К. БУРЖУАДЕМОВ Очерки растущей идеологии - Антигэлбрейт (1974)</a></li>
 <li><a href="ideology/gnl/">Жить не по лжи (сборник откликов-споров на статью А.И.Солженицына) 1978 г.</a></li>
@@ -27,5 +18,5 @@
 <li><a href="ideology/index.html">Новые документы </a> </li>
 </ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

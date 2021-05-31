@@ -1,22 +1,14 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>ассказы Ю.И.Красовитова о жизни и о войне.</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>ассказы Ю.И.Красовитова о жизни и о войне.</title>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>Рассказы Ю.И.Красовитова о жизни и о войне</h1>
-<p><img align="right" alt="" height="350" hspace="10" src="/static/images/Tom7/Yura/026.jpg">
+
+<h1>Рассказы Ю.И.Красовитова о жизни и о войне</h1>
+<p><img align="right" alt="" height="350" hspace="10" src="/static/images/Tom7/Yura/026.jpg"/>
          (Воспоминания Юрка Ивановича Красовитова, жителя села 
 Шевченково на Черкащине,1923 года рождения, инвалида Отечественной войны, моего 
-двоюродного дяди, записаны в июле 1987 г., -<em> В.Сокирко</em>)</img></p>
+двоюродного дяди, записаны в июле 1987 г., -<em> В.Сокирко</em>)</p>
 <p><em>(Л.Ткаченко: машинописный текст <a href="../Yura/">"Воспоминаний 
 Ю.И.Красовитова"</a> заканчивается на полуслове, и никому не удалось вспомнить, 
 существовала ли следующая рукописная тетрадь или не случилось Юре её написать 
@@ -2702,4 +2694,5 @@
 дойдя до времени его ранений. О них и о послевоенной его жизни рассказали сёстры 
 Нина и Оля (см. <a href="../Nina/">"Воспоминания Нины Ивановны Красовитовой"</a> ) </em></p>
 <br/>
-</body></html>
+
+{% endblock content %}

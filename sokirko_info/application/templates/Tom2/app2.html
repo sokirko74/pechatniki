@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Наши горы. Переписка маленьких людей. 1968г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. СОКИРКО</b></i></h2>
+
+
+<h2><i><b>В. и Л. СОКИРКО</b></i></h2>
 <h2>Том 2. Наши горы. 1967-1977гг.</h2>
 <h1><a name="'170'">Приложение 2. Переписка маленьких людей.1968г.</a></h1>
 <p>(с обсуждением меморандума ак.Сахарова «Размышления о прогрессе, мирном сосуществовании и интеллектуальной свободе.)</p>
@@ -159,5 +150,5 @@
 <p>Так и думаю. И буду рад успокоиться, если вы меня переубедите. Пишите. Виктор.</p>
 <p>На этом наша переписка закончилась и более не возобновлялась в подобном плане. Однако мы остались друзьями и, как мне кажется, с годами стали лучше понимать друг друга.</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

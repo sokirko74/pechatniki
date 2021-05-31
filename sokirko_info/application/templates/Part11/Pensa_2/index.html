@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Пенза"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>113.<u> В Пензу мимо Каменки и Рамзая</u>Несколько часов автобусной дороги мима большого города Каменки и родового гнезда патриарха русского исторического романа Загоскина в Рамзае - и мы под вечер приехали в саму Пензу. </p> <p>114. Ходили по ее историческим улицам, фотографировали, мокли под дождем, сушились на солнышке, разделяя гордость пензенцев за ухоженность </p>
 <p>115. города на высоких присурских холмах, а под вечер перешли </p>
 <p>116. мост и заночевали на правом, низком берегу Суры, где когда-то, по рассказу лесковского "Очарованного странника" шумела степная </p>
@@ -164,6 +154,6 @@
 <p>250. церквям, этим вечным символам власти земли, традиций и </p>
 <p>251. и самой человеческой памяти. </p>
 <p>252. <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

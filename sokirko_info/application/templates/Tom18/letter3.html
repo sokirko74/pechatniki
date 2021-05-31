@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Открытое письмо Мэри Юзбашян</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>     Том  18. Закавказье. 1988 г.</h2>
+
+
+<h2>     Том  18. Закавказье. 1988 г.</h2>
 <h1>         Открытое письмо Мэри Юзбашян, автору хроники "Дни
 Нагорного Карабаха, март 1988 ", армянским и русским интеллигентам</h1>
 <h4>               
@@ -145,6 +136,6 @@
 свидетелями образцовой республики! Вот потенциал единения: l) общая потребность 
 в мире и добрососедстве; 2) общие нравственные постулаты; 3) общая религиозная 
 основа в утверждении Астрала, как наднационального состояния духа; 4) общие музыкальные корни; 5) общие экологические проблемы. 7.11.1988. С уважением, Юрий Петерсон </p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

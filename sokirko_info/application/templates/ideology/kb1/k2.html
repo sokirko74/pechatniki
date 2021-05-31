@@ -1,21 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Об условиях выживания и развития</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="k1.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="k3.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>В. Сокирко</h3>
 <h3>К.Б.</h3>
 <h1>Об условиях выживания и развития</h1>
@@ -100,5 +88,5 @@
 <a href="k3.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

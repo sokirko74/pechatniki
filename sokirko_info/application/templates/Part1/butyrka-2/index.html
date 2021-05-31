@@ -1,21 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Наши пансионаты" (2)</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <h1> </h1><h1> </h1> <h1></h1>
 <h3> Сценарий</h3>
 <table>
@@ -54,10 +43,10 @@
 <tr><td><img height="150px" src="/static/images/Part1/butyrka-2/mini/m/124.jpg"/></td><td>Конечно, холодно и сыро. Но днём можно отогреться. Наполовину урезана пайка, но после недельной голодовки еды мне хватало. Темнота не удручала, потому что читать и писать всё равно не давали. Зато была тишина, удобная для размышления. А самое главное, можно было переговариваться с сидящими рядом Сашей Лавутом и Леонардом Терновским.</td></tr>
 <tr><td><img height="150px" src="/static/images/Part1/butyrka-2/mini/m/124a.jpg"/></td><td>Вокруг средневековье, темно, сыро, тесно, а в душе такое тепло от расспросов Саши, от более редкого, но такого душевного участия Леонарда. А один раз мне удалось даже увидеться с Леонардом в глазок его камеры, когда мою шмонали. Пусть на секунду, а свиделись – что может сравниться с такой радостью?</td></tr>
 <tr><td><img src="/static/images/Part1/butyrka-2/mini/m/125.jpg" width="250px"/></td><td>И ещё одна запомнилась там радость: отражённые решёткой серебристые дождевые капли, и ливневый шум, и свежесть. Но об этом гораздо лучше написал Валера</td></tr>
-<tr><td><img height="150px" src="/static/images/Part1/butyrka-2/mini/m/125a.jpg"/></td><td>На цыпочки пристав /к зарешеченному окну, <br>
-      Раздирая руки о колючую стену,/ я дотянусь, подтянусь<br>
-      Да много ли мне надо? Несколько хрустальных шариков –<br/>
-      Достойная награда/ за исцарапанные руки и окрик <br/>
+<tr><td><img height="150px" src="/static/images/Part1/butyrka-2/mini/m/125a.jpg"/></td><td>На цыпочки пристав /к зарешеченному окну, <br/>
+      Раздирая руки о колючую стену,/ я дотянусь, подтянусь<br/>
+      Да много ли мне надо? Несколько хрустальных шариков –<br>
+      Достойная награда/ за исцарапанные руки и окрик <br>
       Вертухая за дверью: “У окна не положено!» <br/>
 </br></br></td></tr>
 <tr><td><img height="150px" src="/static/images/Part1/butyrka-2/mini/m/125b.jpg"/></td><td>      С ладоней мокрых/ губами сниму осторожно<br/>
@@ -146,5 +135,5 @@
 <tr><td><img height="150px" src="/static/images/Part1/butyrka-2/mini/m/204.jpg"/></td><td> (Песня Кати) </td></tr>
 </tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

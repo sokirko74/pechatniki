@@ -1,20 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Ленинград" Часть III. "Народная воля"</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Виктор Сокирко и Лидия Ткаченко. Диафильм "Ленинград" Часть III.  "Народная воля"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+<br/><br/>
 <p>1-2. <u>Василий Курочкин 1862</u></p> <p><u>"Письмо японца об России" </u>.<br/>
       Знай, что под суровым петербургским солнцем<br/>
       В русском очень много общего с японцем.</p>
@@ -181,6 +171,6 @@
       Царь змеи раздавить не сумел /И прижатой стала наш идол.</p>
 <p>122а.Ни кремлей, ни чудес, ни святынь,/Ни миражей,ни слез, ни улыбки...<br/>
       Только камни из мерзлых пустынь /Да сознанье проклятой ошибки.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

@@ -1,21 +1,9 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>7. Обычная студенческая жизнь</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="Rasdel3-6.html"> предыдущая </a>
-</td><td><a href="../index.html">оглавление</a></td><td>
-<a href="Rasdel3-8.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h2><em>В.Сокирко</em> Жизнь и поражения советского инакомыслящего </h2>
 <h2>Глава III. Студенческие годы (1956-1962гг.)</h2>
 <h1>7. Обычная студенческая жизнь</h1>
@@ -40,8 +28,8 @@
 Теперь наши летние каникулы были заполнены заводскими практиками, 
 маскируемые все же каким-то заводским обучением,</p><p>
 <img alt="" height="221" src="/static/images/detyun/glava234/0050-15.jpg"/>
-<img alt="" height="250" src="/static/images/detyun/glava234/0050-22.jpg">
-<img alt="" height="250" src="/static/images/detyun/glava234/0050-24.jpg"/>
+<img alt="" height="250" src="/static/images/detyun/glava234/0050-22.jpg"/>
+<img alt="" height="250" src="/static/images/detyun/glava234/0050-24.jpg">
 </img></p>
 <p>военными сборами</p>
 <p><img alt="" height="258" src="/static/images/detyun/glava234/0050-30.jpg"/>
@@ -123,4 +111,5 @@
 <a href="Rasdel3-8.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

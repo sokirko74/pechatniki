@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Алтай-Сибирь 1987 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> Алтай-1987. Северо-Восток</u></p> <p>2. <u>"Наша Чулышмания"</u></p>
 <p>3. <u>Страна теленгитов, телесов, телеутов</u></p>
 <p>4. в алтайских стихах.</p>
@@ -631,6 +621,6 @@
 <p>348. Я - вечность. Я - исток любви и света. /Я - мать. Дитя и Мир в моих руках.</p>
 <p>349.</p>
 <p>350. Конец</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

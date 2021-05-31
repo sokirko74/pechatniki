@@ -1,21 +1,9 @@
-<html>
-<head>
+{% extends 'base.html' %}
 <title>Раздел 4.Мое политическое самообразование - чтение</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="Rasdel3-3.html"> предыдущая </a>
-</td><td><a href="../index.html">оглавление</a></td><td>
-<a href="Rasdel3-5.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h2><em>В.Сокирко</em> Жизнь и поражения советского инакомыслящего </h2>
 <h2>Глава III. Студенческие годы (1956-1962гг.)</h2>
 <h1>Раздел 4. Мое политическое самообразование</h1>
@@ -217,4 +205,5 @@
 <a href="Rasdel3-5.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body></html>
+
+{% endblock content %}

@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко Белоруссия и другое</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Том 12. Белоруссия и другое. 1982г.</h2>
+
+
+<h2>Том 12. Белоруссия и другое. 1982г.</h2>
 <h1>Раздел I. Белорусский дневник. Июль - август 1982 г.</h1>
 <p><i><b>(Путешествия двумя семьями)</b></i></p>
 <p>Авторы: 	Сулимовы 	- папа Володя,  <br/>
@@ -3088,6 +3079,6 @@
 пили чай, писали, играли в морской бой.(Конец)</p>
 <p><b>Витя:</b> Спасибо всем спутникам 
 и компаньонам! Спасибо!</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

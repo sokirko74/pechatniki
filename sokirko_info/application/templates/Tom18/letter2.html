@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. В "Литературную газету" А.Никитину</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>     Том  18. Закавказье. 1988 г.</h2>
+
+
+<h2>     Том  18. Закавказье. 1988 г.</h2>
 <h1>В "Литературную газету" А.Никитину</h1>
 <p>Уважаемый А.Никитин!</p>
 <p>Мы всегда с благодарностью читаем Ваши "хозяйственные" статьи, а в номере "ЛГ" от 8.08.1988 с большим интересом прочли и статьи по национальному вопросу "Искусство жить вместе". Спасибо за публичное выражение близких нам мыслей.</p>
@@ -29,5 +20,5 @@
 <p>Если Вы не против, то просим Вас поддержать это наше предложение. Просим Вас, как влиятельного и авторитетного человека.</p>
 <p>С уважением В.Сокирко, Л.Ткаченко.                    12.08.1988</p>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

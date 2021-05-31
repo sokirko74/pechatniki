@@ -1,18 +1,8 @@
-<html>
-
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Том 15. Южная Россия. 1985г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
+{% block content %}
 
-<body> 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+
 
 <h2><i><b> В. и Л. Сокирко</b></i></h2>
 <h1>Том 15. Южная Россия. 1985г.</h1>
@@ -57,5 +47,5 @@
 </li>
 </li></ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

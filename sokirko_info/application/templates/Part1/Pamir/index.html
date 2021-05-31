@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Памир 1984 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2. <u>Витя: Ложный Гармо = пик Сталина = пик Коммунизма</u></p> <p>3. Географически высокий Памир есть северная часть "крыши Мира", т.e. гималайско-тибетского нагорья. Только здесь вершины достигает 7 и 8 тысяч метров. </p>
 <p>4. Отсюда, говорят, вышли наши арийские предки и жили самые великие мудрецы - от Будды до Рериха.</p>
 <p>5. Случайность англо-русского раздела по Пянджу сфер влияния двух империй в конце прошлого века отдала нам, русским, памирскую часть Гималаев</p>
@@ -290,6 +280,6 @@
 <p>223. них останутся лишь эмоции и картины, да возникшие в детстве наклонности. В их душах, воображении, в нужное время воскреснут памирские горы и крещение под пиком Коммунизма.</p>
 <p>224. И тогда, может, вспомнится им отцовская Вера?</p>
 <p>225.              <u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

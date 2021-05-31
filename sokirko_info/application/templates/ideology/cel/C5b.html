@@ -1,21 +1,9 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Цели людей: Выдержки из записи суда 1980г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<table width="600"> <tr> <td>
-<a href="C5a.html"> предыдущая </a>
-</td><td><a href="index.html">оглавление</a></td><td>
-<a href="C5c.html"> следующая </a>
-</td></tr></table>
-</head>
-<body>
-<script src="/modules/utilities.js" type="text/javascript"></script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
+{% block content %}
+
+
+
 <h3>В. Сокирко</h3>
 <h3>Цели людей </h3>
 <h1>Выдержки из записи суда 1980г.</h1>
@@ -280,5 +268,5 @@
 <a href="C5c.html"> следующая </a>
 </td></tr></table>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Тамбовщина"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1.<u> "Русское Черноземье"-1985г. ч. XI."Тамбовщина" </u></p> <p>2. (карта)</p>
 <p>3. <u>"Земля и земства" - Державин, Баратынский, Чичерин...</u> </p>
 <p>4. <u>Е.А.Баратынcкий (1800-1844) "Деревня"</u> </p>
@@ -252,6 +242,6 @@
 <p>137. и на пленке уже осталось наше утро на реке Вороне перед домом Бориса Николаевича. Целый век прошел от времени его жизни и трудов здесь. Сколько обидных слов и забвения досталось его памяти...</p>
 <p>138. Наступают другие времена, прочищается от предвзятости зеркало памяти. Вот мы и пришли сами, и вас с помощью слайдов привели к его дому и мыслям. Неистребимо живой оказалась Чичеринская земля! </p>
 <p><u>До свидания, тамбовская земля!</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

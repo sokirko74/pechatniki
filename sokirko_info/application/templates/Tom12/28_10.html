@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко Белоруссия и другое</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Том 12. Белоруссия и другое. 1982г.</h2>
+
+
+<h2>Том 12. Белоруссия и другое. 1982г.</h2>
 <h1>   "Возможна ли  Западная Россия? "</h1>
 <h4>Вопросы к гостям, просмотревшим первую часть диафильма  28 октября 1983г.</h4>
 <p>1. Национальная специфика - только от почвы, от генов  или от своеобразного синтеза соседних культур?</p>
@@ -263,5 +254,5 @@
 <p>В другом случае лучше и не начинать разговор 30 марта.</p>
 <p>Только таких людей мы и приглашаем в эту пятницу. Виктор.4.03.84г.</p>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

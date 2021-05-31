@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко (книги,дневники и слайд-фильмы).</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3>Диафильмы и дневники</h3>
+
+
+<h3>Диафильмы и дневники</h3>
 <ol>
 <li><a href="Tom1/">Партизанское кино. 1977г.</a></li>
 <li><a href="Tom2/">Наши горы (1967-1973гг.)</a></li>
@@ -52,5 +43,5 @@
 </ol>
 <h3><a href="region.html">Список диафильмов по регионам</a></h3>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

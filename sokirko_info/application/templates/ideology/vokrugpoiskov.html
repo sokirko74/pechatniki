@@ -1,19 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Вокруг поисков</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Том 21. Вокруг "Поисков взаимопонимания". 1978-1981гг. и дальше</h2>
+
+
+<h2>Том 21. Вокруг "Поисков взаимопонимания". 1978-1981гг. и дальше</h2>
 <h3>Содержание</h3>
 <!--start-->
     0.0. <a href="vokrugpoiskov/0.0.html">Предисловие</a><br/>
@@ -38,7 +29,7 @@
 <h4>Приложения к разделу 1</h4>
     1.18. <a href="vokrugpoiskov/1.18.html">Г.Померанц Мой собеседник Виктор Сокирко</a><br/>
     1.19. <a href="vokrugpoiskov/1.19.html">Г.Павловский Справка о Сокирко </a><br/>
-    1.20. <a href="vokrugpoiskov/1.20.html"> Экономика 1990 года: что нас ждёт и есть ли выход</a> </body></html>
+    1.20. <a href="vokrugpoiskov/1.20.html"> Экономика 1990 года: что нас ждёт и есть ли выход</a>
     1.21. <a href="vokrugpoiskov/1.21.html">О возможности и жизненной необходимости союза между сталинистами и диссидентами</a><br/>
     1.22. <a href="vokrugpoiskov/1.22.html">К вопросу о диссидентской этике</a><br/>
     1.23. <a href="vokrugpoiskov/1.23.html">А.Оболонский Генпрокурору</a><br/>
@@ -171,7 +162,6 @@
     5.25. <a href="vokrugpoiskov/5.25.html">Интервью, данное работнику мемориала К. Линковой 17.05.95г.</a><br/>
     5.26. <a href="vokrugpoiskov/5.26.html">Несколько слов В. Сокирко к 25-летию самиздатского журнала «Поиски»</a><br/>
 <!--end-->
-<br>
-</br>
-</body>
-</html>
+<br/>
+
+{% endblock content %}

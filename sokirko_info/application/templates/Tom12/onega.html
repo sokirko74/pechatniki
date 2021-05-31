@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Северный дневник Артема Сокирко 1982</title>
-<link href="../modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Том 12. Белоруссия и другое. 1982г.</h2>
+
+
+<h2>Том 12. Белоруссия и другое. 1982г.</h2>
 <h1>    Приложение 5. Северный дневник Артема Сокирко</h1>
 <h4>(краткое описание маршрута)</h4>
 <p><b>Предварительное объяснение</b></p>
@@ -67,5 +58,5 @@
 <p>В Ярославле купил первое мороженое после похода, а сейчас уже проехал Загорск.</p>
 <p>Здравствуй, Москва!</p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

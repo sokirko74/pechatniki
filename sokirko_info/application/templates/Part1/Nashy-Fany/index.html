@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Наша встреча со Средней Азией 1966г</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p><b>Предисловие </b></p>
 <p>
         С первой поездки в Среднюю Азию в 1966 г. начался наш
@@ -3980,6 +3970,6 @@
         «А знаешь, куда по-настоящему хочется? - В эту самую Среднюю
         Азию!»
     </p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

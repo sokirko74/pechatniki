@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Путевой дневник Алеши 1986 г.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2>Том 16. Урал-Волга 1986 г.</h2>
+
+
+<h2>Том 16. Урал-Волга 1986 г.</h2>
 <h1>Путевой дневник Алеши.</h1>
 <p>Москва - ночь-утро. Осматривали <u>Киров</u>. Я валюсь от усталости, хотя ходили без рюкзаков. Мне дали 15 коп. Но так и не смог их истратить.</p>
 <p>Ночь - <u>Пермь</u>, дождь, осматривали город. Киров и Пермь очень похожи друг на друга. Вечер - электричка на Кунгур.</p>
@@ -32,5 +23,5 @@
 <p>Утром мы осматривали город - сначала картинную галерею, потом выставку с роскошным чугунным литьем. В зале каслинского литья видели павильон из чугуна, который предназначался для выставки в Париже...</p>
 <p>(конец Алешиных записей)</p>
 <br/>
-			</body>
-</html>
+
+{% endblock content %}

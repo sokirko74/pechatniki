@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>В.и Л.Сокирко Белоруссия и другое</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>196-197.<u>Часть 2. Рождение</u></p><p>198. <u>1. Мяркине - языческие времена</u> Рассказ о белорусской истории мы начинаем с показа небольшого, но очень древнего литовского местечка.</p>
 <p>199.  С незапамятных времен здесь и южнее селились славяне, смешивались с местными литовцами.</p>
 <p>200. Если не считать литовской речи и нескольких таких вот зданий нового национального стиля, то Мяркине очень похоже на западно-белорусские села</p>
@@ -311,6 +301,6 @@
       Но уксус Пруссия, желчь Австрия подносит.</p>
 <p>430. 	У ног  Свобода-Мать стоит, скорбя о нем./ Царев солдат пронзил Распятого копьем.<br/>
                        Но этот лютый враг исправится в грядущем./ Один из всех прощен он будет Всемогущим.</p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}

@@ -14,6 +14,10 @@ def normalize(text):
 def process_file(filename):
     with open (filename) as inp:
         soup = BeautifulSoup(inp, 'html.parser')
+    html = str(soup)
+    if html.find("compatibility.min.js") != -1:
+        sys.stderr.write("skip {}, because it has external javascript".format(filename))
+        return True
     body = soup.find("body")
     if body is None:
         return False
@@ -22,15 +26,14 @@ def process_file(filename):
     for x in soup.find_all("script"):
         x.decompose()
 
-    #shutil.copy(filename, filename+ ".sav")
-    filename +=  ".new"
+    #filename +=  ".new"
+
     with open (filename, "w") as out:
-        out.write("{% extends 'base.html' %}\n")
-        out.write("<title>{}</title>\n".format(title))
-        out.write("{% block content %}\n")
-        out.write(str(body).replace('<body>','').replace('</body>','') + "\n")
-        #out.write(str(body) + "\n")
-        out.write("{% endblock content %}\n")
+       out.write("{% extends 'base.html' %}\n")
+       out.write("<title>{}</title>\n".format(title))
+       out.write("{% block content %}\n")
+       out.write(str(body).replace('<body>', '').replace('</body>', '') + "\n")
+       out.write("{% endblock content %}\n")
     return True
 
 

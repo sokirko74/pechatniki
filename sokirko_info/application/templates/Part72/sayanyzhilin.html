@@ -1,17 +1,10 @@
-<html>
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Дневник Анатолия Жилина. Саяны 1963</title>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h1>
+
+
+<h1>
     Саяны. Лето 1963г<br/>
     Анатолий Жилин</h1>
 <i>
@@ -963,6 +956,6 @@
 <b>но что поделаешь?!
     </b>
 </p>
-<br>
-</br></p></body>
-</html>
+<br/>
+</p>
+{% endblock content %}

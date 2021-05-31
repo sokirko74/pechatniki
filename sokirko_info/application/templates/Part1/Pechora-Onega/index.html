@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. «Дети и шабашки» 1968-1977 гг</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <div class="'n'"> <p>Титры:    1. «1975 год»<br/>
 2. «Шабашка и»<br/>
 3. «Поход»<br/>
@@ -143,6 +133,6 @@
 <p>154. шабашно-деятельная Печора? Неужели и здесь будет брать верх излюбленный мною экономизм?</p>
 <p>155. Вряд ли... В мире всему есть место. Вы только вспомните, что  из века в век, рядом и не тесня друг друга, текут Онега и Печора в один и тот же вечный Ледовитый океан.</p>
 </div>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

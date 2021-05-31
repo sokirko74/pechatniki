@@ -1,20 +1,10 @@
-<html>
-<head>
+{% extends 'base.html' %}
+<title>В.и Л.Сокирко Диафильм «Московские церкви»</title>
+{% block content %}
 
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>В.и Л.Сокирко Диафильм  «Московские церкви»</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+<br/><br/>
 <p><i></i></p> <p>105а. В селе Коломенском в 1532 году в честь рождения государя Ивана IV вознесся шатром каменный храм, названный  Вознесение.</p>
 <p>106. Шатры для русских церквей всегда были мерилом красоты и возвышенности. Все деревянные церкви строились в те годы в виде шатров. Такая церковь была и видна издалека, и тянулась в небо, приближаясь крестом к Богу.</p>
 <p>107. Традиции деревянного зодчества переносились и на первые каменные церкви, показывая, по выражению Брюлова, какой-то блеск поэтического народа, начинающего чувствовать свою самобытность.</p>
@@ -210,6 +200,6 @@
 <h3>
 <a href="/Part2/Moskwa_3/"> Часть третья. «Классицизм» </a>
 </h3>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

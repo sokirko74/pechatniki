@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Том 2. Наши горы. 1967-1973гг.</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h2><i><b>В. и Л. СОКИРКО</b></i></h2>
+
+
+<h2><i><b>В. и Л. СОКИРКО</b></i></h2>
 <h1>Том 2. Наши горы. 1967-1977гг.</h1>
 <ul>
 <li><a href="/Part1/Kozha/">Раздел I. Северный дневник. Диафильм «Кожа». 1967 г.</a>
@@ -53,5 +44,5 @@
 </li></li></ul>
 </li></li></li></li></ul></li></li></li></li></li></li></li></ul>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

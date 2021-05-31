@@ -1,19 +1,10 @@
-<html>
-<head>
-<img src="/static/images/zes.jpg"/>;
+{% extends 'base.html' %}
 <title>ЗЭС N7: В защиту экономических свобод</title>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-<meta content="MSHTML 6.00.6000.16939" name="GENERATOR"/></head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            add_footer()
-        });
-    </script>
-    <h1>В защиту экономических свобод</h1>
+
+
+<h1>В защиту экономических свобод</h1>
 <h1>Выпуск №7, 1979г</h1>
 <h4>Составитель К.Буржуадемов</h4>
 <h4>Оглавление</h4>
@@ -29,4 +20,5 @@
 <h4><a href="72.6.html">Роман Редлих "За права гражданина"</a></h4>
 <h4> </h4><p> </p>
 <br/>
-</body></html>
+
+{% endblock content %}

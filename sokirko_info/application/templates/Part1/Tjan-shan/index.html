@@ -1,20 +1,10 @@
-﻿<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. Диафильм «Тянь-Шань + Иссык-Куль» (Белый пароход)</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>Примечание: надписи на слайдах в тексте сценария подчеркнуты</p>
 <p>1.<u>Тянь-Шань + Иссык-Куль</u></p> <p>2.<u> 4 - 11 сентября 1976 г.</u> </p>
 <p>3 -6.</p>
@@ -257,6 +247,6 @@
 <p>247. До свидания, Иссык-Куль! До свидания, Тянь-Шань! До свидания, Айтматов!</p>
 <p>248. Однако, закончить диафильм придется не этим традиционным прощанием, а разговором в автобусе с московскими туристами: «Да, эта повесть - очень сильная вещь. Вся она - о несовместимости детской чувствительности и жестокости взрослых». Вот вам и все их понимание и тянь-шаньских трагедий, и собственной жизни.</p>
 <p>249. А значит, и их видение будущего, их «Здравствуй, Белый Пароход, это мы!» А что они с ним сделают?</p>
-<br>
-</br></body>
-</html>
+<br/>
+
+{% endblock content %}

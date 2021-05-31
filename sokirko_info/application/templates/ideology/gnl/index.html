@@ -1,19 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Жить не по лжи</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_footer_and_header(window.location.pathname)
-        });
-    </script>
-    <h3><i>В.Абрамкин, К.Буржуадемов, Т.М.Великанова, А.Гринева, В.Грин, В.Н., 
+
+
+<h3><i>В.Абрамкин, К.Буржуадемов, Т.М.Великанова, А.Гринева, В.Грин, В.Н., 
 В.Никольский, С.О., Е.П., Г.С.Померанц, М.Ростиславский, К.Светлов, 
 В.В.Сокирко</i></h3>
 <h1>Жить не по лжи</h1>
@@ -67,5 +58,5 @@
 <p>Примечание 2008г. Статьи А.И.Солженицына и К.Буржуадемова "Активно думать..." начинали каждый из трех выпусков.</p>
 <p>Основная часть материалов Выпусков включена в машинописный журнал <a href="poiski8.html">«Поиски №8. Приложение»</a></p>
 <br/>
-</body>
-</html>
+
+{% endblock content %}

@@ -1,20 +1,10 @@
-<html>
-<head>
-
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+{% extends 'base.html' %}
 <title>Виктор Сокирко и Лидия Ткаченко. "Липецкая земля"</title>
-<link href="/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+{% block content %}
 
-    <script type="text/javascript" src="/modules/utilities.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            show_film_table_by_url_path(window.location.pathname)
-        });
-    </script>
-    <br/><br/>
 
+
+<br/><br/>
 <p>1-2.<u> Родина Бунина</u></p> <p>3. 	Они глумятся над тобою, / Они, о родина, корят <br/>
       Тебя твоею простотою, / Убогим видом черных хат...</p>
 <p>4.Так сын, спокойный и нахальный,  /Стыдится матери своей -<br/>
@@ -214,6 +204,6 @@
       Кисть ничто не уничтожит / И поэтому пиши.</p>
 <p>146. И мы тоже сияли и, прощаясь, благодарили. Так что, до свидания, липецкая земля! Желаем тебе Возрождения старых первоначал, желаем тебе становиться елецкой.</p>
 <p><u>Конец</u></p>
-<br>
-			</br></body>
-</html>
+<br/>
+
+{% endblock content %}
