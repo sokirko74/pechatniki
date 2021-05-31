@@ -1,0 +1,128 @@
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
+	<head>
+		<meta name="title" content="unk"/>
+		<meta name="author" content="unk"/>
+ 		<meta name="copyright" content="unk"/>
+		<layout>
+		<root-layout width="640" height="480" backgroundColor="white"/>
+		<region id="images" width="640" height="480" backgroundColor="black" z-index="1" fit="meet"/>
+		</layout>
+	</head>
+	<body>
+ <par syncTolerance="1s">
+<seq syncBehavior="locked">
+<img src="001.jpg" region="images" regPoint="center" regAlign="center" dur="26s"/>
+<img src="003.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="004.jpg" region="images" regPoint="center" regAlign="center" dur="33s"/>
+<img src="006-1.jpg" region="images" regPoint="center" regAlign="center" dur="16s"/>
+<img src="006.jpg" region="images" regPoint="center" regAlign="center" dur="24s"/>
+<img src="022.jpg" region="images" regPoint="center" regAlign="center" dur="34s"/>
+<img src="007.jpg" region="images" regPoint="center" regAlign="center" dur="34s"/>
+<img src="023.jpg" region="images" regPoint="center" regAlign="center" dur="9s"/>
+<img src="009.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="010.jpg" region="images" regPoint="center" regAlign="center" dur="25s"/>
+<img src="011-1.jpg" region="images" regPoint="center" regAlign="center" dur="14s"/>
+<img src="011.jpg" region="images" regPoint="center" regAlign="center" dur="10s"/>
+<img src="012.jpg" region="images" regPoint="center" regAlign="center" dur="21s"/>
+<img src="013-1.jpg" region="images" regPoint="center" regAlign="center" dur="15s"/>
+<img src="013.jpg" region="images" regPoint="center" regAlign="center" dur="12s"/>
+<img src="014.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="015.jpg" region="images" regPoint="center" regAlign="center" dur="33s"/>
+<img src="016.jpg" region="images" regPoint="center" regAlign="center" dur="32s"/>
+<img src="017.jpg" region="images" regPoint="center" regAlign="center" dur="19s"/>
+<img src="018.jpg" region="images" regPoint="center" regAlign="center" dur="18s"/>
+<img src="019.jpg" region="images" regPoint="center" regAlign="center" dur="14s"/>
+<img src="020.jpg" region="images" regPoint="center" regAlign="center" dur="6s"/>
+<img src="024-1.jpg" region="images" regPoint="center" regAlign="center" dur="25s"/>
+<img src="024-2.jpg" region="images" regPoint="center" regAlign="center" dur="22s"/>
+<img src="024-3.jpg" region="images" regPoint="center" regAlign="center" dur="28s"/>
+<img src="024-4.jpg" region="images" regPoint="center" regAlign="center" dur="24s"/>
+<img src="024-5.jpg" region="images" regPoint="center" regAlign="center" dur="46s"/>
+<img src="024.jpg" region="images" regPoint="center" regAlign="center" dur="17s"/>
+<img src="025.jpg" region="images" regPoint="center" regAlign="center" dur="12s"/>
+<img src="026.jpg" region="images" regPoint="center" regAlign="center" dur="18s"/>
+<img src="027.jpg" region="images" regPoint="center" regAlign="center" dur="31s"/>
+<img src="020.jpg" region="images" regPoint="center" regAlign="center" dur="81s"/>
+<img src="022.jpg" region="images" regPoint="center" regAlign="center" dur="38s"/>
+<img src="xiv.jpg" region="images" regPoint="center" regAlign="center" dur="44s"/>
+<img src="031.jpg" region="images" regPoint="center" regAlign="center" dur="9s"/>
+<img src="031-1.jpg" region="images" regPoint="center" regAlign="center" dur="10s"/>
+<img src="032.jpg" region="images" regPoint="center" regAlign="center" dur="14s"/>
+<img src="033.jpg" region="images" regPoint="center" regAlign="center" dur="12s"/>
+<img src="010-1.jpg" region="images" regPoint="center" regAlign="center" dur="41s"/>
+<img src="033-1.jpg" region="images" regPoint="center" regAlign="center" dur="43s"/>
+<img src="034.jpg" region="images" regPoint="center" regAlign="center" dur="21s"/>
+<img src="035.jpg" region="images" regPoint="center" regAlign="center" dur="20s"/>
+<img src="036.jpg" region="images" regPoint="center" regAlign="center" dur="18s"/>
+<img src="037.jpg" region="images" regPoint="center" regAlign="center" dur="39s"/>
+<img src="038.jpg" region="images" regPoint="center" regAlign="center" dur="43s"/>
+<img src="039.jpg" region="images" regPoint="center" regAlign="center" dur="14s"/>
+<img src="040.jpg" region="images" regPoint="center" regAlign="center" dur="7s"/>
+<img src="041.jpg" region="images" regPoint="center" regAlign="center" dur="16s"/>
+<img src="042.jpg" region="images" regPoint="center" regAlign="center" dur="8s"/>
+<img src="043.jpg" region="images" regPoint="center" regAlign="center" dur="28s"/>
+<img src="044.jpg" region="images" regPoint="center" regAlign="center" dur="52s"/>
+<img src="045.jpg" region="images" regPoint="center" regAlign="center" dur="26s"/>
+<img src="046.jpg" region="images" regPoint="center" regAlign="center" dur="6s"/>
+<img src="047.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="048.jpg" region="images" regPoint="center" regAlign="center" dur="19s"/>
+<img src="049.jpg" region="images" regPoint="center" regAlign="center" dur="24s"/>
+<img src="050.jpg" region="images" regPoint="center" regAlign="center" dur="23s"/>
+<img src="052.jpg" region="images" regPoint="center" regAlign="center" dur="25s"/>
+<img src="053.jpg" region="images" regPoint="center" regAlign="center" dur="19s"/>
+<img src="054.jpg" region="images" regPoint="center" regAlign="center" dur="29s"/>
+<img src="055.jpg" region="images" regPoint="center" regAlign="center" dur="28s"/>
+<img src="056.jpg" region="images" regPoint="center" regAlign="center" dur="56s"/>
+<img src="057-1.jpg" region="images" regPoint="center" regAlign="center" dur="21s"/>
+<img src="057.jpg" region="images" regPoint="center" regAlign="center" dur="13s"/>
+<img src="058.jpg" region="images" regPoint="center" regAlign="center" dur="41s"/>
+<img src="059.jpg" region="images" regPoint="center" regAlign="center" dur="24s"/>
+<img src="060.jpg" region="images" regPoint="center" regAlign="center" dur="41s"/>
+<img src="061.jpg" region="images" regPoint="center" regAlign="center" dur="27s"/>
+<img src="062.jpg" region="images" regPoint="center" regAlign="center" dur="19s"/>
+<img src="063.jpg" region="images" regPoint="center" regAlign="center" dur="40s"/>
+<img src="064.jpg" region="images" regPoint="center" regAlign="center" dur="9s"/>
+<img src="065.jpg" region="images" regPoint="center" regAlign="center" dur="8s"/>
+<img src="066.jpg" region="images" regPoint="center" regAlign="center" dur="9s"/>
+<img src="067.jpg" region="images" regPoint="center" regAlign="center" dur="9s"/>
+<img src="068.jpg" region="images" regPoint="center" regAlign="center" dur="12s"/>
+<img src="069.jpg" region="images" regPoint="center" regAlign="center" dur="6s"/>
+<img src="070-1.jpg" region="images" regPoint="center" regAlign="center" dur="5s"/>
+<img src="070.jpg" region="images" regPoint="center" regAlign="center" dur="3s"/>
+<img src="071-1.jpg" region="images" regPoint="center" regAlign="center" dur="2s"/>
+<img src="071.jpg" region="images" regPoint="center" regAlign="center" dur="3s"/>
+<img src="073.jpg" region="images" regPoint="center" regAlign="center" dur="3s"/>
+<img src="074.jpg" region="images" regPoint="center" regAlign="center" dur="4s"/>
+<img src="076.jpg" region="images" regPoint="center" regAlign="center" dur="5s"/>
+<img src="077.jpg" region="images" regPoint="center" regAlign="center" dur="18s"/>
+<img src="078.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="079.jpg" region="images" regPoint="center" regAlign="center" dur="10s"/>
+<img src="080-1.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="080.jpg" region="images" regPoint="center" regAlign="center" dur="4s"/>
+<img src="081-1.jpg" region="images" regPoint="center" regAlign="center" dur="7s"/>
+<img src="081.jpg" region="images" regPoint="center" regAlign="center" dur="18s"/>
+<img src="082-1.jpg" region="images" regPoint="center" regAlign="center" dur="4s"/>
+<img src="082.jpg" region="images" regPoint="center" regAlign="center" dur="5s"/>
+<img src="083-1.jpg" region="images" regPoint="center" regAlign="center" dur="17s"/>
+<img src="083.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="084.jpg" region="images" regPoint="center" regAlign="center" dur="10s"/>
+<img src="085-1.jpg" region="images" regPoint="center" regAlign="center" dur="4s"/>
+<img src="085.jpg" region="images" regPoint="center" regAlign="center" dur="6s"/>
+<img src="087-1.jpg" region="images" regPoint="center" regAlign="center" dur="7s"/>
+<img src="087-2.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="087-3.jpg" region="images" regPoint="center" regAlign="center" dur="9s"/>
+<img src="087.jpg" region="images" regPoint="center" regAlign="center" dur="3s"/>
+<img src="088.jpg" region="images" regPoint="center" regAlign="center" dur="5s"/>
+<img src="089.jpg" region="images" regPoint="center" regAlign="center" dur="4s"/>
+<img src="090-1.jpg" region="images" regPoint="center" regAlign="center" dur="3s"/>
+<img src="091-1.jpg" region="images" regPoint="center" regAlign="center" dur="13s"/>
+<img src="091.jpg" region="images" regPoint="center" regAlign="center" dur="11s"/>
+<img src="092.jpg" region="images" regPoint="center" regAlign="center" dur="5s"/>
+<img src="093-1.jpg" region="images" regPoint="center" regAlign="center" dur="4s"/>
+<img src="093.jpg" region="images" regPoint="center" regAlign="center" dur="3s"/>
+<img src="095.jpg" region="images" regPoint="center" regAlign="center" dur="10s"/>
+</seq>
+<audio src="audio.mp3" syncBehavior="locked"/>
+</par>
+</body>
+</smil>
