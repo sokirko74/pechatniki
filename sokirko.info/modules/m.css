@@ -1,0 +1,61 @@
+p {
+    margin-top: 0px;
+    border-top: 0px;
+    padding-top:0px; 
+}
+
+.n {
+    padding-left: 17mm;
+    text-indent: -7mm;
+}
+
+.s {
+    padding-left: 2cm;
+}
+
+.tbl {
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+li.all_other_links {
+    list-style: none;
+    font-style: italic;
+}
+
+/* mobile */
+@media screen and (max-device-width:480px) {
+    #desktop {
+        display: none;
+    }
+    html {
+        font-size: 28px
+    }
+    .morda_microdata {
+        font-size: 12px;
+        font-style: italic;
+    }
+    div.morda_content_block {
+    }
+}
+
+/* desktop */
+@media screen and (min-device-width:481px) {
+    #mobile {
+        display: none;
+    }
+    .morda_microdata {
+        font-style: italic;
+    }
+    div.morda_content_block {
+        float:left;
+    }
+
+}
+
+
+
