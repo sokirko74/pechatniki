@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}Home {% endblock title %}</title>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/style.css" %}">
+    <link href="/static/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
+
+    {% block head_favicon %}
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+    {% endblock head_favicon %}
+
+    {% block head_meta %}
+    {% block head_meta_charset %}
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8"/>
+    {% endblock head_meta_charset %}
+    {% endblock head_meta %}
+
+<body>
+    <a href="/"><img src="/static/images/header2.jpg"></a><br/><br/>
+
+    {# The Document Body #}
+
+    <div id="site-wrapper">
+        {% block content %}
+        if you see this, something is wrong!
+        {% endblock content %}
+    </div>
+
+    <br/>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <img alt="Лицензия Creative Commons" style="border-width:0" src="/static/images/creative_common.png"/>
+    </a>
+    <br/>Все материалы сайта доступны по <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"> лицензии Creative Commons «Attribution» 4.0 Всемирная</a>.
+</body>
+</html>
