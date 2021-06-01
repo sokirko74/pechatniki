@@ -83,5 +83,126 @@ NAVIGATION = {
                 "/ecomomy/pris/8_7.html",
                 "/ecomomy/pris/8_8.html"
         ]
+    },
+    "/ecomomy/Zes1": {
+        "main": "/ecomomy/Zes1/index.html",
+        "subpages": [
+            "/ecomomy/Zes1/0.1.html",
+            "/ecomomy/Zes1/1.1.html",
+            "/ecomomy/Zes1/1.2.html",
+            "/ecomomy/Zes1/1.3.html",
+            "/ecomomy/Zes1/2.1.01.html",
+            "/ecomomy/Zes1/2.1.02.html",
+            "/ecomomy/Zes1/2.1.03.html",
+            "/ecomomy/Zes1/2.1.04.html",
+            "/ecomomy/Zes1/2.1.05.html",
+            "/ecomomy/Zes1/2.1.06.html",
+            "/ecomomy/Zes1/2.1.07.html",
+            "/ecomomy/Zes1/2.1.08.html",
+            "/ecomomy/Zes1/2.1.09.html",
+            "/ecomomy/Zes1/2.1.10.html",
+            "/ecomomy/Zes1/2.1.11.html",
+            "/ecomomy/Zes1/3.01.html",
+            "/ecomomy/Zes1/3.02.html",
+            "/ecomomy/Zes1/3.03.html",
+            "/ecomomy/Zes1/3.04.html",
+            "/ecomomy/Zes1/3.05.html",
+            "/ecomomy/Zes1/3.05.html",
+            "/ecomomy/Zes1/3.06.html",
+            "/ecomomy/Zes1/3.07.html",
+            "/ecomomy/Zes1/3.08.html",
+            "/ecomomy/Zes1/3.09.html",
+            "/ecomomy/Zes1/3.10.html",
+            "/ecomomy/Zes1/3.11.html",
+            "/ecomomy/Zes1/4.1.html"
+        ]
+    },
+    "/ecomomy/Zes2": {
+        "main": "/ecomomy/Zes2/index.html",
+        "subpages": [
+            "/ecomomy/Zes2/0.1.html",
+            "/ecomomy/Zes2/I.1.html",
+            "/ecomomy/Zes2/I.2.html",
+            "/ecomomy/Zes2/I.3.html",
+            "/ecomomy/Zes2/I.4.html",
+            "/ecomomy/Zes2/I.5.html",
+            "/ecomomy/Zes2/I.6.html",
+            "/ecomomy/Zes2/II.1.html",
+            "/ecomomy/Zes2/I.2.html",
+            "/ecomomy/Zes2/II.3.html",
+            "/ecomomy/Zes2/III.html",
+            "/ecomomy/Zes2/IV.1.html",
+            "/ecomomy/Zes2/IV.2.html",
+            "/ecomomy/Zes2/IV.3.html",
+            "/ecomomy/Zes2/V.1.html",
+            "/ecomomy/Zes2/V.2.html",
+            "/ecomomy/Zes2/V.3.html",
+            "/ecomomy/Zes2/V.4.html",
+            "/ecomomy/Zes2/V.5.html"
+        ]
+    },
+    "/ecomomy/Zes3": {
+        "main": "/ecomomy/Zes3/index.html",
+        "subpages": [
+            "/ecomomy/Zes3/0.1.html",
+            "/ecomomy/Zes3/1.1.html",
+            "/ecomomy/Zes3/1.2.html",
+            "/ecomomy/Zes3/2.1.html",
+            "/ecomomy/Zes3/3.1.html",
+            "/ecomomy/Zes3/3.2.html",
+            "/ecomomy/Zes3/4.1.html"
+        ]
+    },
+    "/ecomomy/Zes4": {
+        "main": "/ecomomy/Zes4/index.html",
+        "subpages": [
+            "/ecomomy/Zes4/0.0.html",
+            "/ecomomy/Zes4/41.1.html",
+            "/ecomomy/Zes4/41.2.html",
+            "/ecomomy/Zes4/42.1.html",
+            "/ecomomy/Zes4/43.1.html",
+            "/ecomomy/Zes4/45.1.html",
+            "/ecomomy/Zes4/45.2.html",
+            "/ecomomy/Zes4/46.1.html",
+            "/ecomomy/Zes4/46.2.html"
+        ]
+    },
+    "/ecomomy/Zes5": {
+        "main": "/ecomomy/Zes5/index.html",
+        "subpages": [
+            "/ecomomy/Zes5/0.1.html",
+            "/ecomomy/Zes5/51.1.html",
+            "/ecomomy/Zes5/51.2.html",
+            "/ecomomy/Zes5/52.1.html",
+            "/ecomomy/Zes5/53.1.html",
+            "/ecomomy/Zes5/55.1.html",
+            "/ecomomy/Zes5/55.2.html",
+            "/ecomomy/Zes5/56.1.html"
+        ]
+    },
+    "/ecomomy/Zes6": {
+        "main": "/ecomomy/Zes6/index.html",
+        "subpages": [
+            "/ecomomy/Zes6/0.0.html",
+            "/ecomomy/Zes6/61.1.html",
+            "/ecomomy/Zes6/62.1.html",
+            "/ecomomy/Zes6/63.1.html",
+            "/ecomomy/Zes6/64.1.html",
+            "/ecomomy/Zes6/65.1.html"
+        ]
+    },
+    "/ecomomy/Zes7": {
+        "main": "/ecomomy/Zes7/index.html",
+        "subpages": [
+            "/ecomomy/Zes7/7.0.html",
+            "/ecomomy/Zes7/71.2.html",
+            "/ecomomy/Zes7/72.1.html",
+            "/ecomomy/Zes7/72.2.html",
+            "/ecomomy/Zes7/72.3.html",
+            "/ecomomy/Zes7/72.4.html",
+            "/ecomomy/Zes7/72.5.html",
+            "/ecomomy/Zes7/72.6.html"
+        ]
     }
+
 }
