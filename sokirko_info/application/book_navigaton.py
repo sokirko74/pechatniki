@@ -294,7 +294,49 @@ NAVIGATION = {
             "/ideology/cel/C5a.html",
             "/ideology/cel/C5b.html"
         ]
+    },
+    "/ideology/gnl": {
+        "main": "/ideology/gnl/index.html",
+        "subpages": [
+            "/ideology/gnl/intro1.html",
+            "/ideology/gnl/solghenizin.html",
+            "/ideology/gnl/solghenizin2.html",
+            "/ideology/gnl/burghuademov.html",
+            "/ideology/gnl/Rostislawski.html",
+            "/ideology/gnl/velikanova.html",
+            "/ideology/gnl/popovski.html",
+            "/ideology/gnl/vn.html",
+            "/ideology/gnl/sokirko.html",
+            "/ideology/gnl/so.html",
+            "/ideology/gnl/vnikol.html",
+            "/ideology/gnl/kburghuad.html",
+            "/ideology/gnl/prediclovie.html",
+            "/ideology/gnl/yamechania.html",
+            "/ideology/gnl/otvetnazamechania.html",
+            "/ideology/gnl/grin.html",
+            "/ideology/gnl/otvetg.html",
+            "/ideology/gnl/kcvetlov.html",
+            "/ideology/gnl/komment.html",
+            "/ideology/gnl/ep.html",
+            "/ideology/gnl/epcomment.html",
+            "/ideology/gnl/agrineva.html",
+            "/ideology/gnl/otvetgr.html",
+            "/ideology/gnl/abne.html",
+            "/ideology/gnl/otv.html",
+            "/ideology/gnl/abvdop.html",
+            "/ideology/gnl/kbproc.html",
+            "/ideology/gnl/pril.html",
+            "/ideology/gnl/predv.html",
+            "/ideology/gnl/pomer.html",
+            "/ideology/gnl/kbvomoghno.html",
+            "/ideology/gnl/otvetna.html",
+            "/ideology/gnl/shaf.html",
+            "/ideology/gnl/komshaf.html",
+            "/ideology/gnl/shwei.html",
+            "/ideology/gnl/poiski8.html"
+        ]
     }
+
 
 
 
