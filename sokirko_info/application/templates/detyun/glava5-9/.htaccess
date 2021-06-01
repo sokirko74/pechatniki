@@ -1,4 +1,0 @@
-AddCharset utf-8 .htm .html
-RewriteEngine on
-RewriteBase /detyun/glava5-9
-RewriteRule ^(.*)\.htm$ $1.html [R=permanent]

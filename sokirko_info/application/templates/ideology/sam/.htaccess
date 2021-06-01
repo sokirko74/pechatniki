@@ -1,4 +1,0 @@
-AddCharset utf-8 .html
-RewriteEngine on
-RewriteBase /ideology/sam
-RewriteRule ^(.*)\.htm$ $1.html [R=permanent]

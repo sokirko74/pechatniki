@@ -1,4 +1,0 @@
-AddCharset utf-8 .html
-RewriteEngine on
-RewriteBase /ideology/vokrugpoiskov
-RewriteRule ^(.*)\.htm$ $1.html [R=permanent]

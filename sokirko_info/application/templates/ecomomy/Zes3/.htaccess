@@ -1,4 +1,0 @@
-AddCharset utf-8 .html
-RewriteEngine on
-RewriteBase /ecomomy/Zes3
-RewriteRule ^(.*)\.htm$ $1.html [R=permanent]
