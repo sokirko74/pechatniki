@@ -1,31 +1,49 @@
 from django.shortcuts import render
 import os
 from .slide_films import SLIDE_FILMS
+from .book_navigaton import NAVIGATION
 
 
-def get_slide_info(urlpath):
-    _, extension = os.path.splitext(urlpath)
-    if extension == '.htm':
-        urlpath += 'l'
+def get_slide_info(urlpath, context):
     if urlpath.endswith('/index.html'):
         urlpath = urlpath[:-len('/index.html')]
     key = urlpath.strip("/")
-    return key, SLIDE_FILMS.get(key)
+    info = SLIDE_FILMS.get(key)
+    if info is not None:
+        context.update(info)
+        context['slide_film_key'] = key
+
+
+def get_navigation_info(urlpath, context):
+    folder = os.path.dirname(urlpath)
+    info = NAVIGATION.get(folder)
+    if info is None:
+        return
+    subpages = info.get('subpages', [])
+    try:
+        index = subpages.index(urlpath)
+    except ValueError:
+        return
+    context['contents_page'] = info['main']
+    if index > 0:
+        context['prev_page'] = subpages[index - 1]
+    if index + 1 < len(subpages):
+        context['next_page'] = subpages[index + 1]
 
 
 def index(request):
-    template_path = request.path
+    urlpath = request.path
+    _, extension = os.path.splitext(urlpath)
+    if extension == '.htm':
+        urlpath += 'l'
+
+    template_path = urlpath
     if template_path.startswith('/'):
         template_path = template_path[1:]
     if not template_path.endswith('.html') and not template_path.endswith('.ico') and not template_path.endswith('.htm'):
         template_path = os.path.join(template_path, 'index.html')
-    _, extension = os.path.splitext(template_path)
-    if extension == '.htm':
-        template_path += 'l'
 
     context = {}
-    slide_film_key, slide_film_props = get_slide_info(request.path)
-    if slide_film_props is not None:
-        context.update(slide_film_props)
-        context['slide_film_key'] = slide_film_key
+    get_slide_info(urlpath, context)
+    get_navigation_info(urlpath, context)
     return render(request, template_path, context)

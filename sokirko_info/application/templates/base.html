@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Home {% endblock %}</title>
@@ -16,8 +17,18 @@
         {% endblock %}
     {% endblock %}
 </head>
+
 <body>
     <a href="/"><img class="header_class" src="/static/images/header2.jpg"></a><br/><br/>
+
+    {%  if contents_page %}
+        <table width="600">
+            <tr> <td> {%  if prev_page %} <a href="{{prev_page}}">предыдущая</a> {% endif %}</td>
+                 <td><a href="{{contents_page}}">оглавление</a></td>
+                 <td>{%  if next_page %} <a href="{{next_page}}"> следующая</a>{% endif %}</td>
+            </tr>
+        </table>
+    {% endif %}
 
     {% if slide_film_key %}
         <div class="desktop">
@@ -48,6 +59,17 @@
     </div>
 
     <br clear="all" /> <br/>
+
+    {%  if contents_page %}
+        <table width="600">
+            <tr> <td> {%  if prev_page %} <a href="{{prev_page}}">предыдущая</a> {% endif %}</td>
+                 <td><a href="{{contents_page}}">оглавление</a></td>
+                 <td>{%  if next_page %} <a href="{{next_page}}"> следующая</a>{% endif %}</td>
+            </tr>
+        </table>
+        <br clear="all" /> <br/>
+    {% endif %}
+
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
         <img alt="Лицензия Creative Commons" style="border-width:0" src="/static/images/creative_common.png"/>
     </a>
