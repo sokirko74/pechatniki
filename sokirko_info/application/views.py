@@ -2,6 +2,7 @@ from django.shortcuts import render
 import os
 from .slide_films import SLIDE_FILMS
 from .book_navigaton import NAVIGATION
+from django.shortcuts import redirect
 
 
 def get_slide_info(urlpath, context):
@@ -16,7 +17,7 @@ def get_slide_info(urlpath, context):
 
 def get_navigation_info(urlpath, context):
     folder = os.path.dirname(urlpath)
-    info = NAVIGATION.get(folder)
+    info = NAVIGATION.get(folder, NAVIGATION.get(os.path.dirname(folder)))
     if info is None:
         return
     subpages = info.get('subpages', [])
