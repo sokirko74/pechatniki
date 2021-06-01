@@ -17,7 +17,7 @@
     {% endblock %}
 </head>
 <body>
-    <a href="/"><img src="/static/images/header2.jpg"></a><br/><br/>
+    <a href="/"><img class="header_class" src="/static/images/header2.jpg"></a><br/><br/>
 
     {% if slide_film_key %}
         <div class="desktop">
@@ -26,14 +26,14 @@
                     <td><h2>{{ heading|safe }}</td>
                     <td><a href="http://youtu.be/{{youtube_id}}"><img src="/static/images/{{slide_film_key}}/mini.jpg"></a></td>
                     <td><a href="http://youtu.be/{{youtube_id}}">Смотреть на YouTube</a><br><br><br><a
-                            href="http://fotki.yandex.ru/users/{{yandex_photo}}">Отдельные слайды</a></td>
+                            href="{{yandex_photo}}">Отдельные слайды</a></td>
                 </tr>
             </table>
         </div>
         <div class="mobile">
             <div style="float:left"><a href="http://youtu.be/{{youtube_id}}"><img src="/static/images/{{slide_film_key}}/mini.jpg"></a></div>
             <div style="float:left">&nbsp;&nbsp;<a href="http://youtu.be/{{youtube_id}}"><big>Смотреть на YouTube</big></a><br><br><br>&nbsp;&nbsp;<a
-                    href="http://fotki.yandex.ru/users/{{yandex_photo}}"><big>Отдельные слайды</big></a>
+                    href="{{yandex_photo}}"><big>Отдельные слайды</big></a>
             </div>
             <br/>
         </div>
@@ -47,7 +47,7 @@
         {% endblock content %}
     </div>
 
-    <br/>
+    <br clear="all" /> <br/>
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
         <img alt="Лицензия Creative Commons" style="border-width:0" src="/static/images/creative_common.png"/>
     </a>

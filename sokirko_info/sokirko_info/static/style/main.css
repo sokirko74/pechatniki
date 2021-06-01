@@ -58,5 +58,13 @@ li.all_other_links {
 
 }
 
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+img.header_class {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
