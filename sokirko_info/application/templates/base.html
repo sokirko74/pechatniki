@@ -2,24 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-
-    <title>{% block title %}Home {% endblock title %}</title>
-
-
-    <link rel="stylesheet" type="text/css" href="/static/style/main.css" %}">
-    <link href="/static/modules/m.css" media="all" rel="stylesheet" type="text/css"/>
+    <title>{% block title %}Home {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/style/main.css">
 
     {% block head_favicon %}
-    <link rel="icon" type="image/png" href="/static/images/favicon.png">
-    {% endblock head_favicon %}
+        <link rel="icon" type="image/png" href="/static/images/favicon.png">
+    {% endblock %}
 
     {% block head_meta %}
-    {% block head_meta_charset %}
-    <meta http-equiv="Content-Type"
-          content="text/html; charset=utf-8"/>
-    {% endblock head_meta_charset %}
-    {% endblock head_meta %}
-
+        {% block head_meta_charset %}
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=utf-8"/>
+        {% endblock %}
+    {% endblock %}
+</head>
 <body>
     <a href="/"><img src="/static/images/header2.jpg"></a><br/><br/>
 
@@ -29,16 +25,17 @@
                 <tr>
                     <td><h2>{{ heading|safe }}</td>
                     <td><a href="http://youtu.be/{{youtube_id}}"><img src="/static/images/{{slide_film_key}}/mini.jpg"></a></td>
-                    <td><a href="http://youtu.be/{{youtube_id}}">Смотреть онлайн</a><br><br><br><a
-                            href="http://fotki.yandex.ru/users/sokirko-v/{{yandex_photo}}">Отдельные слайды</a></td>
+                    <td><a href="http://youtu.be/{{youtube_id}}">Смотреть на YouTube</a><br><br><br><a
+                            href="http://fotki.yandex.ru/users/{{yandex_photo}}">Отдельные слайды</a></td>
                 </tr>
             </table>
         </div>
         <div class="mobile">
             <div style="float:left"><a href="http://youtu.be/{{youtube_id}}"><img src="/static/images/{{slide_film_key}}/mini.jpg"></a></div>
-            <div style="float:left">&nbsp;&nbsp;<a href="http://youtu.be/{{youtube_id}}"><big>Смотреть онлайн</big></a><br><br><br>&nbsp;&nbsp;<a
-                    href="http://fotki.yandex.ru/users/sokirko-v/{{yandex_photo}}"><big>Отдельные слайды</big></a>
+            <div style="float:left">&nbsp;&nbsp;<a href="http://youtu.be/{{youtube_id}}"><big>Смотреть на YouTube</big></a><br><br><br>&nbsp;&nbsp;<a
+                    href="http://fotki.yandex.ru/users/{{yandex_photo}}"><big>Отдельные слайды</big></a>
             </div>
+            <br/>
         </div>
     {% endif %}
 
