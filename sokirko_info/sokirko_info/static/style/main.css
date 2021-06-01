@@ -29,7 +29,7 @@ li.all_other_links {
 
 /* mobile */
 @media screen and (max-device-width:480px) {
-    #desktop {
+    .desktop {
         display: none;
     }
     html {
@@ -45,9 +45,10 @@ li.all_other_links {
 
 /* desktop */
 @media screen and (min-device-width:481px) {
-    #mobile {
+    .mobile {
         display: none;
     }
+
     .morda_microdata {
         font-style: italic;
     }
