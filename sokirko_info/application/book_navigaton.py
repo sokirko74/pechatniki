@@ -275,7 +275,27 @@ NAVIGATION = {
             "/detyun/glava5-9/Rasdel6-19.html",
             "/detyun/glava5-9/Rasdel6-20.html",
             ]
+    },
+    "/ideology/cel": {
+        "main": "/ideology/cel/index.html",
+        "subpages": [
+            "/ideology/cel/C1.html",
+            "/ideology/cel/C1a.html",
+            "/ideology/cel/C1b.html",
+            "/ideology/cel/cxe.html",
+            "/ideology/cel/cah.html",
+            "/ideology/cel/C1c.html",
+            "/ideology/cel/C2a.html",
+            "/ideology/cel/C2b.html",
+            "/ideology/cel/C2c.html",
+            "/ideology/cel/C3.html",
+            "/ideology/cel/C4a.html",
+            "/ideology/cel/C4b.html",
+            "/ideology/cel/C5a.html",
+            "/ideology/cel/C5b.html"
+        ]
     }
+
 
 
 }

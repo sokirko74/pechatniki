@@ -26,12 +26,20 @@ if __name__ == "__main__":
         contents_file = os.path.join(args.folder, "index.html")
     contents_links = [x for x in get_links(contents_file)]
     assert len(contents_links) > 0
-    files = [x for x in os.listdir(args.folder) if x != "index.html"]
-    if set(files) != set(contents_links):
-        raise Exception ("contents_links != html files in {}".format(args.folder))
+    found_files = [x for x in os.listdir(args.folder) if x != "index.html"]
+    print(found_files)
+    print(contents_links)
+
+    if not set(found_files).issubset(set(contents_links)):
+        for x in found_files:
+            if x not in contents_links:
+                print ("{} is not in contents_links".format(x))
+        if set(found_files) != set(contents_links):
+            raise Exception("contents_links != html files in {}".format(args.folder))
     url_paths = []
     for x in contents_links:
-        url_paths.append("/"+os.path.join(args.folder, x))
+        if x in found_files:
+            url_paths.append("/"+os.path.join(args.folder, x))
     rec = {
         "/" + args.folder: {
             "main": "/" + contents_file,
