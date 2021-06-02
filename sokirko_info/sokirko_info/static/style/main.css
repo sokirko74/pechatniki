@@ -68,3 +68,14 @@ img.header_class {
     padding-right: 0px;
 }
 
+    /* for Tom18 presentation */
+
+figure.simple_presentation_page {
+  height: 600px;
+}
+
+.simple_presentation_page img {
+  max-height: 85%;
+}
+
+
