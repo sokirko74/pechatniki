@@ -1,1 +1,0 @@
-gfind . | grep -E ".html?$" >sitemap.txt

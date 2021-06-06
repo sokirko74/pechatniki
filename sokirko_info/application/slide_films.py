@@ -293,7 +293,7 @@ SLIDE_FILMS = \
     "Part2/2_Pereslawlja": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967- 1982гг.</h2> <h1>Диафильм «Два Переславля»</h1>",
         "youtube_id": "A7oGXAv7kUs",
-        "yandex_photo": "lilia-tkachen/album/155977"
+        "yandex_photo": "http://fotki.yandex.ru/users/lilia-tkachen/album/155977"
     },
     "Part2/ikoni": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967- 1982гг.</h2> <h1>Диафильм «Рассказ об иконах»</h1>",

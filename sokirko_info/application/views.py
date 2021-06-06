@@ -1,8 +1,28 @@
 from django.shortcuts import render
 import os
+import urllib
 from .slide_films import SLIDE_FILMS
 from .book_navigaton import NAVIGATION
-from django.shortcuts import redirect
+from pathlib import Path
+from django.http import HttpResponse
+
+
+
+def build_sitemap_xml_by_local_files():
+    folder = os.path.join(os.path.dirname(__file__), "templates")
+    urls = list(os.path.relpath(path.absolute(), start=folder) for path in Path(folder).rglob('*.html'))
+    sitemap = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+    sitemap += "<urlset xmlns=\"https://www.sitemaps.org/schemas/sitemap/0.9\">\n"
+    for p in urls:
+        if p != "base.html":
+            url = urllib.parse.urljoin("http://sokirko.info", p)
+            sitemap += "<url><loc>{}</loc></url>\n".format(url)
+    sitemap += "</urlset>\n"
+    return sitemap
+
+
+SITEMAP = build_sitemap_xml_by_local_files()
+IMAGES_ROOT = os.path.join(os.path.dirname(__file__), '../sokirko_info/static/images')
 
 
 def get_slide_info(urlpath, context):
@@ -37,7 +57,12 @@ def index(request):
     _, extension = os.path.splitext(urlpath)
     if extension == '.htm':
         urlpath += 'l'
-
+    if urlpath.strip('/') == 'sitemap.xml':
+        return HttpResponse(SITEMAP, content_type='application/xml')
+    if urlpath.strip('/') == 'favicon.ico':
+        return HttpResponse(open(os.path.join(IMAGES_ROOT, 'favicon.ico'), "rb").read(), content_type='image/x-icon')
+    if urlpath.strip('/') == 'favicon.png':
+        return HttpResponse(open(os.path.join(IMAGES_ROOT, 'favicon.png'), "rb").read(), content_type='image/png')
     template_path = urlpath
     if template_path.startswith('/'):
         template_path = template_path[1:]
