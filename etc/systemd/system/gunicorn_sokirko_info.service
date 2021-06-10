@@ -1,0 +1,16 @@
+[Unit]
+Description=gunicorn daemon for sokirko.info
+Requires=gunicorn_sokirko_info.socket
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=sokirko
+WorkingDirectory=/home/sokirko/pechatniki/sokirko_info
+Environment=PYTHONPATH=/home/sokirko/pechatniki/sokirko_info
+
+ExecStart=/home/sokirko/.local/bin/gunicorn \
+          --access-logfile - \
+          --workers 4 \
+          --bind unix:/run/gunicorn_sokirko_info.sock \
+          sokirko_info.wsgi:application
