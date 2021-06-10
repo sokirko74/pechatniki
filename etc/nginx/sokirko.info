@@ -1,0 +1,35 @@
+server {
+    #server_name sokirko.info;
+    server_name y.disclosures.ru;
+    #root /home/sokirko/pechathiki/sokirko_info/sokirko_info;
+		
+    location ^~ /favicon { 
+	try_files $uri /static/$uri;
+	access_log off; 
+	log_not_found off; 
+    }
+
+    location /static/ {
+        alias /home/sokirko/pechatniki/sokirko_info/sokirko_info/static/;
+	expires    24h;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn_sokirko_info.sock;
+    } 
+
+    listen 80;
+	
+    access_log /var/log/nginx/sokirko-info-access.log;
+    error_log  /var/log/nginx/sokirko-info-error.log;
+}
+
+# remove 'www'
+server {
+    listen 80;
+    server_name www.y.disclosures.ru;
+    return 301 $scheme://y.disclosures.ru$request_uri;
+
+}
+
