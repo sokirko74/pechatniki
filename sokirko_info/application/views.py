@@ -59,10 +59,6 @@ def index(request):
         urlpath += 'l'
     if urlpath.strip('/') == 'sitemap.xml':
         return HttpResponse(SITEMAP, content_type='application/xml')
-    if urlpath.strip('/') == 'favicon.ico':
-        return HttpResponse(open(os.path.join(IMAGES_ROOT, 'favicon.ico'), "rb").read(), content_type='image/x-icon')
-    if urlpath.strip('/') == 'favicon.png':
-        return HttpResponse(open(os.path.join(IMAGES_ROOT, 'favicon.png'), "rb").read(), content_type='image/png')
     template_path = urlpath
     if template_path.startswith('/'):
         template_path = template_path[1:]
