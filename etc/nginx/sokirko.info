@@ -1,6 +1,6 @@
 server {
-    #server_name sokirko.info;
-    server_name y.disclosures.ru;
+    server_name sokirko.info;
+    #server_name y.disclosures.ru;
     #root /home/sokirko/pechathiki/sokirko_info/sokirko_info;
 		
     location ^~ /favicon { 
