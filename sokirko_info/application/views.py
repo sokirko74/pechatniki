@@ -1,11 +1,13 @@
+
+from .slide_films import SLIDE_FILMS
+from .book_navigaton import NAVIGATION
+
 from django.shortcuts import render
 import os
 import urllib
-from .slide_films import SLIDE_FILMS
-from .book_navigaton import NAVIGATION
 from pathlib import Path
 from django.http import HttpResponse
-
+from django.conf import settings
 
 
 def build_sitemap_xml_by_local_files():
@@ -22,7 +24,7 @@ def build_sitemap_xml_by_local_files():
 
 
 SITEMAP = build_sitemap_xml_by_local_files()
-IMAGES_ROOT = os.path.join(os.path.dirname(__file__), '../sokirko_info/static/images')
+IMAGES_ROOT = os.path.join(settings.STATIC_FOLDER, 'images')
 
 
 def get_slide_info(urlpath, context):
@@ -32,6 +34,7 @@ def get_slide_info(urlpath, context):
     info = SLIDE_FILMS.get(key)
     if info is not None:
         context.update(info)
+        context['pechatniki_js'] = os.path.join(urlpath, "slide_viewer.html")
         context['slide_film_key'] = key
 
 
@@ -59,6 +62,8 @@ def index(request):
         urlpath += 'l'
     if urlpath.strip('/') == 'sitemap.xml':
         return HttpResponse(SITEMAP, content_type='application/xml')
+    if urlpath.strip('/') == 'favicon.ico':  #for debug, in prod favicons are managed by nginx
+        return HttpResponse(open(os.path.join(settings.STATIC_FOLDER, 'favicon.ico'), "rb").read(), content_type='image/x-icon')
     template_path = urlpath
     if template_path.startswith('/'):
         template_path = template_path[1:]
@@ -69,3 +74,6 @@ def index(request):
     get_slide_info(urlpath, context)
     get_navigation_info(urlpath, context)
     return render(request, template_path, context)
+
+
+

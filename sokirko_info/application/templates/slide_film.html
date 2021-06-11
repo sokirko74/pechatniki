@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>{{title}}</title>
+  {% include "common.html" %}
+  <link rel="stylesheet" type="text/css" href="/static/timesheets/style/layout.css">
+  <link rel="stylesheet" type="text/css" href="/static/timesheets/style/audio.css">
+  <script type="text/javascript" src="/static/timesheets/timesheets.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/timesheets/style/timeline.css">
+  <script type="text/javascript" src="/static/timesheets/timeline.js"></script>
+</head>
+
+<body class="timeline">
+    <div id="media"
+         data-timecontainer = "excl"
+         data-mediasync     = "audio"
+         data-dur           = "{{whole_duration}}"
+         data-first         = "first.click"
+         data-prev          = "prev.click"
+         data-next          = "next.click"
+         data-last          = "last.click">
+
+      {% for id,image,data_begin in slides %}
+          <div id="{{id}}" data-begin="{{data_begin}}">
+            <img src="{{image}}">
+          </div>
+      {% endfor %}
+    </div>
+
+
+    <div id="mediaController">
+
+      <div id="timeline">
+        <div id="mediaStart" class="play">
+          <button class="pause">
+            <img src="/static/timesheets/images/media-pause.png" alt="pause">
+          </button>
+          <button class="play">
+            <img src="/static/timesheets/images/media-play.png" alt="play">
+          </button>
+        </div>
+        <div id="timeCursor"><span></span></div>
+        <div id="timeValue">
+          <span>0:00</span>
+        </div>
+      </div>
+      <div class="menu" style="float: left;  margin: 10px auto; margin-left: 20px;">
+        <button id="first" title="first section">        «     </button>
+        <button id="prev"  title="previous section"> &lt; prev </button>
+        <button id="next"  title="next section">     next &gt; </button>
+        <button id="last"  title="last section">         »     </button>
+      </div>
+      <br style="clear: both; line-height: 1px;">
+
+      <audio id="audioPlayer" controls preload="auto">
+        <source src="{{audio_mp3}}" type="audio/mp3" />
+        <br>
+        This page requires <strong>&lt;audio&gt;</strong> support:<br>
+        best viewed with Firefox 3.5+, Safari 4+, Chrome 5+, Opera 10.60+ or IE9.<br>
+        <br>
+        Internet Explorer users, please enable Flash or Silverlight.
+      </audio>
+    </div>
+
+</body>
+</html>
