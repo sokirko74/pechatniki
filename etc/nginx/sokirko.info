@@ -17,19 +17,38 @@ server {
     location / {
         include proxy_params;
         proxy_pass http://unix:/run/gunicorn_sokirko_info.sock;
-    } 
-
-    listen 80;
+    }
 	
     access_log /var/log/nginx/sokirko-info-access.log;
     error_log  /var/log/nginx/sokirko-info-error.log;
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/sokirko.info/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/sokirko.info/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
 }
 
 # remove 'www'
 server {
     listen 80;
-    server_name www.y.disclosures.ru;
-    return 301 $scheme://y.disclosures.ru$request_uri;
+    listen 443;
+    server_name www.sokirko.info;
+    return 301 $scheme://sokirko.info$request_uri;
 
 }
 
+server {
+    if ($host = sokirko.info) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    server_name sokirko.info; 
+
+    listen 80;
+    return 404; # managed by Certbot
+
+
+}
