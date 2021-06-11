@@ -18,12 +18,15 @@ html {
 }
 
 /* navigation menu */
+div.menu {
+    float: left;
+    margin-top: 10px;
+    margin-left: 2vw;
+    width: 15vw;
+}
+
 .menu button {
-
   cursor: pointer;
-
-
-  /* min-width: 2em; */ /* bugs on IE7 */
   text-align: center;
   background-color: #ddf;
   border: 1px solid #cce;

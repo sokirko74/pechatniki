@@ -71,7 +71,10 @@ function startup() {
   gMediaPlayer.addEventListener("timeupdate", function() {
     var time = gMediaPlayer.currentTime;
     timeValue.innerHTML = toTimeStr(time);
-    timeCursor.style.left = Math.floor(40 + 2.43*time) + "px";
+    var width = timeCursor.parentElement.clientWidth;
+    timeCursor.style.left = Math.floor(40 + (width * time / gMediaPlayer.duration) ) + "px";
+    console.log("timeCursor.style.left " + timeCursor.style.left);
+    //timeCursor.style.left = Math.floor(40 + 1.43*time) + "px";
   }, false);
   /*
   // SMIL-based alternative

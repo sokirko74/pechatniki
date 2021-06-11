@@ -1,11 +1,10 @@
 #timeline {
   position: relative;
-  left: 10px;
-  width: 698px;
+  left: 1vw;
+  width: 60vw;
   height: 30px;
-  margin: 5px auto;
+  margin-top: 5px;
   z-index: 10;
-  /* border: 1px solid gray; */
   background-color: #555;
   border-radius         : 5px;
   -o-border-radius      : 5px;
@@ -20,7 +19,6 @@
   margin-left: 1px;
   margin-top: 4px;
   height: 19px;
-  /* border: 1px solid #fed; */
   text-decoration: none;
   color: #555;
 }

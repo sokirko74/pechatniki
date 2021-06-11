@@ -22,7 +22,7 @@
          data-last          = "last.click">
 
       {% for id,image,data_begin in slides %}
-          <div id="{{id}}" data-begin="{{data_begin}}">
+          <div id="section{{id}}" data-begin="{{data_begin}}">
             <img src="{{image}}">
           </div>
       {% endfor %}
@@ -45,7 +45,7 @@
           <span>0:00</span>
         </div>
       </div>
-      <div class="menu" style="float: left;  margin: 10px auto; margin-left: 20px;">
+      <div class="menu">
         <button id="first" title="first section">        «     </button>
         <button id="prev"  title="previous section"> &lt; prev </button>
         <button id="next"  title="next section">     next &gt; </button>
