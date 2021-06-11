@@ -73,7 +73,7 @@ function startup() {
     timeValue.innerHTML = toTimeStr(time);
     var width = timeCursor.parentElement.clientWidth;
     timeCursor.style.left = Math.floor(40 + (width * time / gMediaPlayer.duration) ) + "px";
-    console.log("timeCursor.style.left " + timeCursor.style.left);
+    //console.log("timeCursor.style.left " + timeCursor.style.left);
     //timeCursor.style.left = Math.floor(40 + 1.43*time) + "px";
   }, false);
   /*
@@ -108,6 +108,7 @@ function startup() {
         console.error(`${err.name}, ${err.message}`);
       }
     };
+    requestWakeLock();
 }
 
 EVENTS.onSMILReady(function() {
