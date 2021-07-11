@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dd3pn8=8-fb23n06l1$rfcm^@@00!x2b(qgf0ilue^fn69@-27'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('SOKIRKO_INFO_DEBUG', "True")
 
 ALLOWED_HOSTS = ['5.188.159.205', '127.0.0.1', 'localhost', 'y.disclosures.ru', 'sokirko.info']
 
