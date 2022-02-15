@@ -1,0 +1,36 @@
+## MATHII font description for CHI2RTF utility: not tested
+
+FONT = Symbol
+SIZE = 10
+ATTR = none
+INDEX_SIZE = 10
+DEFSYMBOL = NONBREAK-SPACE
+
+! ¨	@ ¨	# ¨	$ ¹	% \
+* ´	( ¨	) ¨	_ º	= @
+" ²	' ¢	~ »	` ¨	: ¸
+; @	< £	> ³	
+
+1 ^	2 Ð	3 Ø	4 Ü	5 Û
+6 Þ	7 µ	8 ¥	9 ¨	0 ¨
+
+Q ·	W ×	E $	R ¨	T ¨
+Y ¨	U ¨	I ¨	O ¨	A "
+S å	D Ñ	F ¨	G ¨	H ¨
+J ¨	K ¨	L ®	Z ¨	X ¨
+C Ì	V ¨	B É	N ¨	M ¨
+
+q °	w ¨	e Î	r ¨	t Ä
+y ¨	u È	i ò	o Æ	a À
+s Å	d ¶	f ¨	g ¨
+j ¨	k ¨	l ¨	z ¨	x ¨
+c Í	v Ú	b Ê	n Ç	m Ï
+
+FONT = Times New Roman
+^ ^	+ ±	- ±	, «	. »
+
+FONT = Times New Roman Cyr, 204
+h ž
+
+FONT = MS LineDraw
+P þ	p ÿ

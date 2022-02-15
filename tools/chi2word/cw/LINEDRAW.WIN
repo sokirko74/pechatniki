@@ -1,0 +1,25 @@
+## LINEDRAW font description for CHI2RTF utility
+## Currently, it is not completely described
+
+FONT = MS LineDraw
+SIZE = 12
+ATTR = none
+INDEX_SIZE = 12
+DEFSYMBOL = NONBREAK-SPACE
+
+! ÿ	@ º	# Þ
+4 Û	5 ²	6 ±	7 °
+
+## These symbols, though invisible, are often used as nonbreaking spaces. 
+
+$  NONBREAK-SPACE 
+%  NONBREAK-SPACE 
+^  NONBREAK-SPACE 
+&  NONBREAK-SPACE 
+
+## Arrows
+FONT = Symbol
+I  ­
+J  ¬
+L  ®
+<  ¯

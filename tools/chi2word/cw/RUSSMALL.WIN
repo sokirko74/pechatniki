@@ -1,0 +1,25 @@
+## RUSSMALL font description for CHI2RTF utility
+## Recoding table for this font converts symbols to ANSI 1251 codepage
+
+FONT = Times New Roman Cyr, 204
+SIZE = 10
+ATTR = none
+INDEX_SIZE = 10
+
+## Recoding table - Capital Cyrillic characters
+F À	< Á	D Â	U Ã	L Ä	T Å	| ¨	: Æ
+P Ç	B È	Q É	R Ê	K Ë	V Ì	Y Í	J Î
+G Ï	H Ð	C Ñ	N Ò	E Ó	A Ô	{ Õ	W Ö
+X ×	I Ø	O Ù	~ Ú	S Û	M Ü	" Ý	> Þ
+Z ß
+
+## Recoding table - Small Cyrillic characters
+f à	, á	d â	u ã	l ä	t å	\ ¸	; æ
+p ç	b è	q é	r ê	k ë	v ì	y í	j î
+g ï	h ð	c ñ	n ò	e ó	a ô	[ õ	w ö
+x ÷	i ø	o ù	` ú	s û	m ü	' ý	. þ
+z ÿ
+
+## Recoding table - Punctuations
+} ¹	] §	@ "	% :	* ;	^ ,	& .
+

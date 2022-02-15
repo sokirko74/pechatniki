@@ -1,0 +1,7 @@
+## ORATOR font description for CHI2RTF utility
+## No recoding table is required for this font
+
+FONT = Arial
+SIZE = 13
+ATTR = BOLD
+INDEX_SIZE = 11

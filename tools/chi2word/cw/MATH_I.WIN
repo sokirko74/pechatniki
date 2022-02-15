@@ -1,0 +1,19 @@
+## MATH_I font description for CHI2RTF utility (not very accurate)
+
+FONT = Symbol
+SIZE = 10
+ATTR = none
+INDEX_SIZE = 10
+DEFSYMBOL = NONBREAK-SPACE
+
+! ¨	@ ¨	# ¨	$ ¹	% \
+* ´	( ¨	) ¨	_ º	= @
+" ²	' ¢	~ »	` ¨	: ¸
+; @	< £	> ³	
+
+1 ^	2 Ð	3 Ø	4 Ü	5 Û
+6 Þ	7 µ	8 ¥	9 ¨	0 ¨
+
+FONT = Times New Roman
+^ ^	+ ±	- ±	, «	. »
+

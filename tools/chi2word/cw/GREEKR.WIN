@@ -1,0 +1,8 @@
+## GREEKR font description for CHI2RTF utility 
+## WARNING: not accurate!!!
+
+FONT = Symbol
+SIZE = 12
+ATTR = none
+INDEX_SIZE = 12
+

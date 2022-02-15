@@ -1,0 +1,7 @@
+## BOLD__L font description for CHI2RTF utility
+## No recoding table is required for this font
+
+FONT = Times New Roman
+SIZE = 12
+ATTR = Bold
+INDEX_SIZE = 10

@@ -1,0 +1,1 @@
+https://l.facebook.com/l.php?u=https%3A%2F%2Fweb.archive.org%2Fweb%2F20070110123912%2Fhttp%3A%2F%2Fproling.iitp.ru%2FPersonal%2FGrigoriev%2FChi2word%2Fchi2word.html&h=AT1tliMuB8NBhiQfsJoMOAPf0hvi3UeXSjGdai4oG0b-vY48BW0o6TKy5ZFLdZZxQMv2aLYcIY-HIGQ2zx1DEHi-ID8FP4T1UwqR1YakHTGbASVBYgIgi70VqjM8Qg

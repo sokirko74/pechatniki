@@ -1,0 +1,7 @@
+## DRAWSYM font description for CHI2RTF utility
+## Not done
+
+FONT = Symbol
+SIZE = 12
+ATTR = none
+INDEX_SIZE = 10

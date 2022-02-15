@@ -1,0 +1,7 @@
+## GOTHIC font description for CHI2RTF utility
+## No recoding table is required for this font
+
+FONT = CyrillicGoth
+SIZE = 12
+ATTR = none
+INDEX_SIZE = 10

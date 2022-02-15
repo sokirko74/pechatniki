@@ -1,0 +1,10 @@
+## An ad hoc font description for CHI2RTF utility
+## Substituted in emergency situations instead of lacking fonts.
+## Currently, a bomb symbol from WingDings will be drawn
+## for any character.
+
+FONT = WingDings
+SIZE = 12
+ATTR = Bold 
+INDEX_SIZE = 10
+DEFSYMBOL = M
