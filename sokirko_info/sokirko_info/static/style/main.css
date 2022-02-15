@@ -78,4 +78,18 @@ figure.simple_presentation_page {
   max-height: 85%;
 }
 
+.bigfont {
+    font-size: large;
+}
+
+.centered_big {
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+    width: 100%;
+}
 

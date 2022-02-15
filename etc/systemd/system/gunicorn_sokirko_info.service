@@ -8,6 +8,7 @@ Wants=network-online.target
 User=sokirko
 WorkingDirectory=/home/sokirko/pechatniki/sokirko_info
 Environment=PYTHONPATH=/home/sokirko/pechatniki/sokirko_info
+Environment=SOKIRKO_INFO_DEBUG=False
 
 ExecStart=/home/sokirko/.local/bin/gunicorn \
           --access-logfile - \
