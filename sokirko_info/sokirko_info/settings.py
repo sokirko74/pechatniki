@@ -123,7 +123,30 @@ STATIC_URL = '/static/'
 
 STATIC_FOLDER = os.path.join(BASE_DIR, "sokirko_info/static")
 
+LOG_FOLDER = os.path.join(BASE_DIR, "logs")
+if not os.path.exists(LOG_FOLDER):
+    os.mkdir(LOG_FOLDER)
+
+
 STATICFILES_DIRS = [
     STATIC_FOLDER
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(LOG_FOLDER, 'info.log'),
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
