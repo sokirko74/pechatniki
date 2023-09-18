@@ -17,7 +17,7 @@ def build_sitemap_xml_by_local_files():
     sitemap += "<urlset xmlns=\"https://www.sitemaps.org/schemas/sitemap/0.9\">\n"
     for p in urls:
         if p != "base.html":
-            url = urllib.parse.urljoin("http://sokirko.info", p)
+            url = urllib.parse.urljoin("https://sokirko.info", p)
             sitemap += "<url><loc>{}</loc></url>\n".format(url)
     sitemap += "</urlset>\n"
     return sitemap
