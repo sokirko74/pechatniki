@@ -23,3 +23,6 @@
 5.  Слайды в формате  jpg находятся на Яндекс-диске https://disk.yandex.ru/d/lxSdJ3OvBLy6oQ .
   Эти слайды должны возникнуть по пути ~/pechatniki/sokirko_info/sokirko_info/static/SlideFilms
 
+6.  Рестарт сайта
+
+sudo systemctl restart gunicorn_sokirko_info.service
