@@ -15,10 +15,17 @@ def build_sitemap_xml_by_local_files():
     urls = list(os.path.relpath(path.absolute(), start=folder) for path in Path(folder).rglob('*.html'))
     sitemap = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
     sitemap += "<urlset xmlns=\"https://www.sitemaps.org/schemas/sitemap/0.9\">\n"
+
+    folder1 = os.path.join(settings.STATIC_FOLDER)
     for p in urls:
         if p != "base.html":
             url = urllib.parse.urljoin("https://sokirko.info", p)
             sitemap += "<url><loc>{}</loc></url>\n".format(url)
+    static = list(os.path.relpath(path.absolute(), start=folder1) for path in Path(folder1).rglob('*.pdf'))
+    for p in static:
+        url = urllib.parse.urljoin("https://sokirko.info/static/", p)
+        sitemap += "<url><loc>{}</loc></url>\n".format(url)
+
     sitemap += "</urlset>\n"
     return sitemap
 
