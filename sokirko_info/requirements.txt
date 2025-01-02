@@ -1,3 +1,4 @@
 ﻿Django
 gunicorn
 bs4
+lxml

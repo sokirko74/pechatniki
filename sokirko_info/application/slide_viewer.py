@@ -57,5 +57,5 @@ def slide_viewer(request):
         context['audio_mp3'] = os.path.join(url_path, "audio.mp3")
         html_heading = SLIDE_FILMS.get(film_key, {}).get('heading')
         context['title'] = re.sub('<[^>]+>', '', html_heading)
-    template_path = os.path.join(os.path.dirname(__file__), "templates", "slide_film.html")
+    template_path = os.path.join(os.path.dirname(__file__), "templates", "slide-film.html")
     return render(request, template_path, context)

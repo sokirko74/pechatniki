@@ -1,11 +1,11 @@
 SLIDE_FILMS = \
 {
-    "Part1/Altai_1": {
+    "Part1/Altai-1": {
         "heading": "<h2> Том 2. Наши горы.1967-1977гг.</h2> <h1>Диафильм «Алтай»</h1>",
         "youtube_id": "OXkmLVLSh5A",
         "yandex_photo": "https://disk.yandex.ru/d/vlOYcm3qCGy2Uw"
     },
-    "Part1/Altai_2": {
+    "Part1/Altai-2": {
         "heading": "<h2>Том 2.Наши горы. 1967-1977гг.</h2> <h1><a>Диафильм «Алтай»</a></h1>",
         "youtube_id": "HF0-0tOOkhg",
         "yandex_photo": "https://disk.yandex.ru/d/v2lbJuXPwQOQO"
@@ -80,47 +80,47 @@ SLIDE_FILMS = \
         "youtube_id": "B8-1S_SQkLc",
         "yandex_photo": "https://disk.yandex.ru/d/TxSHaxKsMRCuCw"
     },
-    "Part10/Sev_Dvina": {
+    "Part10/Sev-Dvina": {
         "heading": "<h2>Том 13. Север. 1983 г.</h2> <h1>\"Северная Двина\"</h1>",
         "youtube_id": "sYEW3jNwt-k",
         "yandex_photo": "https://disk.yandex.ru/d/LMw_TDmYq6FHCQ"
     },
-    "Part11/Brjanschina_1": {
+    "Part11/Brjanschina-1": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Брянщина\"</h1> <h3>(Севск, Трубчевск)</h3>",
         "youtube_id": "zleWGUQ5Rco",
         "yandex_photo": "https://disk.yandex.ru/d/41WSZaHYYY6jbA"
     },
-    "Part11/Brjanschina_2": {
+    "Part11/Brjanschina-2": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Брянщина\"</h1> <h3>(Раскольничьи Новозыбков и Клинцы)</h3>",
         "youtube_id": "qp71bERypb0",
         "yandex_photo": "https://disk.yandex.ru/d/qNm9w9i-Pq4--Q"
     },
-    "Part11/Chernosem_1_Tula": {
+    "Part11/Chernosem-1-Tula": {
         "heading": "<h2>Том 15. Южная Россия. 1985г</h2> <h1>\"Тула\"</h1>",
         "youtube_id": "vloLVpZU1Lo",
         "yandex_photo": "https://disk.yandex.ru/d/vY-_E2PHSwrmgg"
     },
-    "Part11/Chernosem_2_Kaluga": {
+    "Part11/Chernosem-2-Kaluga": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Калуга\"</h1>",
         "youtube_id": "a3YIwq6nWWY",
         "yandex_photo": "https://disk.yandex.ru/d/ateAPoC3fTVFmw"
     },
-    "Part11/Kulikowo_pole": {
+    "Part11/Kulikowo-pole": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Куликово поле\"</h1>",
         "youtube_id": "bjyo1Dc6-qk",
         "yandex_photo": "https://disk.yandex.ru/d/rmxrtEVBJeh37g"
     },
-    "Part11/Kursk_1_P_Belgor": {
+    "Part11/Kursk-1-P-Belgor": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Курско-белгородская земля\"</h1> <h3>(Белгород)</h3>",
         "youtube_id": "HW1vhkdLGMo",
         "yandex_photo": "https://disk.yandex.ru/d/Tw9Gkd5Bi0LYDA"
     },
-    "Part11/Kursk_2_Rilsk": {
+    "Part11/Kursk-2-Rilsk": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Курско-белгородская земля\"</h1> <h3>(Курск и Рыльск)</h3>",
         "youtube_id": "FqQDYQqhaT4",
         "yandex_photo": "https://disk.yandex.ru/d/8kvKp1yUklK2iw"
     },
-    "Part11/Lipezkaja_semlja": {
+    "Part11/Lipezkaja-semlja": {
         "heading": "<h2>Том 15. Южная Россия.1985г.</h2> <h1>\"Липецкая земля\"</h1>",
         "youtube_id": "dD6VMwg4CEg",
         "yandex_photo": "https://disk.yandex.ru/d/KfyHLkiea_9jlQ"
@@ -130,22 +130,22 @@ SLIDE_FILMS = \
         "youtube_id": "jp5mf3rDnxI",
         "yandex_photo": "https://disk.yandex.ru/d/MaRqQf3_f8RJDw"
     },
-    "Part11/Pensa_1": {
+    "Part11/Pensa-1": {
         "heading": "<h2>Том 15. Южная Россия. 1995г.</h2> <h1>\"Пенза\"</h1> <h3>(Чембар, Тарханы)</h3>",
         "youtube_id": "vC031zVUlK4",
         "yandex_photo": "https://disk.yandex.ru/d/9h-cMY7m-9Lojg"
     },
-    "Part11/Pensa_2": {
+    "Part11/Pensa-2": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Пенза\"</h1> <h3>(город и музеи)</h3>",
         "youtube_id": "xfbjTTkc6vA",
         "yandex_photo": "https://disk.yandex.ru/d/Ana6AdvQUr4LsA"
     },
-    "Part11/Rostow_1": {
+    "Part11/Rostow-1": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Ростовская земля\"</h1> <h3> (Старочеркесск)</h3>",
         "youtube_id": "A0PFCVfJmfA",
         "yandex_photo": "https://disk.yandex.ru/d/gB0vvbU0M9emQQ"
     },
-    "Part11/Rostow_2": {
+    "Part11/Rostow-2": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Ростовская земля\"</h1> <h3>(Азов и Таганрог)</h3>",
         "youtube_id": "HlEbV92Ul_0",
         "yandex_photo": "https://disk.yandex.ru/d/qgya_3aErwNwLA"
@@ -155,42 +155,42 @@ SLIDE_FILMS = \
         "youtube_id": "Ltll-jj8M7A",
         "yandex_photo": "https://disk.yandex.ru/d/xw3VNF1i3AUQvw"
     },
-    "Part11/Woronezh_1_Rileew": {
+    "Part11/Woronezh-1-Rileew": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Воронежская земля\"</h1> <h3> (Рылеев)</h3>",
         "youtube_id": "00STQP8aLZU",
         "yandex_photo": "https://disk.yandex.ru/d/UDWnXfbnJgypCQ"
     },
-    "Part11/Woronezh_2_Kolzow": {
+    "Part11/Woronezh-2-Kolzow": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Воронежская земля\"</h1> <h3> (Кольцов)</h3>",
         "youtube_id": "tjistEJhqc8",
         "yandex_photo": "https://disk.yandex.ru/d/OvrimkYhkc_NWA"
     },
-    "Part11/Woronezh_3_Nikitin": {
+    "Part11/Woronezh-3-Nikitin": {
         "heading": "<h2>Том 15. Южная Россия. 1985г.</h2> <h1>\"Воронежская земля\"</h1> <h3> (Никитин)</h3>",
         "youtube_id": "mJ6FQtn5eKY",
         "yandex_photo": "https://disk.yandex.ru/d/f8IWo-qKUlmwkw"
     },
-    "Part11/Woronezh_4_Mandel": {
+    "Part11/Woronezh-4-Mandel": {
         "heading": "<h2>Том 15. Южная Россия.1985г.</h2> <h1>\"Воронежская земля\"</h1> <h3> (Мандельштам)</h3>",
         "youtube_id": "Ngr0ZnvJdA8",
         "yandex_photo": "https://disk.yandex.ru/d/rs2cTkaRhXHEDw"
     },
-    "Part12/Basch_1_Chelab": {
+    "Part12/Basch-1-Chelab": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Южный Урал\"</h1>",
         "youtube_id": "GLl8CNuj_zc",
         "yandex_photo": "https://disk.yandex.ru/d/OiRtMyh2gRfz9A"
     },
-    "Part12/Basch_2_Ufa": {
+    "Part12/Basch-2-Ufa": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Южный Урал\"</h1> <h3> (Уфа)</h3>",
         "youtube_id": "H9MX2Vri1_M",
         "yandex_photo": "https://disk.yandex.ru/d/4073JCkzxeg9Zw"
     },
-    "Part12/Basch_3-Belaja": {
+    "Part12/Basch-3-Belaja": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Южный Урал\"</h1> <h3>(Река Белая)</h3>",
         "youtube_id": "xMdCEJjCnq8",
         "yandex_photo": "https://disk.yandex.ru/d/dZf_9G61bCrM8w"
     },
-    "Part12/Basch_4_Orenb": {
+    "Part12/Basch-4-Orenb": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Южный Урал\"</h1> <h3> (Оренбург)</h3>",
         "youtube_id": "tzyXVh58Mv8",
         "yandex_photo": "https://disk.yandex.ru/d/cS7SfUCvqi9mSA"
@@ -205,12 +205,12 @@ SLIDE_FILMS = \
         "youtube_id": "8PX9Y8Dtr4E",
         "yandex_photo": "https://disk.yandex.ru/d/4KcJfbuXKAg2aA"
     },
-    "Part12/Saw-Ural_2": {
+    "Part12/Saw-Ural-2": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Заводской Урал\"</h1> <h3>(Свердловск)</h3>",
         "youtube_id": "xXaCk8Db1nY",
         "yandex_photo": "https://disk.yandex.ru/d/a-cxQDyrdEsIew"
     },
-    "Part12/Saw_Ural_1": {
+    "Part12/Saw-Ural-1": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Заводской Урал\"</h1> <h3>(Кунгур, Чусовая...)</h3>",
         "youtube_id": "5_ESStRyuJ8",
         "yandex_photo": "https://disk.yandex.ru/d/TErwARMnMcscjQ"
@@ -220,42 +220,42 @@ SLIDE_FILMS = \
         "youtube_id": "WHP-pU49lUY",
         "yandex_photo": "https://disk.yandex.ru/d/7GxPCw_eKKVitA"
     },
-    "Part12/Wolga_Kalmikia": {
+    "Part12/Wolga-Kalmikia": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Волга-Калмыки\"</h1> <h3>(Нижняя Волга. Храм в Речном)</h3>",
         "youtube_id": "0w_5hW098Vs",
         "yandex_photo": "https://disk.yandex.ru/d/Vfb_chvep9uxhg"
     },
-    "Part12/Wolga_Kalmik_Astra": {
+    "Part12/Wolga-Kalmik-Astra": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Волга-Калмыки\"</h1> <h3>(Астрахань. За лотосом)</h3>",
         "youtube_id": "gIMUG7MBBDA",
         "yandex_photo": "https://disk.yandex.ru/d/PMy1yfWW8TaHTw"
     },
-    "Part12/Wolga_Saratov": {
+    "Part12/Wolga-Saratov": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Саратов- Сызрань-Самара\"</h1> <h3> (Саратов)</h3>",
         "youtube_id": "DMZLy_oOkVE",
         "yandex_photo": "https://disk.yandex.ru/d/DKd05T2nCIe64A"
     },
-    "Part12/Wolga_Sisr_Samara": {
+    "Part12/Wolga-Sisr-Samara": {
         "heading": "<h2>Том 16. Урал-Волга 1986 г.</h2> <h1>\"Саратов- Сызрань-Самара\"</h1> <h3>(Сызрань, Саратов)</h3>",
         "youtube_id": "If7HfV8L7SI",
         "yandex_photo": "https://disk.yandex.ru/d/QlpIRtlT3Vq-cQ"
     },
-    "Part13/Altai_Chul": {
+    "Part13/Altai-Chul": {
         "heading": "<h2>Том 17. Алтай-Сибирь 1987 г.</h2> <h1> \"Алтай - Чулышмания\"</h1>",
         "youtube_id": "xV99FdxDrtc",
         "yandex_photo": "https://disk.yandex.ru/d/KLSZF9LUkAqC8g"
     },
-    "Part13/Altai_Kos_Ag": {
+    "Part13/Altai-Kos-Ag": {
         "heading": "<h2>Том 17. Алтай-Сибирь 1987 г.</h2> <h1>Алтай - Кош-Агач</h1>",
         "youtube_id": "hWTs5maaYIc",
         "yandex_photo": "https://disk.yandex.ru/d/bbkgRlVA4OYaag"
     },
-    "Part13/Altai_Ojroti": {
+    "Part13/Altai-Ojroti": {
         "heading": "<h2>Том 17. Алтай-Сибирь 1987 г.</h2> <h1>Алтай - Ойротия - 87</h1>",
         "youtube_id": "o7NvmWf7OSY",
         "yandex_photo": "https://disk.yandex.ru/d/iUEhn0pWEqkFEQ"
     },
-    "Part13/Altai_Otchi_bala": {
+    "Part13/Altai-Otchi-bala": {
         "heading": "<h2>Том 17. Алтай-Сибирь 1987 г.</h2> <h1>Алтай - Белуха</h1>",
         "youtube_id": "srfi9Wyx2Io",
         "yandex_photo": "https://disk.yandex.ru/d/ZVXi4mjLDxp3kw"
@@ -290,7 +290,7 @@ SLIDE_FILMS = \
         "youtube_id": "Y1XnprResQs",
         "yandex_photo": "https://disk.yandex.ru/d/4sHV5BTqit9CYw"
     },
-    "Part2/2_Pereslawlja": {
+    "Part2/2-Pereslawlja": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967- 1982гг.</h2> <h1>Диафильм «Два Переславля»</h1>",
         "youtube_id": "A7oGXAv7kUs",
         "yandex_photo": "https://disk.yandex.ru/d/Em6rXWukVmsTIw"
@@ -310,27 +310,27 @@ SLIDE_FILMS = \
         "youtube_id": "-arlLcTf2Z0",
         "yandex_photo": "https://disk.yandex.ru/d/LOEQkyrf7T8XZA"
     },
-    "Part2/Moskwa_1": {
+    "Part2/Moskwa-1": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967-1982гг.</h2> <h1>Диафильм «Московские церкви»</h1> <h2> Часть 1. До 17 века <h2> </h2></h2>",
         "youtube_id": "qx2bzSyHPVk",
         "yandex_photo": "https://disk.yandex.ru/d/zop6WPuYjWUjGQ"
     },
-    "Part2/Moskwa_2": {
+    "Part2/Moskwa-2": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967-1982гг.</h2> <h1>Диафильм «Московские церкви»</h1> <h2> Часть вторая «От Грозного до Петра» <h2> </h2></h2>",
         "youtube_id": "shbPONdn76A",
         "yandex_photo": "https://disk.yandex.ru/d/VerpqwklciQBGw"
     },
-    "Part2/Moskwa_3": {
+    "Part2/Moskwa-3": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967-1982гг.</h2> <h1>Диафильм «Московские церкви»</h1> <h3>Часть третья. «Классицизм»</h3>",
         "youtube_id": "vur1gMiw9og",
         "yandex_photo": "https://disk.yandex.ru/d/2OapK3broEF9_Q"
     },
-    "Part2/Nowgorod_nachala": {
+    "Part2/Nowgorod-nachala": {
         "heading": "<h2>Том 6. Северо-Запад</h2> <h1>\"Новгородские начала\"</h1>",
         "youtube_id": "EVPF4IV5zFw",
         "yandex_photo": "https://disk.yandex.ru/d/ruG5m5BeyrT5RQ"
     },
-    "Part2/Nowgorod_pskow_st": {
+    "Part2/Nowgorod-pskow-st": {
         "heading": "<h2>Том 6. Северо-Запад</h2> <h1>\"Новгород-псковская старина\"</h1>",
         "youtube_id": "D5SXf5QDsSk",
         "yandex_photo": "https://disk.yandex.ru/d/TPHi_cQsolpPxw"
@@ -345,17 +345,17 @@ SLIDE_FILMS = \
         "youtube_id": "FuMp32roSKs",
         "yandex_photo": "https://disk.yandex.ru/d/x390Q1XMC2z05g"
     },
-    "Part2/Pskowsri_kreposti": {
+    "Part2/Pskowsri-kreposti": {
         "heading": "<h2>Том 6. Северо-Запад. 1967-1976гг.</h2> <h1>\"Псковские крепости\"</h1>",
         "youtube_id": "55LBMkeio3c",
         "yandex_photo": "https://disk.yandex.ru/d/PB0pecuW0T4kYQ"
     },
-    "Part2/Sabas-83_ssilkaGleba": {
+    "Part2/Sabas-83-ssilkaGleba": {
         "heading": "<h2>Том 13. Север. 1983 г.</h2> <h1>Пушествие к Глебу в ссылку в Троице-Печорск.</h1>",
         "youtube_id": "U1WIOp8rKoY",
         "yandex_photo": "https://disk.yandex.ru/d/XVg5RhrfeqwyRA"
     },
-    "Part2/Sergii_Rad": {
+    "Part2/Sergii-Rad": {
         "heading": "<h2>Том 4. Москва - Ополье. 1967-1982гг.</h2> <h1>Диафильм «Сергей Радонежский» (Подмосковные монастыри)</h1> <h3>(Подмосковные монастыри)</h3>",
         "youtube_id": "lKaEHXRmMUw",
         "yandex_photo": "https://disk.yandex.ru/d/DmQpUBlsOiM5Yw"
@@ -380,7 +380,7 @@ SLIDE_FILMS = \
         "youtube_id": "OBDLXJi7t6Q",
         "yandex_photo": "https://disk.yandex.ru/d/39dd0JP_G3Dq3w"
     },
-    "Part3/Dzhan_Tugan": {
+    "Part3/Dzhan-Tugan": {
         "heading": "<h2>Том 2. Наши горы. 1967-1977гг.</h2> <h1>\"Джан-Туган\"</h1>",
         "youtube_id": "3O7yCJ0P_Vw",
         "yandex_photo": "https://disk.yandex.ru/d/XUIO_gxQ-Kbulw"
@@ -430,7 +430,7 @@ SLIDE_FILMS = \
         "youtube_id": "md6aNXA2Jk4",
         "yandex_photo": "https://disk.yandex.ru/d/2eYnkYh9nUQpTQ"
     },
-    "Part3/Sew_armenia": {
+    "Part3/Sew-armenia": {
         "heading": "<h2>Том 8. Кавказ. 1969 - 1986гг.</h2> <h1>Д/ф «Северо-Армянские монастыри»</h1>",
         "youtube_id": "eHINHt-nJa8",
         "yandex_photo": "https://disk.yandex.ru/d/UrrTjIVH43btHA"
@@ -440,42 +440,42 @@ SLIDE_FILMS = \
         "youtube_id": "cz0ktuh1NB4",
         "yandex_photo": "https://disk.yandex.ru/d/LnxPHd2_l1yfnA"
     },
-    "Part3/Vesna_sveta": {
+    "Part3/Vesna-sveta": {
         "heading": "<h2><i><b>В. и Л. Сокирко</b></i></h2> <h2>Том I.Партизанское кино. 1977г. </h2> <h1>Д/ф \"ВЕСНА СВЕТА\"</h1>",
         "youtube_id": "ddajWbirSSU",
         "yandex_photo": "https://disk.yandex.ru/d/FUI6yclHm1lFoA"
     },
-    "Part3/Vesna_wodi": {
+    "Part3/Vesna-wodi": {
         "heading": "<h2>Том I.Партизанское кино. 1977г. </h2> <h1>Д/ф \"ВЕСНА ВОДЫ И МАЯ\"</h1>",
         "youtube_id": "1WtblMDa_JE",
         "yandex_photo": "https://disk.yandex.ru/d/iPc4i3oE2m8WUg"
     },
-    "Part4/Karpati_71": {
+    "Part4/Karpati-71": {
         "heading": "<h2>Том 7. Украина. 1971-1977гг.</h2> <h2>Раздел 1. Закарпатье - 1971г</h2> <h1>Диафильм \"Карпаты 1971г.\"</h1>",
         "youtube_id": "Y-xx_pCzUT8",
         "yandex_photo": "https://disk.yandex.ru/d/FQCsjUczAx180Q"
     },
-    "Part4/Karpat_goroda": {
+    "Part4/Karpat-goroda": {
         "heading": "<h2>Том 7. Украина. 1971-1977гг.</h2> <h2>Раздел 1. Закарпатье - 1971г</h2> <h1>Диафильм \"Карпатские города\"</h1>",
         "youtube_id": "K-enNIWNsGg",
         "yandex_photo": "https://disk.yandex.ru/d/rXyxi93ANXKhkQ"
     },
-    "Part4/Krim_Kokt_4_73": {
+    "Part4/Krim-Kokt-4-73": {
         "heading": "<h2>Том 7. Украина. 1971-1977гг.</h2> <h2>Раздел 2. Крым - 73 г.</h2> <h1>Диафильм ч.4 \"Коктебель\"</h1>",
         "youtube_id": "LtJQ5Ls0kOY",
         "yandex_photo": "https://disk.yandex.ru/d/t5ylXc7aTaQYfA"
     },
-    "Part4/Krim_rasni_3": {
+    "Part4/Krim-rasni-3": {
         "heading": "<h2>Том 7. Украина. 1971-1977гг.</h2> <h2>Раздел 2. Крым - 73 г.</h2> <h1>Диафильм ч. 3.\"Крым разноплеменный\" </h1>",
         "youtube_id": "QXwGl4AWJ78",
         "yandex_photo": "https://disk.yandex.ru/d/GKpGKQ-53mSnsg"
     },
-    "Part4/Krim_rus_2": {
+    "Part4/Krim-rus-2": {
         "heading": "<h2>Том 7. Украина. 1971-1977г.</h2> <h2>Раздел 2. Крым - 73 г.</h2> <h1>Диафильм ч. 2 \"Крым русский\"</h1>",
         "youtube_id": "YTw6HSUemeQ",
         "yandex_photo": "https://disk.yandex.ru/d/jBxOJxd262qcFA"
     },
-    "Part4/Krim_tat_1": {
+    "Part4/Krim-tat-1": {
         "heading": "<h2>Том 7. Украина. 1971-1977гг.</h2> <h2>Раздел 2. Крым - 73 г.</h2> <h1>Диафильм \"Крым татарский\"</h1>",
         "youtube_id": "TbwEMJLFabE",
         "yandex_photo": "https://disk.yandex.ru/d/RbwWnnqtciucbQ"
@@ -495,7 +495,7 @@ SLIDE_FILMS = \
         "youtube_id": "jBbhuzM2gHE",
         "yandex_photo": "https://disk.yandex.ru/d/Isam8kCvDOt0nA"
     },
-    "Part4/ukrains_temi_71": {
+    "Part4/ukrains-temi-71": {
         "heading": "<h2>Том 7. Украина. 1971-1977гг.</h2> <h2>Раздел 1. Закарпатье - 1971г</h2> <h1>Диафильм \"Украинские темы\"</h1>",
         "youtube_id": "78YwOWAWieU",
         "yandex_photo": "https://disk.yandex.ru/d/TIA46QYwacD-6Q"
@@ -505,17 +505,17 @@ SLIDE_FILMS = \
         "youtube_id": "ornlONo0nXw",
         "yandex_photo": "https://disk.yandex.ru/d/YPZ-4IO6SbH3Mw"
     },
-    "Part5/Belorusi_2": {
+    "Part5/Belorusi-2": {
         "heading": "<h2>Том 12. Белоруссия и другое. 1982г.</h2> <h1>Диафильм \"Белая Русь\"</h1> <h3> (Рождение)</h3>",
         "youtube_id": "v7n9rCPMASk",
         "yandex_photo": "https://disk.yandex.ru/d/6mQlyEWYqOFBVA"
     },
-    "Part5/Belorusi_3": {
+    "Part5/Belorusi-3": {
         "heading": "<h2>Том 12. Белоруссия и другое. 1982г.</h2> <h1>Диафильм \"Белая Русь\"</h1> <h3> (Перелом болезни)</h3>",
         "youtube_id": "g28R7xZS6_M",
         "yandex_photo": "https://disk.yandex.ru/d/s7ZO2tqw1p9_Kw"
     },
-    "Part5/Belorus_leto_82": {
+    "Part5/Belorus-leto-82": {
         "heading": "<h2> Том 12. Белоруссия и другое.1982г.</h2> <h1>Диафильм \"Рассказы о лете-1982\"</h1>",
         "youtube_id": "XE5MkmbA8E0",
         "yandex_photo": "https://disk.yandex.ru/d/6bQtug-E6GJ0Cw"
@@ -555,7 +555,7 @@ SLIDE_FILMS = \
         "youtube_id": "NKOGAX-ozU0",
         "yandex_photo": "https://disk.yandex.ru/d/b1KNwNJvyYBTKA"
     },
-    "Part5/Sev_Ural_70": {
+    "Part5/Sev-Ural-70": {
         "heading": "<h2>Диафильм \"Северный Урал (байдарка)\"</h2>",
         "youtube_id": "RZDCrH2dzkc",
         "yandex_photo": "https://disk.yandex.ru/d/iFmQB-Gc8P07Zw"
@@ -565,17 +565,17 @@ SLIDE_FILMS = \
         "youtube_id": "GCyPQKQ3C-M",
         "yandex_photo": "https://disk.yandex.ru/d/0zx1-LZLzje7gA"
     },
-    "Part6/Aserbaid_1": {
+    "Part6/Aserbaid-1": {
         "heading": "<h2>Том 8. Кавказ. 1969 - 1986гг.</h2> <h1>Д/ф \"Азербайджанцы (Бакинская любовь)»</h1>",
         "youtube_id": "euPZH84vpII",
         "yandex_photo": "https://disk.yandex.ru/d/LQ4eACSjuvX0oA"
     },
-    "Part6/Awarzi_1": {
+    "Part6/Awarzi-1": {
         "heading": "<h2>Том 8. Кавказ. 1969 - 1986гг.</h2> <h1>Диафильм \"Аварцы\" (1)</h1> <h3>(Чабаньи горы)</h3>",
         "youtube_id": "oEzQXQx29nU",
         "yandex_photo": "https://disk.yandex.ru/d/relhKmqaPJQ6Tw"
     },
-    "Part6/Awarzi_2": {
+    "Part6/Awarzi-2": {
         "heading": "<h2>Том 8. Кавказ. 1969 - 1986гг.</h2> <h1>Диафильм \"Аварцы\"</h1> <h3>(Хунзах, Ботлих)</h3>",
         "youtube_id": "3i8Avjujy0c",
         "yandex_photo": "https://disk.yandex.ru/d/aT5ImUmLobahJg"
@@ -600,27 +600,27 @@ SLIDE_FILMS = \
         "youtube_id": "8OSIXImyMTk",
         "yandex_photo": "https://disk.yandex.ru/d/ACz22bwql8qBLw"
     },
-    "Part6/Leto_86_na_Juge": {
+    "Part6/Leto-86-na-Juge": {
         "heading": "<h2>Том 8. Кавказ.1969-1986гг.</h2> <h1>\"Черкесы\"</h1> <h2>(\"Лето 86 на Юге\")</h2>",
         "youtube_id": "5ltxa9JDroA",
         "yandex_photo": "https://disk.yandex.ru/d/U_tRku1_zaXkHg"
     },
-    "Part6/Ogni_Baku_1": {
+    "Part6/Ogni-Baku-1": {
         "heading": "<h2>Том 8. Кавказ. 1969-1986 гг.</h2> <h2>Диафильм «ОГОНЬ БАКУ (МАЗДА БАКЫ)»</h2> <p> (Маздак)</p>",
         "youtube_id": "_sINtTiY2UI",
         "yandex_photo": "https://disk.yandex.ru/d/Z9z5ddDO-of6Vg"
     },
-    "Part6/Ogni_Baku_2": {
+    "Part6/Ogni-Baku-2": {
         "heading": "<h2>Том 8. Кавказ. 1969-1986 гг.</h2> <h1>Диафильм «ОГОНЬ БАКУ (МАЗДА БАКЫ)»</h1> <h3>(Путь огня по Каспию в Россию)</h3>",
         "youtube_id": "ldkrlnBp2cw",
         "yandex_photo": "https://disk.yandex.ru/d/dVmR2dn8f0-Epw"
     },
-    "Part7/Abchasia_1": {
+    "Part7/Abchasia-1": {
         "heading": "<h2>Том 8. Кавказ. 1969-1986гг.</h2> <h1>\"Абхазия\"</h1> <h3> (Рица,Сухуми)</h3>.",
         "youtube_id": "mp4rhk8fN50",
         "yandex_photo": "https://disk.yandex.ru/d/2Q4oays9yan4fg"
     },
-    "Part7/Abchasia_2": {
+    "Part7/Abchasia-2": {
         "heading": "<h2>Том 8. Кавказ. 1969-1986гг.</h2> <h1>\"Абхазия\"</h1> <h3> (Пицунда, Гудаута)</h3>.",
         "youtube_id": "9eCfdQ7X78w",
         "yandex_photo": "https://disk.yandex.ru/d/tcSiPhgo2V0_ag"
@@ -735,7 +735,7 @@ SLIDE_FILMS = \
         "youtube_id": "yYSLeaC2ig0",
         "yandex_photo": "https://disk.yandex.ru/d/y4GgMyWAweYAHw"
     },
-    "picket/Radio_Svoboda": {
+    "picket/Radio-Svoboda": {
         "heading": "Аудио-интервью О.Кусова радио \"Свобода\", взятое  03.01.08. и прозвучавшее в эфире 15.01.08г.",
         "youtube_id": "IKxS9yEzjh4",
         "yandex_photo": "https://disk.yandex.ru/d/4Ab7dztE09gd0Q"
