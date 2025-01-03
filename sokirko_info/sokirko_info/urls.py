@@ -21,6 +21,7 @@ from django.views.generic.base import TemplateView
 from django.http import HttpResponse
 from django.conf import settings
 
+
 def static_file(request):
     file_path =  os.path.join(settings.STATIC_FOLDER, request.path.strip('/'))
     with open(file_path) as inp:
