@@ -25,12 +25,16 @@ from django.conf import settings
 def static_file(request):
     file_path =  os.path.join(settings.STATIC_FOLDER, request.path.strip('/'))
     with open(file_path) as inp:
-        return HttpResponse(inp.read(), content_type="text/plain")
+        ct = "text/plain"
+        if file_path.endswith('.xml'):
+            ct = "text/xml"
+        return HttpResponse(inp.read(), content_type=ct)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('robots.txt', static_file),
+    path('sitemap.xml', static_file),
     re_path('google', static_file),
     re_path('yandex', static_file),
     re_path('', include('application.urls')),
