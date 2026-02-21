@@ -3,3 +3,6 @@ sokirko_info/.idea
 sokirko_info/sokirko_info/static/images
 sokirko_info/__pycache__/
 sokirko_info/sokirko_info/__pycache__/
+sokirko_info/venv/
+sokirko_info/application/__pycache__/
+sokirko_info/logs/
