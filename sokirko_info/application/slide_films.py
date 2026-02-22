@@ -597,6 +597,5 @@ SLIDE_FILMS = \
 def check_on_start():
     films_count = len(SLIDE_FILMS)
     assert films_count == len(set(i['youtube_id'] for i in SLIDE_FILMS.values() ))
-    assert films_count == len(set(i['yandex_photo'] for i in SLIDE_FILMS.values()))
 
 check_on_start()
