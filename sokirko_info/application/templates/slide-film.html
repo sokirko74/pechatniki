@@ -1,67 +1,395 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <title>{{title}}</title>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
   {% include "common.html" %}
-  <link rel="stylesheet" type="text/css" href="/static/timesheets/style/layout.css">
-  <link rel="stylesheet" type="text/css" href="/static/timesheets/style/audio.css">
-  <script type="text/javascript" src="/static/timesheets/timesheets.js"></script>
-  <link rel="stylesheet" type="text/css" href="/static/timesheets/style/timeline.css">
-  <script type="text/javascript" src="/static/timesheets/timeline.js"></script>
+  <style>
+    /* Кнопка по умолчанию полупрозрачная, плавно меняет opacity */
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 9999; /* Выводим поверх всех слоев плеера */
+
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный темный фон */
+      color: #ffffff !important;           /* Белый цвет текста */
+      text-decoration: none;
+      border-radius: 4px;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    /* Класс, который добавляется при активности мыши */
+    body.user-active .back-button {
+      opacity: 0.8;
+      pointer-events: auto;
+    }
+
+    body.user-active .back-button:hover {
+      opacity: 1;
+    }
+    .player-container {
+      position: relative;
+      max-width: 960px;
+      margin: 0 auto;
+      background: #000;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    .slide-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: none;
+    }
+    .slide-img.active {
+      display: block;
+    }
+
+    /* Большая центральная кнопка Play */
+    .big-play-btn {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s, opacity 0.3s;
+      z-index: 10;
+    }
+    .big-play-btn:hover {
+      transform: scale(1.1);
+      background: rgba(255, 0, 0, 0.8);
+    }
+    .big-play-btn::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0 15px 26px;
+      border-color: transparent transparent transparent #fff;
+      margin-left: 5px;
+    }
+    .player-container.playing .big-play-btn {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Нижняя панель управления */
+    .controls-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: opacity 0.4s ease;
+      z-index: 9;
+    }
+    .player-container.user-inactive.playing .controls-bar {
+      opacity: 0;
+      cursor: none;
+    }
+
+    .timeline-slider {
+      width: 100%;
+      cursor: pointer;
+      accent-color: #ff0000;
+    }
+
+    .controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+
+    .controls-left, .controls-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    .btn:hover { color: #ff0000; }
+  </style>
 </head>
+<body>
 
-<body class="timeline">
-    <div id="media"
-         data-timecontainer = "excl"
-         data-mediasync     = "audio"
-         data-dur           = "{{whole_duration}}"
-         data-first         = "first.click"
-         data-prev          = "prev.click"
-         data-next          = "next.click"
-         data-last          = "last.click">
+<div>
+<a href="./" class="back-button">← Назад</a>
+</div>
 
-      {% for id,image,data_begin in slides %}
-          <div id="section{{id}}" data-begin="{{data_begin}}">
-            <img src="{{image}}">
-          </div>
-      {% endfor %}
-    </div>
+<div class="player-container" id="player">
+  <!-- Слайды -->
+  {% for slide in slides %}
+    <img src="{{ slide.src }}" class="slide-img {% if forloop.first %}active{% endif %}" data-index="{{ slide.id }}">
+  {% endfor %}
 
+  <!-- Кнопка Play по центру -->
+  <div class="big-play-btn" id="bigPlayBtn"></div>
 
-    <div id="mediaController">
+  <!-- Контролы -->
+  <div class="controls-bar" id="controlsBar">
+    <input type="range" class="timeline-slider" id="timeline" min="0" max="{{ whole_duration_sec }}" value="0" step="0.1">
 
-      <div id="timeline">
-        <div id="mediaStart" class="play">
-          <button class="pause">
-            <img src="/static/timesheets/images/media-pause.png" alt="pause">
-          </button>
-          <button class="play">
-            <img src="/static/timesheets/images/media-play.png" alt="play">
-          </button>
-        </div>
-        <div id="timeCursor"><span></span></div>
-        <div id="timeValue">
-          <span>0:00</span>
-        </div>
+    <div class="controls-row">
+      <div class="controls-left">
+        <button class="btn" id="playPauseBtn">▶</button>
+        <span id="timeDisplay">0:00 / 0:00</span>
       </div>
-      <div class="menu">
-        <button id="first" title="first section">        «     </button>
-        <button id="prev"  title="previous section"> &lt; prev </button>
-        <button id="next"  title="next section">     next &gt; </button>
-        <button id="last"  title="last section">         »     </button>
+      <div class="controls-right">
+        <button class="btn" id="fullscreenBtn">⛶</button>
       </div>
-      <br style="clear: both; line-height: 1px;">
-
-      <audio id="audioPlayer" controls preload="auto">
-        <source src="{{audio_mp3}}" type="audio/mp3" />
-        <br>
-        This page requires <strong>&lt;audio&gt;</strong> support:<br>
-        best viewed with Firefox 3.5+, Safari 4+, Chrome 5+, Opera 10.60+ or IE9.<br>
-        <br>
-        Internet Explorer users, please enable Flash or Silverlight.
-      </audio>
     </div>
+  </div>
+
+  <audio id="audio" src="{{ audio_mp3 }}" preload="metadata"></audio>
+</div>
+
+<script>
+  const slidesData = {{ slides_json|safe }};
+  const player = document.getElementById('player');
+  const audio = document.getElementById('audio');
+  const bigPlayBtn = document.getElementById('bigPlayBtn');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+  const timeline = document.getElementById('timeline');
+  const timeDisplay = document.getElementById('timeDisplay');
+  const slideImages = document.querySelectorAll('.slide-img');
+
+  let currentSlideIndex = -1;
+  let isScrubbing = false;
+  let hideControlsTimeout;
+
+  let hideTimeout;
+
+  function showControls() {
+    document.body.classList.add('user-active');
+    clearTimeout(hideTimeout);
+
+    // Скрываем через 2.5 секунды бездействия
+    hideTimeout = setTimeout(() => {
+      document.body.classList.remove('user-active');
+    }, 2500);
+  }
+
+  // Отслеживаем движение мыши
+  window.addEventListener('mousemove', showControls);
+  window.addEventListener('click', showControls);
+
+  function formatTime(seconds) {
+    if (isNaN(seconds) || seconds < 0) return "0:00";
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  }
+
+  // Находим текущий активный слайд и переходим к соседнему
+  function navigateSlide(direction) {
+    const currentTime = audio.currentTime;
+
+    if (direction === 'next') {
+      // Ищем первый слайд, время начала которого строго больше текущего
+      const nextSlide = slidesData.find(s => s.start > currentTime + 0.1);
+      if (nextSlide) {
+        audio.currentTime = nextSlide.start;
+      }
+    } else if (direction === 'prev') {
+      // Если мы прошли больше 1.5 секунд от начала текущего слайда,
+      // логичнее сначала прыгнуть на его начало, а при повторном клике — на предыдущий
+      const currentSlide = slidesData.find(s => currentTime >= s.start && currentTime < s.end);
+
+      if (currentSlide && (currentTime - currentSlide.start > 1.5)) {
+        audio.currentTime = currentSlide.start;
+      } else {
+        // Ищем последний слайд, время начала которого меньше начала текущего
+        const prevSlides = slidesData.filter(s => s.start < currentTime - 0.1);
+        if (prevSlides.length > 0) {
+          const prevSlide = prevSlides[prevSlides.length - 1];
+          audio.currentTime = prevSlide.start;
+        } else {
+          audio.currentTime = 0; // Возврат в самое начало
+        }
+      }
+    }
+  }
+
+  // Слушатель нажатий клавиш клавиатуры
+  window.addEventListener('keydown', (event) => {
+    // Игнорируем нажатия, если пользователь вводит текст в инпутах или текстовых полях
+    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+      return;
+    }
+
+    if (event.key === 'ArrowRight') {
+      event.preventDefault(); // Предотвращаем стандартный скролл страницы
+      navigateSlide('next');
+    } else if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      navigateSlide('prev');
+    } else if (event.key === ' ') { // Пробел для паузы / воспроизведения
+      event.preventDefault();
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  });
+
+  function updateSlide(currentTime) {
+    const slide = slidesData.find(s => currentTime >= s.start && currentTime < s.end)
+                  || slidesData[slidesData.length - 1];
+    if (slide && slide.id !== currentSlideIndex) {
+      currentSlideIndex = slide.id;
+      slideImages.forEach(img => img.classList.remove('active'));
+      const activeImg = document.querySelector(`.slide-img[data-index="${slide.id}"]`);
+      if (activeImg) activeImg.classList.add('active');
+    }
+  }
+
+  // Управление воспроизведением
+  function togglePlay() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+
+  bigPlayBtn.addEventListener('click', togglePlay);
+  playPauseBtn.addEventListener('click', togglePlay);
+
+  audio.addEventListener('play', () => {
+    player.classList.add('playing');
+    playPauseBtn.textContent = '❚❚';
+  });
+
+  audio.addEventListener('pause', () => {
+    player.classList.remove('playing');
+    playPauseBtn.textContent = '▶';
+    showControls();
+  });
+
+  fullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      player.requestFullscreen().catch(err => console.error(err));
+    } else {
+      document.exitFullscreen();
+    }
+  });
+
+  // Автоскрытие контролов
+  function resetControlsTimeout() {
+    showControls();
+    if (!audio.paused) {
+      clearTimeout(hideControlsTimeout);
+      hideControlsTimeout = setTimeout(() => {
+        player.classList.add('user-inactive');
+      }, 2500);
+    }
+  }
+
+  function showControls() {
+    clearTimeout(hideControlsTimeout);
+    player.classList.remove('user-inactive');
+  }
+
+  player.addEventListener('mousemove', resetControlsTimeout);
+  player.addEventListener('mouseleave', () => {
+    if (!audio.paused) player.classList.add('user-inactive');
+  });
+
+  // Инициализация длительности
+  function initDuration() {
+    if (audio.duration && !isNaN(audio.duration) && audio.duration > 0) {
+      timeline.max = audio.duration;
+    }
+  }
+
+  audio.addEventListener('loadedmetadata', initDuration);
+  audio.addEventListener('durationchange', initDuration);
+
+  // Обновление времени при воспроизведении
+  audio.addEventListener('timeupdate', () => {
+    if (!isScrubbing) {
+      timeline.value = audio.currentTime;
+      updateSlide(audio.currentTime);
+      const maxDur = audio.duration || parseFloat(timeline.max) || 0;
+      timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(maxDur)}`;
+    }
+  });
+
+  // --- НАДЕЖНАЯ ПЕРЕМОТКА ---
+  function performSeek(targetTime) {
+    if (isNaN(targetTime)) return;
+
+    // Переключаем слайд визуально
+    updateSlide(targetTime);
+
+    // Принудительно устанавливаем позицию аудио
+    try {
+      audio.currentTime = targetTime;
+    } catch (e) {
+      console.warn("Не удалось установить currentTime:", e);
+    }
+
+    const maxDur = audio.duration || parseFloat(timeline.max) || 0;
+    timeDisplay.textContent = `${formatTime(targetTime)} / ${formatTime(maxDur)}`;
+  }
+
+  timeline.addEventListener('mousedown', () => { isScrubbing = true; });
+  timeline.addEventListener('touchstart', () => { isScrubbing = true; });
+
+  // Реакция во время перетаскивания
+  timeline.addEventListener('input', (e) => {
+    const val = parseFloat(e.target.value);
+    performSeek(val);
+  });
+
+  // Фиксация позиции при отпускании
+  function onScrubEnd(e) {
+    if (isScrubbing) {
+      isScrubbing = false;
+      const val = parseFloat(timeline.value);
+      performSeek(val);
+    }
+  }
+
+  timeline.addEventListener('mouseup', onScrubEnd);
+  timeline.addEventListener('touchend', onScrubEnd);
+  timeline.addEventListener('change', (e) => {
+    isScrubbing = false;
+    const val = parseFloat(e.target.value);
+    performSeek(val);
+  });
+</script>
+
 
 </body>
 </html>

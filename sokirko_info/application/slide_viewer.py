@@ -18,21 +18,46 @@ def duration_to_minutes(seconds):
 
 
 def build_slide_collection(url_path, soup, context):
-    index = 1
-    whole_dur_in_secs = 0
-    slides = list()
-    for img in soup.find_all("img"):
-        img_src = os.path.join(url_path, img['src'])
-        dur = img['dur']
-        if dur.endswith('s'):
-            dur = dur[:-1]
-        dur = int(dur)
+    current_time_sec = 0
+    slides = []
 
-        slides.append((index, img_src, duration_to_minutes(whole_dur_in_secs)))
-        index += 1
-        whole_dur_in_secs += int(dur)
+    for idx, img in enumerate(soup.find_all("img")):
+        img_src = os.path.join(url_path, img['src'])
+        dur_raw = img['dur']
+        if dur_raw.endswith('s'):
+            dur_raw = dur_raw[:-1]
+        dur_sec = float(dur_raw)
+
+        slides.append({
+            'id': idx + 1,
+            'src': img_src,
+            'start': current_time_sec,
+            'end': current_time_sec + dur_sec
+        })
+        current_time_sec += dur_sec
+
     context['slides'] = slides
-    context['whole_duration'] = duration_to_minutes(whole_dur_in_secs)
+    context['slides_json'] = slides
+    # Обязательно число секунд для атрибута max у range-инпута:
+    context['whole_duration_sec'] = int(current_time_sec)
+
+
+# def build_slide_collection(url_path, soup, context):
+#     index = 1
+#     whole_dur_in_secs = 0
+#     slides = list()
+#     for img in soup.find_all("img"):
+#         img_src = os.path.join(url_path, img['src'])
+#         dur = img['dur']
+#         if dur.endswith('s'):
+#             dur = dur[:-1]
+#         dur = int(dur)
+#
+#         slides.append((index, img_src, duration_to_minutes(whole_dur_in_secs)))
+#         index += 1
+#         whole_dur_in_secs += int(dur)
+#     context['slides'] = slides
+#     context['whole_duration'] = duration_to_minutes(whole_dur_in_secs)
 
 
 logger = logging.getLogger('django')
