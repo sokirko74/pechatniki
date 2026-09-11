@@ -5,31 +5,6 @@
   <title>{{ title }}</title>
   {% include "common.html" %}
   <style>
-    /* Кнопка по умолчанию полупрозрачная, плавно меняет opacity */
-    .back-button {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      z-index: 9999; /* Выводим поверх всех слоев плеера */
-
-      display: inline-block;
-      padding: 8px 14px;
-      background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный темный фон */
-      color: #ffffff !important;           /* Белый цвет текста */
-      text-decoration: none;
-      border-radius: 4px;
-      font-family: sans-serif;
-      font-size: 14px;
-    }
-    /* Класс, который добавляется при активности мыши */
-    body.user-active .back-button {
-      opacity: 0.8;
-      pointer-events: auto;
-    }
-
-    body.user-active .back-button:hover {
-      opacity: 1;
-    }
     .player-container {
       position: relative;
       max-width: 960px;
@@ -41,6 +16,26 @@
       justify-content: center;
       overflow: hidden;
       user-select: none;
+    }
+
+    /* Кнопка Назад */
+    .back-button {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 9999;
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 4px;
+      font-family: sans-serif;
+      font-size: 14px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
     }
 
     .slide-img {
@@ -98,12 +93,19 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
-      transition: opacity 0.4s ease;
       z-index: 9;
-    }
-    .player-container.user-inactive.playing .controls-bar {
       opacity: 0;
-      cursor: none;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    /* Управление видимостью органов управления через класс user-active */
+    .player-container.user-active .controls-bar,
+    .player-container.user-active .back-button {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
     }
 
     .timeline-slider {
@@ -140,11 +142,10 @@
 </head>
 <body>
 
-<div>
-<a href="./" class="back-button">← Назад</a>
-</div>
+<div class="player-container user-active" id="player">
+  <!-- Кнопка Назад перемещена внутрь контейнера плеера -->
+  <a href="./" class="back-button">← Назад</a>
 
-<div class="player-container" id="player">
   <!-- Слайды -->
   {% for slide in slides %}
     <img src="{{ slide.src }}" class="slide-img {% if forloop.first %}active{% endif %}" data-index="{{ slide.id }}">
@@ -184,23 +185,30 @@
 
   let currentSlideIndex = -1;
   let isScrubbing = false;
-  let hideControlsTimeout;
+  let controlsTimeout;
 
-  let hideTimeout;
-
+  // Функция показа элементов управления и автоскрытия
   function showControls() {
-    document.body.classList.add('user-active');
-    clearTimeout(hideTimeout);
+    player.classList.add('user-active');
+    clearTimeout(controlsTimeout);
 
-    // Скрываем через 2.5 секунды бездействия
-    hideTimeout = setTimeout(() => {
-      document.body.classList.remove('user-active');
-    }, 2500);
+    if (!audio.paused) {
+      controlsTimeout = setTimeout(() => {
+        player.classList.remove('user-active');
+      }, 3000);
+    }
   }
 
-  // Отслеживаем движение мыши
-  window.addEventListener('mousemove', showControls);
-  window.addEventListener('click', showControls);
+  // События активности
+  player.addEventListener('mousemove', showControls);
+  player.addEventListener('touchstart', showControls, { passive: true });
+
+  audio.addEventListener('pause', () => {
+    player.classList.add('user-active');
+    clearTimeout(controlsTimeout);
+  });
+
+  audio.addEventListener('play', showControls);
 
   function formatTime(seconds) {
     if (isNaN(seconds) || seconds < 0) return "0:00";
@@ -209,56 +217,42 @@
     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
   }
 
-  // Находим текущий активный слайд и переходим к соседнему
+  // Навигация по слайдам
   function navigateSlide(direction) {
     const currentTime = audio.currentTime;
 
     if (direction === 'next') {
-      // Ищем первый слайд, время начала которого строго больше текущего
       const nextSlide = slidesData.find(s => s.start > currentTime + 0.1);
-      if (nextSlide) {
-        audio.currentTime = nextSlide.start;
-      }
+      if (nextSlide) audio.currentTime = nextSlide.start;
     } else if (direction === 'prev') {
-      // Если мы прошли больше 1.5 секунд от начала текущего слайда,
-      // логичнее сначала прыгнуть на его начало, а при повторном клике — на предыдущий
       const currentSlide = slidesData.find(s => currentTime >= s.start && currentTime < s.end);
 
       if (currentSlide && (currentTime - currentSlide.start > 1.5)) {
         audio.currentTime = currentSlide.start;
       } else {
-        // Ищем последний слайд, время начала которого меньше начала текущего
         const prevSlides = slidesData.filter(s => s.start < currentTime - 0.1);
         if (prevSlides.length > 0) {
-          const prevSlide = prevSlides[prevSlides.length - 1];
-          audio.currentTime = prevSlide.start;
+          audio.currentTime = prevSlides[prevSlides.length - 1].start;
         } else {
-          audio.currentTime = 0; // Возврат в самое начало
+          audio.currentTime = 0;
         }
       }
     }
   }
 
-  // Слушатель нажатий клавиш клавиатуры
+  // Нажатия клавиш
   window.addEventListener('keydown', (event) => {
-    // Игнорируем нажатия, если пользователь вводит текст в инпутах или текстовых полях
-    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
-      return;
-    }
+    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) return;
 
     if (event.key === 'ArrowRight') {
-      event.preventDefault(); // Предотвращаем стандартный скролл страницы
+      event.preventDefault();
       navigateSlide('next');
     } else if (event.key === 'ArrowLeft') {
       event.preventDefault();
       navigateSlide('prev');
-    } else if (event.key === ' ') { // Пробел для паузы / воспроизведения
+    } else if (event.key === ' ') {
       event.preventDefault();
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
+      togglePlay();
     }
   });
 
@@ -273,7 +267,6 @@
     }
   }
 
-  // Управление воспроизведением
   function togglePlay() {
     if (audio.paused) {
       audio.play();
@@ -293,7 +286,6 @@
   audio.addEventListener('pause', () => {
     player.classList.remove('playing');
     playPauseBtn.textContent = '▶';
-    showControls();
   });
 
   fullscreenBtn.addEventListener('click', () => {
@@ -304,28 +296,6 @@
     }
   });
 
-  // Автоскрытие контролов
-  function resetControlsTimeout() {
-    showControls();
-    if (!audio.paused) {
-      clearTimeout(hideControlsTimeout);
-      hideControlsTimeout = setTimeout(() => {
-        player.classList.add('user-inactive');
-      }, 2500);
-    }
-  }
-
-  function showControls() {
-    clearTimeout(hideControlsTimeout);
-    player.classList.remove('user-inactive');
-  }
-
-  player.addEventListener('mousemove', resetControlsTimeout);
-  player.addEventListener('mouseleave', () => {
-    if (!audio.paused) player.classList.add('user-inactive');
-  });
-
-  // Инициализация длительности
   function initDuration() {
     if (audio.duration && !isNaN(audio.duration) && audio.duration > 0) {
       timeline.max = audio.duration;
@@ -335,7 +305,6 @@
   audio.addEventListener('loadedmetadata', initDuration);
   audio.addEventListener('durationchange', initDuration);
 
-  // Обновление времени при воспроизведении
   audio.addEventListener('timeupdate', () => {
     if (!isScrubbing) {
       timeline.value = audio.currentTime;
@@ -345,20 +314,14 @@
     }
   });
 
-  // --- НАДЕЖНАЯ ПЕРЕМОТКА ---
   function performSeek(targetTime) {
     if (isNaN(targetTime)) return;
-
-    // Переключаем слайд визуально
     updateSlide(targetTime);
-
-    // Принудительно устанавливаем позицию аудио
     try {
       audio.currentTime = targetTime;
     } catch (e) {
-      console.warn("Не удалось установить currentTime:", e);
+      console.warn("Ошибка при смене времени:", e);
     }
-
     const maxDur = audio.duration || parseFloat(timeline.max) || 0;
     timeDisplay.textContent = `${formatTime(targetTime)} / ${formatTime(maxDur)}`;
   }
@@ -366,18 +329,14 @@
   timeline.addEventListener('mousedown', () => { isScrubbing = true; });
   timeline.addEventListener('touchstart', () => { isScrubbing = true; });
 
-  // Реакция во время перетаскивания
   timeline.addEventListener('input', (e) => {
-    const val = parseFloat(e.target.value);
-    performSeek(val);
+    performSeek(parseFloat(e.target.value));
   });
 
-  // Фиксация позиции при отпускании
-  function onScrubEnd(e) {
+  function onScrubEnd() {
     if (isScrubbing) {
       isScrubbing = false;
-      const val = parseFloat(timeline.value);
-      performSeek(val);
+      performSeek(parseFloat(timeline.value));
     }
   }
 
@@ -385,11 +344,9 @@
   timeline.addEventListener('touchend', onScrubEnd);
   timeline.addEventListener('change', (e) => {
     isScrubbing = false;
-    const val = parseFloat(e.target.value);
-    performSeek(val);
+    performSeek(parseFloat(e.target.value));
   });
 </script>
-
 
 </body>
 </html>
